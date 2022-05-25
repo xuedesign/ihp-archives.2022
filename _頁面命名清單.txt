@@ -1,0 +1,23 @@
+資料庫使用規範 index
+錯誤訊息 error404
+
+/user
+	登入 login 
+	忘記密碼 forgot-password 
+	重設密碼 reset-password 
+	加入會員 join 
+	加入成功訊息 join-success 
+	編輯會員資料 edit-user 
+	變更密碼 edit-password
+
+/collection
+	首頁  home
+	整編原則說明 infomation
+	簡目 list
+	詳目 view
+	指定範圍搜尋 filter-search
+	指定範圍搜尋結果 filter-search-results
+	檔案搜尋 search
+	檔案搜尋結果 search-results
+	選擇輸出清單 export
+	意見回饋 contact
