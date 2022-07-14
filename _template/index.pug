@@ -9,11 +9,32 @@ html(lang="zh-Hant")
   body
     #wrap
       header
+        #hdr-main
+          h1
+            a(herf="index.html" title="回首頁") 史語所檔案館館藏資料庫
+          nav#main-nav
+            ul
+              li
+                a(herf="index.html" title="回首頁") 首頁
+              li
+                a(herf="#" title="檔案類型") 檔案類型
+                ul
+                  li
+                    a(herf="#" title="史語所行政檔案") 史語所行政檔案
+                  li
+                    a(herf="#" title="史語所研究員檔案") 史語所研究員檔案
+                  li
+                    a(herf="file-summary.html" title="徵集檔案") 徵集檔案
+                  li
+                    a(herf="#" title="影音檔案") 影音檔案
+              li
+                a(herf="search.html" title="檔案搜尋") 檔案搜尋
+              li 會員登入
       = '\n'
-      main#container(style="min-height:500px")
+      main#container
       = '\n'
-      footer
-        // 從頁尾置底開始
+    footer
+        include foot.pug
   = '\n'
 
   //- script區塊
