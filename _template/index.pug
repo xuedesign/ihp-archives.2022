@@ -7,29 +7,50 @@ html(lang="zh-Hant")
   = '\n'
 
   body
+    #screenblock
+      h1
+        a(href="#") 史語所檔案館館藏資料庫
+      p
+        |請使用電腦操作本系統查詢館藏，
+        br
+        |如有不便敬請見諒！
+
     #wrap
       header
         #hdr-main
           h1
-            a(herf="index.html" title="回首頁") 史語所檔案館館藏資料庫
+            a(href="index.html" title="回首頁") 史語所檔案館館藏資料庫
           nav#main-nav
             ul
               li
-                a(herf="index.html" title="回首頁") 首頁
+                a(href="index.html" title="回首頁") 首頁
               li
-                a(herf="#" title="檔案類型") 檔案類型
+                a(href="#" title="檔案類型") 檔案類型
                 ul
                   li
-                    a(herf="#" title="史語所行政檔案") 史語所行政檔案
+                    a(href="#" title="史語所行政檔案") 史語所行政檔案
                   li
-                    a(herf="#" title="史語所研究員檔案") 史語所研究員檔案
+                    a(href="#" title="史語所研究員檔案") 史語所研究員檔案
                   li
-                    a(herf="file-summary.html" title="徵集檔案") 徵集檔案
+                    a(href="collection/file-summary.html" title="徵集檔案") 徵集檔案
                   li
-                    a(herf="#" title="影音檔案") 影音檔案
+                    a(href="#" title="影音檔案") 影音檔案
               li
-                a(herf="search.html" title="檔案搜尋") 檔案搜尋
-              li 會員登入
+                a(href="collection/search.html" title="檔案搜尋") 檔案搜尋
+              li
+                a
+                  img(class="icon_user" src="images/icon_user.svg" alt="user")
+                ul
+                  li
+                    a(href="user/edit-profiles.html" title="會員編輯") 會員編輯
+                  li
+                    a(href="user/edit-pwd.html" title="修改密碼") 修改密碼
+                  li
+                    a(href="#" title="登出") 登出
+                // 未登入狀態
+                  <ul>
+                    <li><a href="user/signin.html" title="登入會員">登入會員</a></li>
+                  </ul>
       = '\n'
       main#container
       = '\n'

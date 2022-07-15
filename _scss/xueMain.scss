@@ -153,33 +153,37 @@ h1 a{
 
 /*主選單*/
 #main-nav{
-  display: block;
-  text-align: right;
-  border: 1px solid #686666;
+  display: flex;
+  /* width: 30%; */
+  justify-content: space-between;
+  /* text-align: right; */
+  /* border: 1px solid #afafaf; */
+  margin-right: 120px;
 }
 #main-nav ul{
-  width: 100%;
   text-align: left;
   vertical-align: middle;
   padding-top: 50px;
 }
 #main-nav li{
   display: inline-block;
-  margin: 0 40px;
+  margin: 0 25px;
   font-size: 2rem;
   font-weight: 500;
-  transform: translateZ(0);
+  /* transform: translateZ(0);
   transition-duration: 0.5s;
-  transition-property: transform;
+  transition-property: transform; */
+  vertical-align: middle;
 }
 #main-nav li:hover{
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 #main-nav li:hover,
 #main-nav li li:hover{
   cursor:pointer;
 }
-#main-nav li:nth-child(2){
+#main-nav li:nth-child(2),
+#main-nav li:nth-child(4){
   position: relative;
 }
 #main-nav li a{
@@ -206,10 +210,21 @@ h1 a{
   margin: 0;
   padding: 10px 15px;
 }
+#main-nav li:nth-child(4):hover ul{
+  visibility: visible;
+  text-align: left;
+  top: 40px;
+  left: -85px;
+  width: 180px;
+  background: rgba(67, 87, 101, .5);
+  border-radius: 15px;
+  margin: 0;
+  padding: 10px 15px;
+}
 #main-nav ul li li{
-  width:80%;
+  width:75%;
   margin: 0 20px 0 5px;
-  padding: 8px 20px;
+  padding: 8px 20px 8px 20px;
   border-bottom: 1px dashed #fff;
   font-weight: 400;
   font-size: 1.8rem;
@@ -222,6 +237,13 @@ h1 a{
 }
 #main-nav ul li li:last-child{
   border-bottom: none
+}
+#main-nav .icon_user{
+  display:block;
+  width: 35px;
+  height: 35px;
+  padding-bottom: 5px;
+  cursor: pointer;
 }
 
 /*
@@ -318,6 +340,29 @@ h1 a{
   background: #35251a;
   border: 0px none #fff;
   border-radius: 0}
+
+/*
+=====================================
+行動版警語
+=====================================
+*/
+#screenblock{
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background:#ECEAE3
+}
+#screenblock p{
+  width: 80%;
+  margin: 20% auto;
+  font-size:4rem;
+  line-height: 6rem;
+  text-align: center;
+  padding: 30px;
+  border:5px solid rgb(129, 129, 129);
+}
 
 /*
 =====================================s
