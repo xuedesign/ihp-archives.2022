@@ -47,4 +47,16 @@
 
 }
 
+/*
+=====================================
+平板裝置(長>寬) for-tablet-portrait-up
+=====================================
+*/
+@media (max-width:800px) { /*750*/
+#screenblock p{
+    font-size:3rem;
+    line-height: 4.5rem
+}
+}
+
 

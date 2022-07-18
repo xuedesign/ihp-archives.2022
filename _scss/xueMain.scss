@@ -36,7 +36,7 @@
 引入外部文件
 =====================================
 */
-@import url("reset.css");
+@import 'reset';
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@700&display=swap");
 
 
@@ -124,7 +124,9 @@ header{
 
 #container{
   @extend %content_block;
-  padding-bottom: 50px
+  margin: 50px auto;
+  min-height:1000px;
+  border:1px solid #ccc;
 }
 
 footer{
@@ -149,6 +151,7 @@ h1 a{
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 /*主選單*/
@@ -163,7 +166,7 @@ h1 a{
 #main-nav ul{
   text-align: left;
   vertical-align: middle;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 #main-nav li{
   display: inline-block;
@@ -190,7 +193,7 @@ h1 a{
   color:#435664;
   letter-spacing: 1px;
   text-decoration: none;
-  padding-bottom: 15px;/*讓第一層選單和第二層間有重疊不會馬上消失*/
+  padding-bottom: 20px;/*讓第一層選單和第二層間有重疊不會馬上消失*/
 }
 #main-nav ul ul{
   /* display: none; */
@@ -208,7 +211,7 @@ h1 a{
   background: rgba(67, 87, 101, .5);
   border-radius: 15px;
   margin: 0;
-  padding: 10px 15px;
+  padding: 10px 20px 10px 0;
 }
 #main-nav li:nth-child(4):hover ul{
   visibility: visible;
@@ -219,12 +222,12 @@ h1 a{
   background: rgba(67, 87, 101, .5);
   border-radius: 15px;
   margin: 0;
-  padding: 10px 15px;
+  padding: 10px 20px 10px 0;
 }
 #main-nav ul li li{
-  width:75%;
-  margin: 0 20px 0 5px;
-  padding: 8px 20px 8px 20px;
+  width:90%;
+  /* margin: 0 20px 0 5px; */
+  padding: 8px 0;
   border-bottom: 1px dashed #fff;
   font-weight: 400;
   font-size: 1.8rem;
@@ -263,11 +266,11 @@ h1 a{
 }
 .foot-left{
   /* width:74%; */
-  padding-top: 25px;
+  padding-top: 45px;
 }
 .foot-right{
   /* width: 25%; */
-  padding-top: 45px;
+  padding-top: 65px;
   text-align: right;
 }
 .foot-right a{
@@ -292,7 +295,6 @@ h1 a{
 按鈕設定
 =====================================
 */
-
 .mybtn,
 .mybtn:visited{
     display: block;
@@ -318,6 +320,33 @@ h1 a{
 .btn-m{
     width: 120px;
     padding: 15px 10px}
+
+/*
+=====================================
+元素設定
+=====================================
+*/
+h2{
+  font-family: "Noto Serif TC";
+  font-weight:700;
+  font-size:3.5rem;
+  line-height:5.25rem;
+  color:#3a4f5f;
+  text-shadow: 0 0 4px rgb(241, 241, 241);
+  letter-spacing: 1px;
+}
+h2::before{
+  content:url(../images/icon_title.svg);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/*單欄*/
+
+/*雙欄*/
+
+/*圓角框*/
+
 
 /*
 =====================================
