@@ -62,7 +62,53 @@
       </header>
 
       <main id="container">
-        <div id="box_tabs"></div>
+        <div id="box_tabs">
+          <input class="tabs__radio" id="tab1" type="radio" name="tabs-example" checked>
+          <label class="tabs__label mybtn btn-m" for="tab1">簡易搜尋</label>
+          <div class="tabs__content">
+            <ul> 
+              <li>
+                <h3>檔案類型：</h3>
+                <div id="selectall">
+                  <input id="sd-00" type="checkbox" name="select_all" checked="checked" onclick="check_all(this,'sb')">
+                  <label for="sd-00">全部</label>
+                </div>
+                <ul id="fruits_container">
+                  <li>
+                    <input id="sd-01" type="checkbox" name="sb" value="史語所行政檔案" checked="checked">
+                    <label for="sd-01">史語所行政檔案</label>
+                  </li>
+                  <li>
+                    <input id="sd-02" type="checkbox" name="sb" value="史語所研究員檔案" checked="checked">
+                    <label for="sd-02">史語所研究員檔案</label>
+                  </li>
+                  <li>
+                    <input id="sd-03" type="checkbox" name="sb" value="徵集檔案" checked="checked">
+                    <label for="sd-03">徵集檔案</label>
+                  </li>
+                  <li>
+                    <input id="sd-04" type="checkbox" name="sb" value="影音檔案" checked="checked">
+                    <label for="sd-04">影音檔案</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>不限欄位：</h3>
+                <input class="myinput incatalog" id="keyword" name="keyword" type="text" title="搜尋關鍵字" placeholder="請輸入要查詢的關鍵字">
+              </li>
+              <li> </li>
+              <li> </li>
+              <li> </li>
+              <li> </li>
+              <li></li>
+            </ul>
+          </div>
+
+          <input class="tabs__radio" id="tab2" type="radio" name="tabs-example">
+          <label class="tabs__label mybtn btn-m" for="tab2">進階搜尋</label>
+          <div class="tabs__content">CONTENT for Tab #2</div>
+        </div>
+
         <div id="box_links">
           <h2>檔案類型</h2>
           <ul>
@@ -70,31 +116,31 @@
               <div class="link-pic" style="background:url(images/pic_typelink-01.png)"></div>
               <h3>史語所行政檔案</h3>
               <p>編目數量：9999 件</p>
-              <p>獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...</p><a class="btn_more" href="#" title="瀏覽檔案">瀏覽檔案</a>
+              <p class="link-info">獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...</p><a class="mybtn btn-m btn_active" href="#" title="瀏覽檔案">瀏覽檔案</a>
             </li>
             <li>
               <div class="link-pic" style="background:url(images/pic_typelink-02.png)"></div>
               <h3>史語所研究員檔案</h3>
               <p>編目中</p>
-              <p>獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...</p><a class="btn_more" href="#" title="瀏覽檔案">瀏覽檔案</a>
+              <p class="link-info">獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...</p><a class="mybtn btn-m btn_notyet" href="#" title="即將上線">即將上線</a>
             </li>
             <li>
               <div class="link-pic" style="background:url(images/pic_typelink-03.png)"></div>
               <h3>徵集檔案</h3>
               <p>編目數量：9999 件</p>
-              <p>獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...</p><a class="btn_more" href="#" title="瀏覽檔案">瀏覽檔案</a>
+              <p class="link-info">獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...</p><a class="mybtn btn-m btn_active" href="#" title="瀏覽檔案">瀏覽檔案</a>
             </li>
             <li>
               <div class="link-pic" style="background:url(images/pic_typelink-04.png)"></div>
               <h3>影音檔案</h3>
               <p>編目中</p>
-              <p>獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...</p><a class="btn_more" href="#" title="瀏覽檔案">瀏覽檔案</a>
+              <p class="link-info">獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...</p><a class="mybtn btn-m btn_notyet" href="#" title="即將上線">即將上線</a>
             </li>
           </ul>
         </div>
       </main>
-
     </div>
+
     <footer>
       <div id="footer_main">
         <p class="foot-left">本網站內容著作權屬中央研究院歷史語言研究所檔案館所有，任何形式之轉載，請與我們連絡<br>館址：台北市南港區 115 研究院路二段 130 號　電話：(02) 2782-9555 　Email:<a href="mailto:archives@mail.ihp.sinica.edu.tw" target="_blank" title="聯絡我們">archives@mail.ihp.sinica.edu.tw</a></p>

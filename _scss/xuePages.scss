@@ -36,8 +36,66 @@
 首頁
 =====================================
 */
+/*頁籤切換*/
+#box_tabs{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin:30px auto 80px;
+    border:1px solid #ccc;
+}
+.tabs__label{
+    margin-right: 20px;
+    padding: 10px 16px;
+    /* boder:1px solid #cfc4c5; */
+    background:#F4F4F4;
+    color:#939da4;
+    cursor: pointer;
+}
+.tabs__radio {
+    display: none;
+}
+.tabs__content {
+    display: none;
+    order: 1;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+.tabs__radio:checked + .tabs__label {
+    color: #EFDFC5;
+    background:#3a4f5f;
+}
+.tabs__radio:checked + .tabs__label + .tabs__content {
+    display: initial;
+}
+.tabs__content{}
+.tabs__content h3,
+#selectall,
+#fruits_container,
+#fruits_container li{
+    display: inline-block;
+}
+.tabs__content ul{
+    padding: 20px 20px;
+}
+.tabs__content ul ul{
+    padding: 0
+}
+.tabs__content li{
+    padding-bottom: 20px;
+}
+.tabs__content li li{
+    padding-bottom: 0;
+}
+.tabs__content h3{
+    font-size:2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 120px;
+}
+
 /*檔案類型*/
-#box_links{}
 #box_links ul{
     display:flex;
     width: 100%;
@@ -50,7 +108,7 @@
     width: 21%;
     background:#ffffff;
     border-radius: 15px;
-    min-height:600px;
+    min-height:560px;
     box-shadow: 0px 29px 80px rgba(0, 0, 0, 0.07), 0px 18.7963px 46.8519px rgba(0, 0, 0, 0.0531481), 0px 11.1704px 25.4815px rgba(0, 0, 0, 0.0425185), 0px 5.8px 13px rgba(0, 0, 0, 0.035), 0px 2.36296px 6.51852px rgba(0, 0, 0, 0.0274815), 0px 0.537037px 3.14815px rgba(0, 0, 0, 0.0168519);
 }
 #box_links .link-pic{
@@ -58,5 +116,35 @@
     height: 230px;
     overflow: hidden;
     border-radius:15px 15px 0 0;
+    background-size: contain;
     background-position: center center;
+}
+#box_links h3{
+    font-family: "Noto Serif TC";
+    font-weight:700;
+    font-size:2.1rem;
+    line-height:3rem;
+    color:#3a4f5f;
+    letter-spacing: 1px;
+    padding: 25px;
+    background:url(../images/line_title.svg) no-repeat;
+    background-position: 20px 60px
+}
+#box_links p{
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    padding: 5px 25px;
+    text-align: justify;
+}
+#box_links p.link-info{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+    word-break: break-all;
+}
+#box_links .btn_active,
+#box_links .btn_notyet{
+    margin: 20px auto;
 }

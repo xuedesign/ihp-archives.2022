@@ -54,6 +54,44 @@ html(lang="zh-Hant")
       = '\n'
       main#container
         #box_tabs
+          input#tab1.tabs__radio(type='radio', name='tabs-example', checked)
+          label.tabs__label.mybtn.btn-m(for='tab1') 簡易搜尋
+          .tabs__content
+            ul 
+              li
+                h3 檔案類型：
+                #selectall
+                  input#sd-00(type='checkbox', name='select_all', checked='checked', onclick="check_all(this,'sb')")
+                  label(for='sd-00') 全部
+                ul#fruits_container
+                  li
+                    input#sd-01(type='checkbox', name='sb', value='史語所行政檔案', checked='checked')
+                    label(for='sd-01') 史語所行政檔案
+                  li
+                    input#sd-02(type='checkbox', name='sb', value='史語所研究員檔案', checked='checked')
+                    label(for='sd-02') 史語所研究員檔案
+                  li
+                    input#sd-03(type='checkbox', name='sb', value='徵集檔案', checked='checked')
+                    label(for='sd-03') 徵集檔案
+                  li
+                    input#sd-04(type='checkbox', name='sb', value='影音檔案', checked='checked')
+                    label(for='sd-04') 影音檔案
+              li
+                h3 不限欄位：
+                input#keyword.myinput.incatalog(name='keyword', type='text', title='搜尋關鍵字', placeholder='請輸入要查詢的關鍵字')
+              li 
+              li 
+              li 
+              li 
+              li
+
+          = '\n'
+
+          input#tab2.tabs__radio(type='radio', name='tabs-example')
+          label.tabs__label.mybtn.btn-m(for='tab2') 進階搜尋
+          .tabs__content
+            | CONTENT for Tab #2
+        = '\n'
         #box_links
           h2 檔案類型
           ul
@@ -61,27 +99,27 @@ html(lang="zh-Hant")
               .link-pic(style='background:url(images/pic_typelink-01.png)')
               h3 史語所行政檔案
               p 編目數量：9999 件
-              p 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
-              a.btn_more( href="#" title="瀏覽檔案") 瀏覽檔案
+              p.link-info 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
+              a.mybtn.btn-m.btn_active( href="#" title="瀏覽檔案") 瀏覽檔案
             li
               .link-pic(style='background:url(images/pic_typelink-02.png)')
               h3 史語所研究員檔案
               p 編目中
-              p 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
-              a.btn_more( href="#" title="瀏覽檔案") 瀏覽檔案
+              p.link-info 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
+              a.mybtn.btn-m.btn_notyet( href="#" title="即將上線") 即將上線
             li
               .link-pic(style='background:url(images/pic_typelink-03.png)')
               h3 徵集檔案
               p 編目數量：9999 件
-              p 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
-              a.btn_more( href="#" title="瀏覽檔案") 瀏覽檔案
+              p.link-info 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
+              a.mybtn.btn-m.btn_active( href="#" title="瀏覽檔案") 瀏覽檔案
             li
               .link-pic(style='background:url(images/pic_typelink-04.png)')
               h3 影音檔案
               p 編目中
-              p 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
-              a.btn_more( href="#" title="瀏覽檔案") 瀏覽檔案
-      = '\n'
+              p.link-info 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
+              a.mybtn.btn-m.btn_notyet( href="#" title="即將上線") 即將上線
+    = '\n'
     footer
         include foot.pug
   = '\n'
