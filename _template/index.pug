@@ -7,90 +7,135 @@ html(lang="zh-Hant")
   = '\n'
 
   body
-    #screenblock
-      h1
-        a(href="#") 史語所檔案館館藏資料庫
-      p
-        |請使用電腦操作本系統查詢館藏，
-        br
-        |如有不便敬請見諒！
+    include screenblock.pug
 
     #wrap
       header
         #hdr-main
-          h1
-            a(href="index.html" title="回首頁") 史語所檔案館館藏資料庫
-          nav#main-nav
-            ul
-              li
-                a(href="index.html" title="回首頁") 首頁
-              li
-                a(href="#" title="檔案類型") 檔案類型
-                ul
-                  li
-                    a(href="#" title="史語所行政檔案") 史語所行政檔案
-                  li
-                    a(href="#" title="史語所研究員檔案") 史語所研究員檔案
-                  li
-                    a(href="collection/file-summary.html" title="徵集檔案") 徵集檔案
-                  li
-                    a(href="#" title="影音檔案") 影音檔案
-              li
-                a(href="collection/search.html" title="檔案搜尋") 檔案搜尋
-              li
-                a
-                  img(class="icon_user" src="images/icon_user.svg" alt="user")
-                ul
-                  li
-                    a(href="user/edit-profiles.html" title="會員編輯") 會員編輯
-                  li
-                    a(href="user/edit-pwd.html" title="修改密碼") 修改密碼
-                  li
-                    a(href="#" title="登出") 登出
-                // 未登入狀態
-                  <ul>
-                    <li><a href="user/signin.html" title="登入會員">登入會員</a></li>
-                  </ul>
+          include hdr-index.pug
       = '\n'
+
       main#container
         #box_tabs
-          input#tab1.tabs__radio(type='radio', name='tabs-example', checked)
+          input#tab1.tabs__radio(type='radio', name='tabs-example',checked)
           label.tabs__label.mybtn.btn-m(for='tab1') 簡易搜尋
           .tabs__content
-            ul 
-              li
-                h3 檔案類型：
-                #selectall
-                  input#sd-00(type='checkbox', name='select_all', checked='checked', onclick="check_all(this,'sb')")
-                  label(for='sd-00') 全部
-                ul#fruits_container
-                  li
-                    input#sd-01(type='checkbox', name='sb', value='史語所行政檔案', checked='checked')
-                    label(for='sd-01') 史語所行政檔案
-                  li
-                    input#sd-02(type='checkbox', name='sb', value='史語所研究員檔案', checked='checked')
-                    label(for='sd-02') 史語所研究員檔案
-                  li
-                    input#sd-03(type='checkbox', name='sb', value='徵集檔案', checked='checked')
-                    label(for='sd-03') 徵集檔案
-                  li
-                    input#sd-04(type='checkbox', name='sb', value='影音檔案', checked='checked')
-                    label(for='sd-04') 影音檔案
-              li
-                h3 不限欄位：
-                input#keyword.myinput.incatalog(name='keyword', type='text', title='搜尋關鍵字', placeholder='請輸入要查詢的關鍵字')
-              li 
-              li 
-              li 
-              li 
-              li
-
+            form(action='#', method='post')
+              ul
+                li
+                  h3 檔案類型：
+                  ul.fruits_container
+                    li
+                      input#sd-01(type='checkbox', name='sb', value='史語所行政檔案')
+                      label(for='sd-01') 史語所行政檔案
+                    li
+                      input#sd-02(type='checkbox', name='sb', value='史語所研究員檔案')
+                      label(for='sd-02') 史語所研究員檔案
+                    li
+                      input#sd-03(type='checkbox', name='sb', value='徵集檔案')
+                      label(for='sd-03') 徵集檔案
+                    li
+                      input#sd-04(type='checkbox', name='sb', value='影音檔案')
+                      label(for='sd-04') 影音檔案
+                li
+                  h3 不限欄位：
+                  input#anytext.myinput.inputLong(name='anytext', type='text', title='不限欄位')
+                li
+                  h3 檔號：
+                  input#filenumber.myinput.inputLong(name='filenumber', type='text', title='檔號')
+                li
+                  h3 題名：
+                  input#filetitle.myinput.inputLong(name='filetitle', type='text', title='題名')
+                li
+                  h3 關鍵字：
+                  input#keyword.myinput.inputLong(name='keyword', type='text', title='關鍵字')
+                li
+                  h3 摘要：
+                  input#summary.myinput.inputLong(name='summary', type='text', title='摘要')
+                li
+                  h3 日期：
+                  input#date1.myinput.inputMid(name='date1', type='text', title='日期')
+                  span(style='padding:0 14px') ~
+                  input#date2.myinput.inputMid(name='date2', type='text', title='日期')
+              .formbtn
+                input.mybtn.btn_reset.btn-m(type='reset', value='清除重填')
+                input.mybtn.btn_send.btn-m(type='button', value='送出查詢', onclick="location.href='collection/search-results.html'")
           = '\n'
 
           input#tab2.tabs__radio(type='radio', name='tabs-example')
           label.tabs__label.mybtn.btn-m(for='tab2') 進階搜尋
           .tabs__content
-            | CONTENT for Tab #2
+            form(action='#', method='post')
+              ul
+                li
+                  h3 檔案類型：
+                  ul.fruits_container
+                    li
+                      input#sd-01(type='checkbox', name='sb2', value='史語所行政檔案')
+                      label(for='sd-01') 史語所行政檔案
+                    li
+                      input#sd-02(type='checkbox', name='sb2', value='史語所研究員檔案')
+                      label(for='sd-02') 史語所研究員檔案
+                    li
+                      input#sd-03(type='checkbox', name='sb2', value='徵集檔案')
+                      label(for='sd-03') 徵集檔案
+                    li
+                      input#sd-04(type='checkbox', name='sb2', value='影音檔案')
+                      label(for='sd-04') 影音檔案
+                li
+                  h3 不限欄位：
+                  input#anytext.myinput.inputLong(name='anytext', type='text', title='不限欄位')
+                li
+                  select.myinput(name='xxx')
+                    option(value='AND', selected='') AND
+                    option(value='OR') OR
+                    option(value='NOT') NOT
+                  input.myinput.inputMid2(type='text', name='xxxx')
+                  span(style='padding:0 10px') @
+                  select.myinput(name='xxxs')
+                    option(value='', selected='all') 所有欄位
+                    option(value='file number') 檔號
+                    option(value='filetitle') 題名
+                    option(value='keyword') 關鍵字
+                    option(value='summary') 摘要
+                    option(value='date') 日期
+                li
+                  select.myinput(name='xxx')
+                    option(value='AND', selected='') AND
+                    option(value='OR') OR
+                    option(value='NOT') NOT
+                  input.myinput.inputMid2(type='text', name='xxxx')
+                  span(style='padding:0 10px') @
+                  select.myinput(name='xxxs')
+                    option(value='', selected='all') 所有欄位
+                    option(value='file number') 檔號
+                    option(value='filetitle') 題名
+                    option(value='keyword') 關鍵字
+                    option(value='summary') 摘要
+                    option(value='date') 日期
+                li
+                  select.myinput(name='xxx')
+                    option(value='AND', selected='') AND
+                    option(value='OR') OR
+                    option(value='NOT') NOT
+                  input.myinput.inputMid2(type='text', name='xxxx')
+                  span(style='padding:0 10px') @
+                  select.myinput(name='xxxs')
+                    option(value='', selected='all') 所有欄位
+                    option(value='file number') 檔號
+                    option(value='filetitle') 題名
+                    option(value='keyword') 關鍵字
+                    option(value='summary') 摘要
+                    option(value='date') 日期
+                li
+                  input#dd-01(type='checkbox', name='sb', value='異體字')
+                  label(for='dd-01') 異體字（例如：煙=烟）
+                li
+                  input#dd-02(type='checkbox', name='sb', value='異體字')
+                  label(for='dd-02') 同義詞（例如：傅斯年=孟真）
+              .formbtn
+                  input.mybtn.btn_reset.btn-m(type='reset', value='清除重填')
+                  input.mybtn.btn_send.btn-m(type='button', value='送出查詢', onclick="location.href='collection/search-results.html'")
         = '\n'
         #box_links
           h2 檔案類型
@@ -100,7 +145,7 @@ html(lang="zh-Hant")
               h3 史語所行政檔案
               p 編目數量：9999 件
               p.link-info 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
-              a.mybtn.btn-m.btn_active( href="#" title="瀏覽檔案") 瀏覽檔案
+              a.mybtn.btn-m.btn_notyet( href="#" title="即將上線") 即將上線
             li
               .link-pic(style='background:url(images/pic_typelink-02.png)')
               h3 史語所研究員檔案
@@ -112,7 +157,7 @@ html(lang="zh-Hant")
               h3 徵集檔案
               p 編目數量：9999 件
               p.link-info 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
-              a.mybtn.btn-m.btn_active( href="#" title="瀏覽檔案") 瀏覽檔案
+              a.mybtn.btn-m.btn_active( href="collection/file-summary.html" title="瀏覽檔案") 瀏覽檔案
             li
               .link-pic(style='background:url(images/pic_typelink-04.png)')
               h3 影音檔案

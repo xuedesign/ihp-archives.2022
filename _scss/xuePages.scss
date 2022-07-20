@@ -71,19 +71,18 @@
 }
 .tabs__content{}
 .tabs__content h3,
-#selectall,
-#fruits_container,
-#fruits_container li{
+.fruits_container,
+.fruits_container li{
     display: inline-block;
 }
 .tabs__content ul{
-    padding: 20px 20px;
+    padding: 20px 20px 0;
 }
 .tabs__content ul ul{
     padding: 0
 }
 .tabs__content li{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 .tabs__content li li{
     padding-bottom: 0;
@@ -94,6 +93,15 @@
     letter-spacing: 1px;
     width: 120px;
 }
+.formbtn{
+    display: block;
+    width: 73%;
+    /* margin: 0 auto; */
+    text-align: center}
+.formbtn .mybtn{
+    display: inline-block;
+    text-align: center;
+    margin: 20px}
 
 /*檔案類型*/
 #box_links ul{
