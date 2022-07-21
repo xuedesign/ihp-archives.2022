@@ -40,9 +40,9 @@
 #box_tabs{
     display: flex;
     flex-wrap: wrap;
-    max-width: 70%;
-    margin:30px auto 80px;
-    border:1px solid #ccc;
+    width: 790px;
+    margin:30px auto;
+    /* border:1px solid #ccc; */
 }
 .tabs__label{
     margin-right: 20px;
@@ -95,7 +95,7 @@
 }
 .formbtn{
     display: block;
-    width: 73%;
+    width: 100%;
     /* margin: 0 auto; */
     text-align: center}
 .formbtn .mybtn{

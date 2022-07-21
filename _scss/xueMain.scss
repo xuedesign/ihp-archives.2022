@@ -60,7 +60,9 @@ body{
   font-family:"Noto Sans TC", "Microsoft JhengHei","PingFangTC-Regular", "Arial", "Helvetica", sans-serif;
   font-size: 1rem; /* 1rem=10px */
   font-weight: 400;
-  color:#3A4F5F}
+  color:#3A4F5F;
+  padding-top:100px;
+}
 form{ margin:0; padding:0}
 image{border:0}
 .clean{ clear:both}
@@ -105,13 +107,19 @@ $nav-hover: #f50;
 */
 #wrap{
   @extend %box_default;
-  min-height: calc(100vh - 126px);/*減掉footer高度*/
+  min-height: calc(100vh - 277px); /*減掉footer高度*/
 }
 
 header{
   @extend %box_default;
+  position:fixed;
   height: 126px;
   background: url(../images/bg_head.png) repeat-x;
+  top: 0;
+  transition: top .8s ease-in-out;
+}
+.nav-up {
+  top: -126px;
 }
 
 #hdr-main{
@@ -270,7 +278,7 @@ h1 a{
 }
 .foot-right{
   /* width: 25%; */
-  padding-top: 65px;
+  padding-top: 69px;
   text-align: right;
 }
 .foot-right a{

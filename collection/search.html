@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="史語所檔案館庋藏所內考古、拓片、善本圖籍、少數民族、內閣大庫檔案等各項典藏的數位化工作，本系統開放大眾查閱瀏覽。">
+    <meta name="keywords" content="中央研究院, 歷史語言研究所, 檔案館, 數位典藏, 史語所行政檔案, 史語所研究員檔案">
+    <meta name="Author" content="ARCHIVES,INSTITUTE OF HISTORY AND PHILOLOGY ACADEMIA SINICA">
+
+    <meta property="og:title" content="館藏資料庫">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="中研院史語所檔案館">
+    <meta property="og:url" content="https://ihparchives.ihp.sinica.edu.tw">
+    <meta property="og:image" content="https://ihparchives.ihp.sinica.edu.twimages/share.jpg">
+    <meta property="og:description" content="史語所檔案館庋藏所內考古、拓片、善本圖籍、少數民族、內閣大庫檔案等各項典藏的數位化工作，本系統開放大眾查閱瀏覽。">
+
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" href="../images/favicon.png">
+    <title>檔案搜尋-館藏資料庫|中央研院歷史語言研究所檔案館</title>
+    <link rel="stylesheet" href="../css/xueMain.css">
+  </head>
+
+  <body>
+    <div id="screenblock">
+      <h1><a href="#">史語所檔案館館藏資料庫</a></h1>
+      <p>請使用電腦操作本系統查詢館藏，<br>如有不便敬請見諒！</p>
+    </div>
+    <div id="wrap">
+      <header class="nav-down">
+        <div id="hdr-main">
+          <h1><a href="../index.html" title="回首頁">史語所檔案館館藏資料庫</a></h1>
+          <nav id="main-nav">
+            <ul>
+              <li><a href="../index.html" title="回首頁">首頁</a></li>
+              <li><a href="#" title="檔案類型">檔案類型</a>
+                <ul>
+                  <li><a href="#" title="史語所行政檔案">史語所行政檔案</a></li>
+                  <li><a href="#" title="史語所研究員檔案">史語所研究員檔案</a></li>
+                  <li><a href="../collection/file-summary.html" title="徵集檔案">徵集檔案</a></li>
+                  <li><a href="#" title="影音檔案">影音檔案</a></li>
+                </ul>
+              </li>
+              <li><a href="../collection/search.html" title="檔案搜尋">檔案搜尋</a></li>
+              <li><a><img class="icon_user" src="../images/icon_user.svg" alt="user"></a>
+                <ul>
+                  <li><a href="../user/edit-profiles.html" title="會員編輯">會員編輯</a></li>
+                  <li><a href="../user/edit-pwd.html" title="修改密碼">修改密碼</a></li>
+                  <li><a href="#" title="登出">登出</a></li>
+                </ul>
+                <!-- 未登入狀態
+                <ul>
+                  <li><a href="../user/signin.html" title="登入會員">登入會員</a></li>
+                </ul>
+                -->
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="container">
+        <div id="box_tabs">
+          <input class="tabs__radio" id="tab1" type="radio" name="tabs-example" checked>
+          <label class="tabs__label mybtn btn-m" for="tab1">簡易搜尋</label>
+          <div class="tabs__content">
+            <form action="#" method="post">
+              <ul>
+                <li>
+                  <h3>檔案類型：</h3>
+                  <ul class="fruits_container">
+                    <li>
+                      <input id="sd-01" type="checkbox" name="sb" value="史語所行政檔案">
+                      <label for="sd-01">史語所行政檔案</label>
+                    </li>
+                    <li>
+                      <input id="sd-02" type="checkbox" name="sb" value="史語所研究員檔案">
+                      <label for="sd-02">史語所研究員檔案</label>
+                    </li>
+                    <li>
+                      <input id="sd-03" type="checkbox" name="sb" value="徵集檔案">
+                      <label for="sd-03">徵集檔案</label>
+                    </li>
+                    <li>
+                      <input id="sd-04" type="checkbox" name="sb" value="影音檔案">
+                      <label for="sd-04">影音檔案</label>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h3>不限欄位：</h3>
+                  <input class="myinput inputLong" id="anytext" name="anytext" type="text" title="不限欄位">
+                </li>
+                <li>
+                  <h3>檔號：</h3>
+                  <input class="myinput inputLong" id="filenumber" name="filenumber" type="text" title="檔號">
+                </li>
+                <li>
+                  <h3>題名：</h3>
+                  <input class="myinput inputLong" id="filetitle" name="filetitle" type="text" title="題名">
+                </li>
+                <li>
+                  <h3>關鍵字：</h3>
+                  <input class="myinput inputLong" id="keyword" name="keyword" type="text" title="關鍵字">
+                </li>
+                <li>
+                  <h3>摘要：</h3>
+                  <input class="myinput inputLong" id="summary" name="summary" type="text" title="摘要">
+                </li>
+                <li>
+                  <h3>日期：</h3>
+                  <input class="myinput inputMid" id="date1" name="date1" type="text" title="日期"><span style="padding:0 14px">~</span>
+                  <input class="myinput inputMid" id="date2" name="date2" type="text" title="日期">
+                </li>
+              </ul>
+              <div class="formbtn">
+                <input class="mybtn btn_reset btn-m" type="reset" value="清除重填">
+                <input class="mybtn btn_send btn-m" type="button" value="送出查詢" onclick="location.href='../collection/search-results.html'">
+              </div>
+            </form>
+          </div>
+
+          <input class="tabs__radio" id="tab2" type="radio" name="tabs-example">
+          <label class="tabs__label mybtn btn-m" for="tab2">進階搜尋</label>
+          <div class="tabs__content">
+            <form action="#" method="post">
+              <ul>
+                <li>
+                  <h3>檔案類型：</h3>
+                  <ul class="fruits_container">
+                    <li>
+                      <input id="sd-01" type="checkbox" name="sb2" value="史語所行政檔案">
+                      <label for="sd-01">史語所行政檔案</label>
+                    </li>
+                    <li>
+                      <input id="sd-02" type="checkbox" name="sb2" value="史語所研究員檔案">
+                      <label for="sd-02">史語所研究員檔案</label>
+                    </li>
+                    <li>
+                      <input id="sd-03" type="checkbox" name="sb2" value="徵集檔案">
+                      <label for="sd-03">徵集檔案</label>
+                    </li>
+                    <li>
+                      <input id="sd-04" type="checkbox" name="sb2" value="影音檔案">
+                      <label for="sd-04">影音檔案</label>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h3>不限欄位：</h3>
+                  <input class="myinput inputLong" id="anytext" name="anytext" type="text" title="不限欄位">
+                </li>
+                <li>
+                  <select class="myinput" name="xxx">
+                    <option value="AND" selected="">AND</option>
+                    <option value="OR">OR</option>
+                    <option value="NOT">NOT</option>
+                  </select>
+                  <input class="myinput inputMid2" type="text" name="xxxx"><span style="padding:0 10px">@</span>
+                  <select class="myinput" name="xxxs">
+                    <option value="" selected="all">所有欄位</option>
+                    <option value="file number">檔號</option>
+                    <option value="filetitle">題名</option>
+                    <option value="keyword">關鍵字</option>
+                    <option value="summary">摘要</option>
+                    <option value="date">日期</option>
+                  </select>
+                </li>
+                <li>
+                  <select class="myinput" name="xxx">
+                    <option value="AND" selected="">AND</option>
+                    <option value="OR">OR</option>
+                    <option value="NOT">NOT</option>
+                  </select>
+                  <input class="myinput inputMid2" type="text" name="xxxx"><span style="padding:0 10px">@</span>
+                  <select class="myinput" name="xxxs">
+                    <option value="" selected="all">所有欄位</option>
+                    <option value="file number">檔號</option>
+                    <option value="filetitle">題名</option>
+                    <option value="keyword">關鍵字</option>
+                    <option value="summary">摘要</option>
+                    <option value="date">日期</option>
+                  </select>
+                </li>
+                <li>
+                  <select class="myinput" name="xxx">
+                    <option value="AND" selected="">AND</option>
+                    <option value="OR">OR</option>
+                    <option value="NOT">NOT</option>
+                  </select>
+                  <input class="myinput inputMid2" type="text" name="xxxx"><span style="padding:0 10px">@</span>
+                  <select class="myinput" name="xxxs">
+                    <option value="" selected="all">所有欄位</option>
+                    <option value="file number">檔號</option>
+                    <option value="filetitle">題名</option>
+                    <option value="keyword">關鍵字</option>
+                    <option value="summary">摘要</option>
+                    <option value="date">日期</option>
+                  </select>
+                </li>
+                <li>
+                  <input id="dd-01" type="checkbox" name="sb" value="異體字">
+                  <label for="dd-01">異體字（例如：煙=烟）</label>
+                </li>
+                <li>
+                  <input id="dd-02" type="checkbox" name="sb" value="異體字">
+                  <label for="dd-02">同義詞（例如：傅斯年=孟真）</label>
+                </li>
+              </ul>
+              <div class="formbtn">
+                <input class="mybtn btn_reset btn-m" type="reset" value="清除重填">
+                <input class="mybtn btn_send btn-m" type="button" value="送出查詢" onclick="location.href='../collection/search-results.html'">
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div id="footer_main">
+        <p class="foot-left">本網站內容著作權屬中央研究院歷史語言研究所檔案館所有，任何形式之轉載，請與我們連絡<br>館址：台北市南港區 115 研究院路二段 130 號　電話：(02) 2782-9555 　Email:<a href="mailto:archives@mail.ihp.sinica.edu.tw" target="_blank" title="聯絡我們">archives@mail.ihp.sinica.edu.tw</a></p>
+        <p class="foot-right"><a href="https://www1.ihp.sinica.edu.tw/" target="_blank" title="[另開視窗]中央研究院歷史語言研究所">中央研究院歷史語言研究所</a>|<a href="http://archives.ihp.sinica.edu.tw/" target="_blank" title="[另開視窗]史語所檔案館">史語所檔案館</a></p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/loadjs/dist/loadjs.umd.min.js"></script>
+  <script src="../js/script.js"></script>
+</html>

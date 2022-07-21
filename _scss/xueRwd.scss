@@ -32,12 +32,13 @@
 **/
 
 @media (max-width:1700px) {
-
+#container{
+    width: 93%;
+}
 }
 
-@media (max-width:1500px) {
-    .formbtn{
-        width: 100%;}
+@media (max-width:1300px) {
+
 }
 
 /*
@@ -47,7 +48,10 @@
 */
 @media (max-width:1110px) { /*1000*/
 #screenblock{
-    display: block
+    display: block;
+    position:fixed;
+    top: 0;
+    z-index: 999;
 }
 
 }

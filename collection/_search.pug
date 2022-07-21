@@ -1,18 +1,18 @@
 doctype html
 html(lang="zh-Hant")
   head
-    include head.pug
-    title 館藏資料庫|中央研院歷史語言研究所檔案館
-    link(rel="stylesheet" href="css/xueMain.css")
+    include ../_template/head-page.pug
+    title 檔案搜尋-館藏資料庫|中央研院歷史語言研究所檔案館
+    link(rel="stylesheet" href="../css/xueMain.css")
   = '\n'
 
   body
-    include screenblock.pug
+    include ../_template/screenblock.pug
 
     #wrap
-      header
+      header.nav-down
         #hdr-main
-          include hdr-index.pug
+          include ../_template/hdr-page.pug
       = '\n'
 
       main#container
@@ -59,7 +59,7 @@ html(lang="zh-Hant")
                   input#date2.myinput.inputMid(name='date2', type='text', title='日期')
               .formbtn
                 input.mybtn.btn_reset.btn-m(type='reset', value='清除重填')
-                input.mybtn.btn_send.btn-m(type='button', value='送出查詢', onclick="location.href='collection/search-results.html'")
+                input.mybtn.btn_send.btn-m(type='button', value='送出查詢', onclick="location.href='../collection/search-results.html'")
           = '\n'
 
           input#tab2.tabs__radio(type='radio', name='tabs-example')
@@ -135,42 +135,14 @@ html(lang="zh-Hant")
                   label(for='dd-02') 同義詞（例如：傅斯年=孟真）
               .formbtn
                   input.mybtn.btn_reset.btn-m(type='reset', value='清除重填')
-                  input.mybtn.btn_send.btn-m(type='button', value='送出查詢', onclick="location.href='collection/search-results.html'")
-        = '\n'
-        #box_links
-          h2 檔案類型
-          ul
-            li
-              .link-pic(style='background:url(images/pic_typelink-01.png)')
-              h3 史語所行政檔案
-              p 編目數量：9999 件
-              p.link-info 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
-              a.mybtn.btn-m.btn_notyet( href="#" title="即將上線") 即將上線
-            li
-              .link-pic(style='background:url(images/pic_typelink-02.png)')
-              h3 史語所研究員檔案
-              p 編目中
-              p.link-info 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
-              a.mybtn.btn-m.btn_notyet( href="#" title="即將上線") 即將上線
-            li
-              .link-pic(style='background:url(images/pic_typelink-03.png)')
-              h3 徵集檔案
-              p 編目數量：9999 件
-              p.link-info 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
-              a.mybtn.btn-m.btn_active( href="collection/file-summary.html" title="瀏覽檔案") 瀏覽檔案
-            li
-              .link-pic(style='background:url(images/pic_typelink-04.png)')
-              h3 影音檔案
-              p 編目中
-              p.link-info 獨行果，說西球是利口；起情熱有總助告把長長時合別能利小成量離定出己作了、內我思中能一甚被廣在整放因十容；天不寶子戰關...
-              a.mybtn.btn-m.btn_notyet( href="#" title="即將上線") 即將上線
+                  input.mybtn.btn_send.btn-m(type='button', value='送出查詢', onclick="location.href='../collection/search-results.html'")
     = '\n'
     footer
-        include foot.pug
+        include ../_template/foot.pug
   = '\n'
 
   //- script區塊
   script(src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js")
   script(src="https://cdn.jsdelivr.net/npm/jquery-migrate/dist/jquery-migrate.min.js")
   script(src="https://cdn.jsdelivr.net/npm/loadjs/dist/loadjs.umd.min.js")
-  script(src="js/script.js")
+  script(src="../js/script.js")
