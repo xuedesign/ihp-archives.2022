@@ -1,0 +1,38 @@
+doctype html
+html(lang="zh-Hant-TW")
+  head
+    include ../_template/head-page.pug
+    title 整編原則-館藏資料庫|中央研院歷史語言研究所檔案館
+    link(rel="stylesheet" href="../css/xueMain.css")
+  = '\n'
+
+  body
+    include ../_template/screenblock.pug
+
+    #wrap
+      header.nav-down
+        #hdr-main
+          include ../_template/hdr-page.pug
+      = '\n'
+
+      main#container-page
+        #bar_title
+          .left_title
+            h2 徵集檔案
+          .right_title
+        = '\n'
+
+        aside#aside
+        = '\n'
+
+        section#pagemain
+    = '\n'
+    footer
+        include ../_template/foot.pug
+  = '\n'
+
+  //- script區塊
+  script(src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/jquery-migrate/dist/jquery-migrate.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/loadjs/dist/loadjs.umd.min.js")
+  script(src="../js/script.js")

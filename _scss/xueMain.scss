@@ -136,11 +136,43 @@ header{
   /* min-height:1000px; */
   border:1px solid #ccc;
 }
+#container-page{
+  @extend %content_flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  border:1px solid #ccc;
+}
 
 footer{
   @extend %box_default;
   height: 126px;
   background-color: #ffffff
+}
+
+#bar_title{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.left_title{
+  width: 30%;
+  border:1px solid #181f52
+}
+.right_title{
+  width: 69%;
+  text-align: right;
+  border:1px solid #181f52
+}
+#aside{
+  width: 25%;
+  min-height:500px;
+  border:1px solid #181f52
+}
+#pagemain{
+  width: 73%;
+  border:1px solid #181f52
 }
 
 /*
