@@ -133,14 +133,13 @@ header{
 #container{
   @extend %content_block;
   margin: 50px auto;
-  /* min-height:1000px; */
-  border:1px solid #ccc;
+  /* min-height:1000px;
+  border:1px solid #ccc; */
 }
 #container-page{
   @extend %content_flex;
   justify-content: space-between;
   margin: 50px auto;
-  border:1px solid #ccc;
 }
 
 footer{
@@ -155,24 +154,22 @@ footer{
   justify-content: space-between;
   width: 100%;
   margin-bottom: 30px;
+  padding-top: 20px;
 }
 .left_title{
   width: 30%;
-  border:1px solid #181f52
 }
 .right_title{
   width: 69%;
   text-align: right;
-  border:1px solid #181f52
 }
 #aside{
   width: 25%;
   min-height:500px;
-  border:1px solid #181f52
 }
 #pagemain{
-  width: 73%;
-  border:1px solid #181f52
+  width: 72%;
+ /*  border:1px solid #181f52 */
 }
 
 /*
@@ -373,9 +370,11 @@ h1 a{
   cursor:not-allowed;
 }
 .btn-l{
-    width: 173px}
+  width: 173px}
 .btn-m{
-    width: 120px}
+  width: 120px}
+.btn-s{
+  width: 100px}
 
 /*表單元件*/
 .myselect,
@@ -414,8 +413,8 @@ h1 a{
 h2{
   font-family: "Noto Serif TC";
   font-weight:700;
-  font-size:3.5rem;
-  line-height:5.25rem;
+  font-size:3.3rem;
+  line-height: 4.3rem;
   color:#3a4f5f;
   text-shadow: 0 0 4px rgb(241, 241, 241);
   letter-spacing: 1px;

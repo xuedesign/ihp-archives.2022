@@ -42,6 +42,7 @@
     flex-wrap: wrap;
     width: 790px;
     margin:30px auto;
+    padding-top: 30px;
     /* border:1px solid #ccc; */
 }
 .tabs__label{
@@ -156,3 +157,134 @@
 #box_links .btn_notyet{
     margin: 20px auto;
 }
+
+/*
+=====================================
+檔案類型
+=====================================
+*/
+/*側邊搜尋框*/
+#box_search,
+#box_subnav{
+    display: block;
+    width: 368px;
+    margin-bottom: 35px;
+    border: 1px solid #C18E7F;
+    border-radius: 15px;
+    background: #F4F4F4
+}
+#box_search h3{
+    font-size: 1.8rem;
+    line-height: 5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    background: #3a4f5f;
+    color:#EFDFC5;
+    border-radius: 15px 15px 0 0;
+}
+#box_search .myinput{
+    display: block;
+    margin: 20px auto 15px;
+    width: 85%;
+}
+#box_check{
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height:2.8rem
+}
+#box_check summary{
+    cursor:pointer;
+}
+#box_check ul{
+    padding-top: 10px;
+}
+
+.subnav-01 li{
+    font-size: 1.8rem;
+    padding: 20px 15px;
+    border-bottom: 1px solid #C18E7F;
+}
+.subnav-01 li:last-child{
+    border-bottom: none;
+}
+.subnav-01 a,
+.subnav-01 a:visited,
+#right_summary a,
+#right_summary a:visited{
+    color: #3A4F5F;
+    text-decoration: none;
+}
+.subnav-01 a:hover,
+#right_summary a:hover{
+    color: #713429;
+    text-decoration: none;
+}
+
+/*整編原則*/
+#pagemain h3{
+    font-family: "Noto Serif TC";
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    color:#3a4f5f;
+    text-shadow: 0 0 4px rgb(241, 241, 241);
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(67, 86, 100, .5);
+    padding: 0 0 10px;
+}
+#box_summary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+#box_summary h4{
+    font-family: "Noto Serif TC";
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    color:#3a4f5f;
+    text-shadow: 0 0 4px rgb(241, 241, 241);
+}
+#left_summary,
+#right_summary{
+    display: block;
+    width: 48%;
+}
+#left_summary{
+    border-right: 1px solid rgba(67, 86, 100, .5);
+}
+#left_summary img{
+    display: block;
+    width: 95%;
+    margin: 20px 0;
+}
+#left_summary p{
+    display: block;
+    width: 95%;
+    padding-bottom: 30px;
+    font-size:1.8rem;
+    line-height:3.5rem;
+    text-align: justify;
+}
+#right_summary ul{
+    display: block;
+    margin: 20px 0;
+}
+#right_summary li{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(67, 86, 100, .5);
+    list-style-image: url(../images/icon_pot.svg);
+}
+/* #right_summary li::before{
+    content: "";
+    display:inline-block;
+    width: 9px;
+    height: 9px;
+    background: url(../images/icon_pot.svg);
+    margin-right: 10px;
+} */

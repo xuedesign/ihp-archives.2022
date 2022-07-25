@@ -23,9 +23,51 @@ html(lang="zh-Hant-TW")
         = '\n'
 
         aside#aside
+          #box_search
+            h3 指定範圍搜尋
+            form(action='#', method='post')
+              input#anytext.myinput(name='anytext', type='text', title='不限欄位', placeholder='不限欄位，請輸入關鍵字查詢')
+              details#box_check
+                summary 限定全宗範圍：(不勾選表全部，可複選)
+                ul
+                  li
+                    input#dd-01(type='checkbox', name='sb', value='陳寶鈞京師大學堂檔案')
+                    label(for='dd-01') 陳寶鈞京師大學堂檔案
+                  li
+                    input#dd-02(type='checkbox', name='sb', value='谷蘭瀅女士家藏契約文書')
+                    label(for='dd-02') 谷蘭瀅女士家藏契約文書
+              .formbtn
+                input.mybtn.btn_reset.btn-s(type='reset', value='清除')
+                input.mybtn.btn_send.btn-s(type='button', value='搜尋', onclick="location.href='#'")
+          #box_subnav.subnav-01
+            ul
+              li
+                a(href='file-summary.html', title='陳寶鈞京師大學堂檔案') 陳寶鈞京師大學堂檔案
+              li
+                a(href='file-summary.html', title='谷蘭瀅女士家藏契約文書') 谷蘭瀅女士家藏契約文書
         = '\n'
 
         section#pagemain
+          h3 谷蘭瀅女士家藏契約文書
+          #box_summary
+            #left_summary
+              h4 整編原則說明：
+              img(src='../images/pic_sample-01.jpg', alt='谷蘭瀅女士家藏契約文書')
+              p
+                |手先是優稱種。壓十能而山發小對受和白男，精員來了受有院，它金是，之法是除費指去？發計是的。起使麼頭？論信心排品有能北直人另點種去初種，的發向裝先天是至觀，那放有坡容情生了。中省被多人未。在賽到樹色本…… 其持景不此細為的日美又起各，麼的家據臺須一…… 聞格長士輕送以中滿力們場發特真。意小為辦國選得早明主車望能風性對眾火記他特在元話說首動起一成：心氣為。
+            #right_summary
+              h4 全宗目錄：
+              ul
+                li
+                  a(href='file-list.html', title='大盆兒胡同') 大盆兒胡同
+                li
+                  a(href='file-list.html', title='通縣') 通縣
+                li
+                  a(href='file-list.html', title='繩子庫胡同') 繩子庫胡同
+                li
+                  a(href='file-list.html', title='繩子庫胡同') 繩子庫胡同
+                li
+                  a(href='file-list.html', title='個人證件文書') 個人證件文書
     = '\n'
     footer
         include ../_template/foot.pug
