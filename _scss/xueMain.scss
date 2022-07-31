@@ -67,6 +67,7 @@ form{ margin:0; padding:0}
 image{border:0}
 .clean{ clear:both}
 .hidden{ visibility:hidden;}
+.txt_small{font-size: 1.8rem}
 
 /*頁面反白設定*/
 ::selection { background: #3A4F5F; color: #EFDFC5}
@@ -162,9 +163,10 @@ footer{
 .right_title{
   width: 69%;
   text-align: right;
+  boder: 1px solid rgb(81, 81, 81)
 }
 #aside{
-  width: 25%;
+  width: 23.5%;
   min-height:500px;
 }
 #pagemain{
@@ -332,10 +334,8 @@ h1 a{
 按鈕設定
 =====================================
 */
-.mybtn{
-    display: block;
-    padding: 8px 5px;
-    font-size: 1.8rem;
+.mybtn,
+.mybtn_select{
     font-weight: 500;
     line-height: 2.2rem;
     letter-spacing: 1px;
@@ -344,6 +344,16 @@ h1 a{
     text-decoration: none;
     border-radius: 10px;
     border:2px solid #BAA4A4
+}
+.mybtn{
+  display: block;
+  padding: 8px 5px;
+  font-size: 1.8rem
+}
+.mybtn_select{
+  display: inline-block;
+  padding: 5px 8px 5px 15px;
+  font-size: 1.6rem
 }
 .btn_active,
 .btn_active:visited,

@@ -167,16 +167,18 @@
 #box_search,
 #box_subnav{
     display: block;
-    width: 368px;
+    width: 100%;
     margin-bottom: 35px;
     border: 1px solid #C18E7F;
     border-radius: 15px;
     background: #F4F4F4
 }
 #box_search h3{
-    font-size: 1.8rem;
+    font-family: "Noto Serif TC";
+    font-weight: 700;
+    font-size: 2rem;
     line-height: 5rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-align: center;
     background: #3a4f5f;
     color:#EFDFC5;
@@ -206,17 +208,25 @@
     padding: 20px 15px;
     border-bottom: 1px solid #C18E7F;
 }
-.subnav-01 li:last-child{
+.subnav-01 li:last-child,
+.subnav-02 li:last-child,
+.subnav-03 li:last-child{
     border-bottom: none;
 }
 .subnav-01 a,
 .subnav-01 a:visited,
+.subnav-02 a,
+.subnav-02 a:visited,
+.subnav-03 a,
+.subnav-03 a:visited,
 #right_summary a,
 #right_summary a:visited{
     color: #3A4F5F;
     text-decoration: none;
 }
 .subnav-01 a:hover,
+.subnav-02 a:hover,
+.subnav-03 a:hover,
 #right_summary a:hover{
     color: #713429;
     text-decoration: none;
@@ -271,7 +281,7 @@
 }
 #right_summary ul{
     display: block;
-    margin: 20px 0;
+    margin: 0 0 20px 22px;
 }
 #right_summary li{
     font-size: 1.8rem;
@@ -288,3 +298,9 @@
     background: url(../images/icon_pot.svg);
     margin-right: 10px;
 } */
+
+/*選取輸出按鈕*/
+.right_title label{
+    font-size: 1.6rem;
+    margin-right: 10px;
+}

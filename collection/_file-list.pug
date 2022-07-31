@@ -2,7 +2,7 @@ doctype html
 html(lang="zh-Hant-TW")
   head
     include ../_template/head-page.pug
-    title 整編原則-館藏資料庫|中央研院歷史語言研究所檔案館
+    title 大盆兒胡同-館藏資料庫|中央研院歷史語言研究所檔案館
     link(rel="stylesheet" href="../css/xueMain.css")
   = '\n'
 
@@ -20,6 +20,13 @@ html(lang="zh-Hant-TW")
           .left_title
             h2 徵集檔案
           .right_title
+            input#selectPage(type='radio', name='selectItem', value='本頁全選')
+            label(for='selectPage') 本頁全選
+            input#selectAll(type='radio', name='selectItem', value='所有頁面全選')
+            label(for='selectAll') 所有頁面全選
+            input#selectCancel(type='radio', name='selectItem', value='清空選取')
+            label(for='selectCancel') 清空選取
+            input.mybtn_select.btn_send(type='button', value='已選擇輸出（99）', onclick="location.href='../collection/export.html'")
         = '\n'
 
         aside#aside
@@ -39,7 +46,8 @@ html(lang="zh-Hant-TW")
               .formbtn
                 input.mybtn.btn_reset.btn-s(type='reset', value='清除')
                 input.mybtn.btn_send.btn-s(type='button', value='搜尋', onclick="location.href='#'")
-          #box_subnav.subnav-01
+          #box_subnav.subnav-02
+            // TODO 從側邊選單開始琢磨
             ul
               li
                 a(href='file-summary.html', title='陳寶鈞京師大學堂檔案') 陳寶鈞京師大學堂檔案
@@ -48,26 +56,8 @@ html(lang="zh-Hant-TW")
         = '\n'
 
         section#pagemain
-          h3 谷蘭瀅女士家藏契約文書
-          #box_summary
-            #left_summary
-              h4 整編原則說明：
-              img(src='../images/pic_sample-01.jpg', alt='谷蘭瀅女士家藏契約文書')
-              p
-                |手先是優稱種。壓十能而山發小對受和白男，精員來了受有院，它金是，之法是除費指去？發計是的。起使麼頭？論信心排品有能北直人另點種去初種，的發向裝先天是至觀，那放有坡容情生了。中省被多人未。在賽到樹色本…… 其持景不此細為的日美又起各，麼的家據臺須一…… 聞格長士輕送以中滿力們場發特真。意小為辦國選得早明主車望能風性對眾火記他特在元話說首動起一成：心氣為。
-            #right_summary
-              h4 全宗目錄：
-              ul
-                li
-                  a(href='file-list.html', title='大盆兒胡同') 大盆兒胡同
-                li
-                  a(href='file-list.html', title='通縣') 通縣
-                li
-                  a(href='file-list.html', title='繩子庫胡同') 繩子庫胡同
-                li
-                  a(href='file-list.html', title='繩子庫胡同') 繩子庫胡同
-                li
-                  a(href='file-list.html', title='個人證件文書') 個人證件文書
+          h3 大盆兒胡同
+
     = '\n'
     footer
         include ../_template/foot.pug

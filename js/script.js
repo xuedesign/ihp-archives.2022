@@ -5,7 +5,7 @@ loadjs('https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js', function()
 });
 
 //headerroll
-loadjs('js/headerroll.js');
+loadjs('https://xuedesign.github.io/ihp-archives.2022/js/headerroll.js');
 
 //fancybox
 loadjs(['https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js']);
