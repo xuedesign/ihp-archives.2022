@@ -117,6 +117,7 @@ header{
   height: 126px;
   background: url(../images/bg_head.png) repeat-x;
   top: 0;
+  z-index: 999;
   transition: top .8s ease-in-out;
 }
 .nav-up {
@@ -163,7 +164,7 @@ footer{
 .right_title{
   width: 69%;
   text-align: right;
-  boder: 1px solid rgb(81, 81, 81)
+  boder: 1px solid rgb(81, 81, 81);
 }
 #aside{
   width: 23.5%;
@@ -246,7 +247,7 @@ h1 a{
   top: 35px;
   left: -75px;
   width: 220px;
-  background: rgba(67, 87, 101, .5);
+  background: rgba(67, 87, 101, .7);
   border-radius: 15px;
   margin: 0;
   padding: 10px 20px 10px 0;
@@ -257,7 +258,7 @@ h1 a{
   top: 35px;
   left: -75px;
   width: 180px;
-  background: rgba(67, 87, 101, .5);
+  background: rgba(67, 87, 101, .7);
   border-radius: 15px;
   margin: 0;
   padding: 10px 20px 10px 0;

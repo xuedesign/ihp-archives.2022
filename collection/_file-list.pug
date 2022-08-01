@@ -47,12 +47,74 @@ html(lang="zh-Hant-TW")
                 input.mybtn.btn_reset.btn-s(type='reset', value='清除')
                 input.mybtn.btn_send.btn-s(type='button', value='搜尋', onclick="location.href='#'")
           #box_subnav.subnav-02
-            // TODO 從側邊選單開始琢磨
-            ul
-              li
-                a(href='file-summary.html', title='陳寶鈞京師大學堂檔案') 陳寶鈞京師大學堂檔案
-              li
-                a(href='file-summary.html', title='谷蘭瀅女士家藏契約文書') 谷蘭瀅女士家藏契約文書
+            details
+              summary 陳寶鈞京師大學堂檔案 #[span 999]
+              ul
+                li
+                  a(href='#', title='陳寶鈞京師大學堂脩業證書（光緒三十三年十二月）') 陳寶鈞京師大學堂脩業證書（光緒三十三年十二月）
+                  span 999
+                li
+                  a(href='#', title='陳寶鈞京師大學堂脩業證書（光緒三十四年六月）') 陳寶鈞京師大學堂脩業證書（光緒三十四年六月）
+                  span 999
+                li
+                  a(href='#', title='陳寶鈞京師大學堂脩業文憑（光緒三十四年十二月）') 陳寶鈞京師大學堂脩業文憑（光緒三十四年十二月）
+                  span 999
+                li
+                  a(href='#', title='陳寶鈞京師大學堂脩業文憑（宣統元年五月）') 陳寶鈞京師大學堂脩業文憑（宣統元年五月）
+                  span 999
+                li
+                  a(href='#', title='陳寶鈞京師大學堂畢業文憑（宣統元年五月二十七日）') 陳寶鈞京師大學堂畢業文憑（宣統元年五月二十七日）
+                  span 999
+            = '\n'
+            // 在該單元時，加入open讓折疊選單打開
+            details(open)
+              summary 谷蘭瀅女士家藏契約文書 #[span 9999]
+              ul
+                li
+                  a(href='file-list.html', title='大盆兒胡同') 大盆兒胡同
+                  span 999
+                li
+                  a(href='#', title='通縣') 通縣
+                  span 99
+                li
+                  a(href='#', title='繩子庫胡同') 繩子庫胡同
+                  span 999
+                li
+                  a(href='#', title='繩子庫胡同') 繩子庫胡同
+                  span 999
+                li
+                  a(href='#', title='個人證件文書') 個人證件文書
+                  span 999
+                li
+                  a(href='file-list.html', title='大盆兒胡同') 大盆兒胡同
+                  span 999
+                li
+                  a(href='#', title='通縣') 通縣
+                  span 99
+                li
+                  a(href='#', title='繩子庫胡同') 繩子庫胡同
+                  span 999
+                li
+                  a(href='#', title='繩子庫胡同') 繩子庫胡同
+                  span 999
+                li
+                  a(href='#', title='個人證件文書') 個人證件文書
+                  span 999
+                li
+                  a(href='file-list.html', title='大盆兒胡同') 大盆兒胡同
+                  span 999
+                li
+                  a(href='#', title='通縣') 通縣
+                  span 99
+                li
+                  a(href='#', title='繩子庫胡同') 繩子庫胡同
+                  span 999
+                li
+                  a(href='#', title='繩子庫胡同') 繩子庫胡同
+                  span 999
+                li
+                  a(href='#', title='個人證件文書') 個人證件文書
+                  span 999
         = '\n'
 
         section#pagemain

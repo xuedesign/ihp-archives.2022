@@ -70,7 +70,6 @@
 .tabs__radio:checked + .tabs__label + .tabs__content {
     display: initial;
 }
-.tabs__content{}
 .tabs__content h3,
 .fruits_container,
 .fruits_container li{
@@ -231,6 +230,112 @@
     color: #713429;
     text-decoration: none;
 }
+
+#box_subnav details{
+    padding: 20px 22px;
+    border-bottom: 1px solid #C18E7F;
+}
+/* #box_subnav details summary::-webkit-details-marker {
+    display: none;
+}
+#box_subnav  details > summary:first-of-type {
+    list-style-type: none;
+} */
+
+#box_subnav details[open] summary ~ * {
+    animation: open 0.5s ease-in-out;
+  }
+@keyframes open {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#box_subnav details:last-child,
+.subnav-02 li:last-child{
+    border-bottom: none
+}
+.subnav-02 summary{
+    position: relative;
+    padding-right: 70px;
+    margin-left: 15px;
+    text-indent: -20px;
+}
+.subnav-02 summary{
+    font-size: 1.8rem;
+    cursor:pointer
+}
+/* #box_subnav > details summary::before {
+    content: url(../images/icon_pot3.svg);
+    vertical-align: middle;
+    color: #3a4f5f;
+    margin: 5px 10px 0 0;
+  }
+#box_subnav > details[open] summary::before {
+    content: url(../images/icon_pot4.svg);
+} */
+.subnav-02 ul{
+    margin: 10px 0 0 15px;
+    padding-top: 10px;
+    max-height:500px;
+    overflow-y: auto;
+}
+.subnav-02 li{
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    padding: 10px 80px 10px 0;
+    border-bottom: 1px dashed rgba(67, 86, 100, .5);
+}
+.subnav-02 summary span{
+    display:block;
+    position:absolute;
+    top:0;
+    right: 10px;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-left: 20px;
+    background:#EDD3C4;
+    font-size: 1.6rem;
+    text-align: center;
+    text-indent: 0;
+}
+.subnav-02 li span{
+    display:block;
+    position:absolute;
+    right: 0;
+    top: 10px;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin: 0 10px 0 20px;
+    background:#EDD3C4;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.subnav-02 ul::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;}
+.subnav-02 ul::-webkit-scrollbar-button {
+    width: 0;
+    height: 0}
+.subnav-02 ul::-webkit-scrollbar-thumb {
+    background: #d9d9d9;
+    border: 0px none #fff;
+    border-radius: 60px}
+.subnav-02 ul::-webkit-scrollbar-thumb:hover {
+    background: #d9d9d9}
+.subnav-02 ul::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    border: 0px none #fff;
+    border-radius: 0}
+
 
 /*整編原則*/
 #pagemain h3{
