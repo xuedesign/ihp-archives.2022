@@ -20,12 +20,8 @@ html(lang="zh-Hant-TW")
           .left_title
             h2 徵集檔案
           .right_title
-            input#selectPage(type='radio', name='selectItem', value='本頁全選')
+            input#selectPage(type='checkbox', name='selectItem', value='本頁全選')
             label(for='selectPage') 本頁全選
-            input#selectAll(type='radio', name='selectItem', value='所有頁面全選')
-            label(for='selectAll') 所有頁面全選
-            input#selectCancel(type='radio', name='selectItem', value='清空選取')
-            label(for='selectCancel') 清空選取
             input.mybtn_select.btn_send(type='button', value='已選擇輸出（99）', onclick="location.href='../collection/export.html'")
         = '\n'
 
@@ -119,6 +115,17 @@ html(lang="zh-Hant-TW")
 
         section#pagemain
           h3 大盆兒胡同
+          #list_option
+            form(action='#', method='post')
+              label 案卷：
+              select.myinput
+                option ---------------------
+              label 排序：
+              select.myinput
+                option 按時間排序
+                option 有數位影像優先
+              input.mybtn.btn_send.btn-s(type='button', value='篩選')
+
 
     = '\n'
     footer

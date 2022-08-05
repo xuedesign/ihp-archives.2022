@@ -22,6 +22,11 @@ nav#main-nav
         img(class="icon_user" src="images/icon_user.svg" alt="user")
       ul
         li
+          // 會員註冊名稱
+          div.box_llog 網站管理員
+            br
+            |#[span 已登入]
+        li
           a(href="user/edit-profiles.html" title="會員編輯") 會員編輯
         li
           a(href="user/edit-pwd.html" title="修改密碼") 修改密碼
@@ -29,5 +34,7 @@ nav#main-nav
           a(href="index.html" title="登出") 登出
       // 未登入狀態
         <ul>
-          <li><a href="user/signin.html" title="登入會員">登入會員</a></li>
+          <li><div class="box_llog">登入會員可瀏覽更多館藏內容</div></li>
+          <li><a href="../user/signin.html" title="登入會員">登入會員</a></li>
+          <li><a href="../user/signup.html" title="註冊會員">註冊會員</a></li>
         </ul>

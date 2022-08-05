@@ -409,3 +409,21 @@
     font-size: 1.6rem;
     margin-right: 10px;
 }
+
+/*簡目表格*/
+#list_option{
+    display:block;
+    width: 100%;
+    padding: 20px 10px;
+}
+#list_option label{
+    font-size: 1.6rem;
+    padding-right: 5px;
+}
+#list_option .myinput{
+    margin-right: 15px;
+    font-size: 1.6rem;
+}
+#list_option .mybtn{
+    display: inline-block
+}

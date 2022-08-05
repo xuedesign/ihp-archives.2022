@@ -117,7 +117,7 @@ header{
   height: 126px;
   background: url(../images/bg_head.png) repeat-x;
   top: 0;
-  z-index: 999;
+  z-index: 500;
   transition: top .8s ease-in-out;
 }
 .nav-up {
@@ -287,6 +287,22 @@ h1 a{
   height: 35px;
   padding-bottom: 5px;
   cursor: pointer;
+}
+#main-nav .box_llog{
+  display: block;
+  border-radius: 5px;
+  background-color: #e1e1e1;
+  width: 95%;
+  /* border:1px solid #fff; */
+  font-size:1.8rem;
+  line-height: 2.4rem;
+  color:#3A4F5F;
+  text-align: center;
+  word-break: break-all;
+}
+#main-nav .box_llog span{
+  font-size:1.6rem;
+  line-height:3rem
 }
 
 /*
@@ -473,15 +489,21 @@ h2::before{
 #screenblock{
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 1000;
   width: 100vw;
   height: 100vh;
   background:#ECEAE3
 }
+#screenblock h3{
+  text-align: center;
+  font-size: 3.5rem;
+  letter-spacing:3px;
+  margin-top: 10%;
+}
 #screenblock p{
-  width: 80%;
-  margin: 20% auto;
-  font-size:4rem;
+  width: 85%;
+  margin: 5% auto 20% auto;
+  font-size:3.5rem;
   line-height: 6rem;
   text-align: center;
   padding: 30px;
