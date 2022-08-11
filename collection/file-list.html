@@ -74,7 +74,7 @@
             <h2>徵集檔案</h2>
           </div>
           <div class="right_title">
-            <input id="selectPage" type="checkbox" name="selectItem" value="本頁全選">
+            <input id="selectPage" type="checkbox" name="selectItem" value="本頁全選" onclick="check_all(this,'tdItem')">
             <label for="selectPage">本頁全選</label>
             <input class="mybtn_select btn_send" type="button" value="已選擇輸出（99）" onclick="location.href='../collection/export.html'">
           </div>
@@ -271,6 +271,23 @@
             </tbody>
           </table>
 
+          <div class="page_option">
+            <div id="page-number">
+              <label for="list-page">位於第</label>
+              <select class="myselect" name="list-page">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+              </select>頁/8頁，共有80筆資料
+            </div>
+            <div id="page-btn-left"><a class="mybtn btn_send btn-s" href="#" title="上一頁">上一頁</a></div>
+            <div id="page-btn-right"><a class="mybtn btn_send btn-s" href="#" title="下一頁">下一頁</a></div>
+          </div>
         </section>
       </main>
     </div>

@@ -20,7 +20,7 @@ html(lang="zh-Hant-TW")
           .left_title
             h2 徵集檔案
           .right_title
-            input#selectPage(type='checkbox', name='selectItem', value='本頁全選')
+            input#selectPage(type='checkbox', name='selectItem', value='本頁全選', onclick="check_all(this,'tdItem')")
             label(for='selectPage') 本頁全選
             input.mybtn_select.btn_send(type='button', value='已選擇輸出（99）', onclick="location.href='../collection/export.html'")
         = '\n'
@@ -227,6 +227,23 @@ html(lang="zh-Hant-TW")
                 td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
           = '\n'
 
+          .page_option
+            #page-number
+              label(for='list-page') 位於第
+              select.myselect(name='list-page')
+                option 1
+                option 2
+                option 3
+                option 4
+                option 5
+                option 6
+                option 7
+                option 8
+              |頁/8頁，共有80筆資料
+            #page-btn-left
+              a.mybtn.btn_send.btn-s(href='#', title='上一頁') 上一頁
+            #page-btn-right
+              a.mybtn.btn_send.btn-s(href='#', title='下一頁') 下一頁
 
     = '\n'
     footer

@@ -135,7 +135,7 @@
     overflow: hidden;
     border-radius:15px 15px 0 0;
     background-size: contain;
-    background-position: center center;
+    /* background-position: center; */
     background-repeat: no-repeat;
 }
 #box_links h3{
@@ -462,6 +462,27 @@
     background: #3A4F5F;
     color:#EDD3C4
 }
-.td_time{}
 .td_title,
 .td_info{ width: 30%;}
+
+.page_option{
+   display: block;
+   width: 95%;
+   margin: 0 auto;
+   text-align: center;
+   font-size:1.8rem;
+   line-height:2.8rem;
+}
+#page-number{
+    display: inline-block;
+    padding-top: 8px;}
+#page-btn-left{
+    display: inline-block;
+    float: left}
+#page-btn-right{
+    display: inline-block;
+    float: right}
+#page-number .myselect{
+    margin: 0 8px;
+    padding: 0 10px;
+}
