@@ -46,6 +46,13 @@
     .mybtn{
         padding: 5px;
     }
+    .bgIndex{
+        background: url(../images/bg_index-1.png) no-repeat;
+        background-position: 0 30px;
+    }
+    #box_links{
+        margin-top: 60px;
+    }
 }
 
 @media (max-width:1300px) {
@@ -57,6 +64,12 @@
     #footer_main{
         width: 95%;
     }
+    #box_tabs{
+        width: 760px;
+        margin:30px 0 30px 38%;
+    }
+    .formbtn .mybtn:nth-child(1){
+        margin: 20px 20px 20px 50px}
 }
 
 /*

@@ -44,73 +44,73 @@ html(lang="zh-Hant-TW")
                 input.mybtn.btn_send.btn-s(type='button', value='搜尋', onclick="location.href='#'")
           #box_subnav.subnav-02
             details
-              summary 陳寶鈞京師大學堂檔案 #[span 999]
+              summary 陳寶鈞京師大學堂檔案 #[span 999+]
               ul
                 li
                   a(href='#', title='陳寶鈞京師大學堂脩業證書（光緒三十三年十二月）') 陳寶鈞京師大學堂脩業證書（光緒三十三年十二月）
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='陳寶鈞京師大學堂脩業證書（光緒三十四年六月）') 陳寶鈞京師大學堂脩業證書（光緒三十四年六月）
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='陳寶鈞京師大學堂脩業文憑（光緒三十四年十二月）') 陳寶鈞京師大學堂脩業文憑（光緒三十四年十二月）
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='陳寶鈞京師大學堂脩業文憑（宣統元年五月）') 陳寶鈞京師大學堂脩業文憑（宣統元年五月）
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='陳寶鈞京師大學堂畢業文憑（宣統元年五月二十七日）') 陳寶鈞京師大學堂畢業文憑（宣統元年五月二十七日）
-                  span 999
+                  span 999+
             = '\n'
             // 在該單元時，加入open讓折疊選單打開
             details(open)
-              summary 谷蘭瀅女士家藏契約文書 #[span 9999]
+              summary 谷蘭瀅女士家藏契約文書 #[span 999+]
               ul
                 li
                   a(href='file-list.html', title='大盆兒胡同') 大盆兒胡同
-                  span 999
+                  span 99
                 li
                   a(href='#', title='通縣') 通縣
                   span 99
                 li
                   a(href='#', title='繩子庫胡同') 繩子庫胡同
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='繩子庫胡同') 繩子庫胡同
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='個人證件文書') 個人證件文書
-                  span 999
+                  span 999+
                 li
                   a(href='file-list.html', title='大盆兒胡同') 大盆兒胡同
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='通縣') 通縣
                   span 99
                 li
                   a(href='#', title='繩子庫胡同') 繩子庫胡同
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='繩子庫胡同') 繩子庫胡同
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='個人證件文書') 個人證件文書
-                  span 999
+                  span 999+
                 li
                   a(href='file-list.html', title='大盆兒胡同') 大盆兒胡同
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='通縣') 通縣
                   span 99
                 li
                   a(href='#', title='繩子庫胡同') 繩子庫胡同
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='繩子庫胡同') 繩子庫胡同
-                  span 999
+                  span 999+
                 li
                   a(href='#', title='個人證件文書') 個人證件文書
-                  span 999
+                  span 999+
         = '\n'
 
         section#pagemain
@@ -125,6 +125,107 @@ html(lang="zh-Hant-TW")
                 option 按時間排序
                 option 有數位影像優先
               input.mybtn.btn_send.btn-s(type='button', value='篩選')
+          = '\n'
+          table.mytable(summary='列表')
+            thead
+              tr
+                th 選取
+                th 檔號
+                th 時間
+                th 題名
+                th 摘要說明
+            tbody
+              tr
+                td.td_no
+                  input#selecttd(type='checkbox', name='tdItem', value='1')
+                  label(for='selecttd') 1.
+                td.td_fileno
+                  a(href='file-details.html' title='11012011002') 11012011002
+                td.td_time 乾隆二十四年
+                td.td_title 乾隆二十四年關成典房契
+                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+              tr
+                td.td_no
+                  input#selecttd(type='checkbox', name='tdItem', value='2')
+                  label(for='selecttd') 2.
+                td.td_fileno
+                  a(href='file-details.html' title='11012011002') 11012011002
+                td.td_time 乾隆三十九年
+                td.td_title 乾隆三十九年長春典房契
+                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+              tr
+                td.td_no
+                  input#selecttd(type='checkbox', name='tdItem', value='3')
+                  label(for='selecttd') 3.
+                td.td_fileno
+                  a(href='file-details.html' title='11012011002') 11012011002
+                td.td_time 乾隆五十二年
+                td.td_title 乾隆五十二年德克錦額典房契
+                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+              tr
+                td.td_no
+                  input#selecttd(type='checkbox', name='tdItem', value='4')
+                  label(for='selecttd') 4.
+                td.td_fileno
+                  a(href='file-details.html' title='11012011002') 11012011002
+                td.td_time 嘉慶六年
+                td.td_title 嘉慶六年郭洪吉典房契
+                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+              tr
+                td.td_no
+                  input#selecttd(type='checkbox', name='tdItem', value='5')
+                  label(for='selecttd') 5.
+                td.td_fileno
+                  a(href='file-details.html' title='11012011002') 11012011002
+                td.td_time 嘉慶九年
+                td.td_title 嘉慶九年寧文氣典房契
+                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+              tr
+                td.td_no
+                  input#selecttd(type='checkbox', name='tdItem', value='6')
+                  label(for='selecttd') 6.
+                td.td_fileno
+                  a(href='file-details.html' title='11012011002') 11012011002
+                td.td_time 嘉慶十二年
+                td.td_title 嘉慶十二年西隆阿典房契
+                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+              tr
+                td.td_no
+                  input#selecttd(type='checkbox', name='tdItem', value='7')
+                  label(for='selecttd') 7.
+                td.td_fileno
+                  a(href='file-details.html' title='11012011002') 11012011002
+                td.td_time 嘉慶二十四年
+                td.td_title 嘉慶二十四年巴栢典房契
+                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+              tr
+                td.td_no
+                  input#selecttd(type='checkbox', name='tdItem', value='8')
+                  label(for='selecttd') 8.
+                td.td_fileno
+                  a(href='file-details.html' title='11012011002') 11012011002
+                td.td_time 道光二十年
+                td.td_title 道光二十年李廣興老典房契
+                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+              tr
+                td.td_no
+                  input#selecttd(type='checkbox', name='tdItem', value='9')
+                  label(for='selecttd') 9.
+                td.td_fileno
+                  a(href='file-details.html' title='11012011002') 11012011002
+                td.td_time 咸豐十年
+                td.td_title 咸豐十年富英仝妻富門李氏賣房契
+                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+              tr
+                td.td_no
+                  input#selecttd(type='checkbox', name='tdItem', value='10')
+                  label(for='selecttd') 10.
+                td.td_fileno
+                  a(href='file-details.html' title='11012011002') 11012011002
+                td.td_time 同治十年
+                td.td_title 同治十年李山賣房契
+                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+          = '\n'
 
 
     = '\n'

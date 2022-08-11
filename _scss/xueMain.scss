@@ -110,6 +110,10 @@ $nav-hover: #f50;
   @extend %box_default;
   min-height: calc(100vh - 277px); /*減掉footer高度*/
 }
+.bgIndex{
+  background: url(../images/bg_index.png) no-repeat;
+  background-position: 0 30px;
+}
 
 header{
   @extend %box_default;
@@ -134,14 +138,14 @@ header{
 
 #container{
   @extend %content_block;
-  margin: 50px auto;
+  margin: 50px auto 100px auto;
   /* min-height:1000px;
   border:1px solid #ccc; */
 }
 #container-page{
   @extend %content_flex;
   justify-content: space-between;
-  margin: 50px auto;
+  margin: 50px auto 100px;
 }
 
 footer{
@@ -452,11 +456,38 @@ h2::before{
   margin-right: 10px;
 }
 
-/*單欄*/
+/*表格*/
+.mytable{
+  display:block;
+  width:98%;
+  margin: 20px auto 30px auto;
+}
+.mytable th{
+  padding: 5px 8px;
+  text-align: center;
+  background-color:#435664;
+  border-right: 1px solid #fff;
+  color:#EFDFC5;
+  font-size:1.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  vertical-align: middle;
 
-/*雙欄*/
+}
+.mytable tr:nth-child(even){
+  background: #EDEDED
+}
+.mytable td{
+  padding: 10px;
+  font-size: 1.8rem;
+  border-right: 1px solid #fff;
+  vertical-align: middle;
+}
+.mytable td:last-child,
+.mytable th:last-child{
+  border-right: none;
+}
 
-/*圓角框*/
 
 
 /*
