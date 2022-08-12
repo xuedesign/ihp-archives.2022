@@ -20,9 +20,7 @@ html(lang="zh-Hant-TW")
           .left_title
             h2 徵集檔案
           .right_title
-            input#selectPage(type='checkbox', name='selectItem', value='本頁全選', onclick="check_all(this,'tdItem')")
-            label(for='selectPage') 本頁全選
-            input.mybtn_select.btn_send(type='button', value='已選擇輸出（99）', onclick="location.href='../collection/export.html'")
+            input.mybtn_select.btn_send(type='button', value='匯出已選擇（99）', onclick="location.href='../collection/export.html'")
         = '\n'
 
         aside#aside
@@ -41,7 +39,7 @@ html(lang="zh-Hant-TW")
                     label(for='dd-02') 谷蘭瀅女士家藏契約文書
               .formbtn
                 input.mybtn.btn_reset.btn-s(type='reset', value='清除')
-                input.mybtn.btn_send.btn-s(type='button', value='搜尋', onclick="location.href='#'")
+                input.mybtn.btn_send.btn-s(type='button', value='搜尋', onclick="location.href='file-range.html'")
           #box_subnav.subnav-02
             details
               summary 陳寶鈞京師大學堂檔案 #[span 999+]
@@ -129,7 +127,9 @@ html(lang="zh-Hant-TW")
           table#mytable.mytable(summary='列表')
             thead
               tr
-                th 選取
+                th 
+                  input#all.all(type='checkbox', name='all') 
+                  label 全選
                 th 檔號
                 th 時間
                 th 題名
