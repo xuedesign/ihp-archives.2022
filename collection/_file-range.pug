@@ -2,7 +2,7 @@ doctype html
 html(lang="zh-Hant-TW")
   head
     include ../_template/head-page.pug
-    title 大盆兒胡同-館藏資料庫|中央研院歷史語言研究所檔案館
+    title 指定範圍搜尋結果-館藏資料庫|中央研院歷史語言研究所檔案館
     link(rel="stylesheet" href="../css/xueMain.css")
   = '\n'
 
@@ -27,15 +27,15 @@ html(lang="zh-Hant-TW")
           #box_search
             h3 指定範圍搜尋
             form(action='#', method='post')
-              input#anytext.myinput(name='anytext', type='text', title='不限欄位', placeholder='不限欄位，請輸入關鍵字查詢')
+              input#anytext.myinput(name='anytext', type='text', title='不限欄位', value='乾隆')
               details#box_check(open)
                 summary 限定全宗範圍：(不勾選表全部，可複選)
                 ul
                   li
-                    input#dd-01(type='checkbox', name='sb', value='陳寶鈞京師大學堂檔案')
+                    input#dd-01(type='checkbox', name='sb', value='陳寶鈞京師大學堂檔案', checked)
                     label(for='dd-01') 陳寶鈞京師大學堂檔案
                   li
-                    input#dd-02(type='checkbox', name='sb', value='谷蘭瀅女士家藏契約文書')
+                    input#dd-02(type='checkbox', name='sb', value='谷蘭瀅女士家藏契約文書', checked)
                     label(for='dd-02') 谷蘭瀅女士家藏契約文書
               .formbtn
                 input.mybtn.btn_reset.btn-s(type='reset', value='清除')
@@ -61,7 +61,7 @@ html(lang="zh-Hant-TW")
                   span 999+
             = '\n'
             // 在該單元時，加入open讓折疊選單打開
-            details(open)
+            details
               summary 谷蘭瀅女士家藏契約文書 #[span 999+]
               ul
                 li
@@ -112,119 +112,128 @@ html(lang="zh-Hant-TW")
         = '\n'
 
         section#pagemain
-          h3 大盆兒胡同
+          h3 指定範圍搜尋結果
           #list_option
             form(action='#', method='post')
-              label 案卷：
-              select.myinput
-                option ---------------------
               label 排序：
               select.myinput
                 option 按時間排序
                 option 有數位影像優先
               input.mybtn.btn_send.btn-s(type='button', value='篩選')
           = '\n'
-          table#mytable1.mytable(summary='列表')
+          table#mytable2.mytable(summary='列表')
             thead
               tr
                 th 
                   input#all.all(type='checkbox', name='all') 
                   label 全選
+                th 全宗
                 th 檔號
                 th 時間
                 th 題名
-                th 摘要說明
             tbody
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='1')
                   label(for='selecttd') 1.
+                td.td_type 谷蘭瀅女士家藏契約文書
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
-                td.td_time 乾隆二十四年
-                td.td_title 乾隆二十四年關成典房契
-                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+                td.td_time 
+                  mark 乾隆
+                  | 二十四年
+                td.td_title 
+                  mark 乾隆
+                  | 二十四年關成典房契
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='2')
                   label(for='selecttd') 2.
+                td.td_type 谷蘭瀅女士家藏契約文書
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
-                td.td_time 乾隆三十九年
-                td.td_title 乾隆三十九年長春典房契
-                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+                td.td_time 
+                  mark 乾隆
+                  | 三十九年
+                td.td_title 
+                  mark 乾隆
+                  | 三十九年長春典房契
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='3')
                   label(for='selecttd') 3.
+                td.td_type 谷蘭瀅女士家藏契約文書
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
-                td.td_time 乾隆五十二年
-                td.td_title 乾隆五十二年德克錦額典房契
-                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
+                td.td_time 
+                  mark 乾隆
+                  | 五十二年
+                td.td_title 
+                  mark 乾隆
+                  | 五十二年德克錦額典房契
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='4')
                   label(for='selecttd') 4.
+                td.td_type 谷蘭瀅女士家藏契約文書
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
                 td.td_time 嘉慶六年
                 td.td_title 嘉慶六年郭洪吉典房契
-                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='5')
                   label(for='selecttd') 5.
+                td.td_type 谷蘭瀅女士家藏契約文書
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
                 td.td_time 嘉慶九年
                 td.td_title 嘉慶九年寧文氣典房契
-                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='6')
                   label(for='selecttd') 6.
+                td.td_type 谷蘭瀅女士家藏契約文書
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
                 td.td_time 嘉慶十二年
                 td.td_title 嘉慶十二年西隆阿典房契
-                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='7')
                   label(for='selecttd') 7.
+                td.td_type 谷蘭瀅女士家藏契約文書
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
                 td.td_time 嘉慶二十四年
                 td.td_title 嘉慶二十四年巴栢典房契
-                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='8')
                   label(for='selecttd') 8.
+                td.td_type 谷蘭瀅女士家藏契約文書
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
                 td.td_time 道光二十年
                 td.td_title 道光二十年李廣興老典房契
-                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='9')
                   label(for='selecttd') 9.
+                td.td_type 谷蘭瀅女士家藏契約文書
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
                 td.td_time 咸豐十年
                 td.td_title 咸豐十年富英仝妻富門李氏賣房契
-                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='10')
                   label(for='selecttd') 10.
+                td.td_type 谷蘭瀅女士家藏契約文書
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
                 td.td_time 同治十年
                 td.td_title 同治十年李山賣房契
-                td.td_info 摘要說明摘要說明摘要說明摘要說明摘要說明
           = '\n'
 
           .page_option

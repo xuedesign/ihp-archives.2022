@@ -447,7 +447,7 @@
     text-align: center;
 }
 .td_fileno{
-    width: 15%;
+    width: 16%;
     text-align:center;
 }
 .td_fileno a,
@@ -462,8 +462,14 @@
     background: #3A4F5F;
     color:#EDD3C4
 }
-.td_title,
-.td_info{ width: 30%;}
+.td_time{ width: 14%;}
+/*#mytable1 .td_title,
+#mytable1 .td_info{ width: 30%;}
+#mytable2 .td_type{ width: 25%;}
+#mytable2 .td_title{ width: 35%;} */
+
+
+
 
 .page_option{
    display: block;
@@ -473,6 +479,9 @@
    font-size:1.8rem;
    line-height:2.8rem;
 }
+mark{
+    font-weight: 500;
+    color:#941010}
 #page-number{
     display: inline-block;
     padding-top: 8px;}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="史語所檔案館庋藏所內考古、拓片、善本圖籍、少數民族、內閣大庫檔案等各項典藏的數位化工作，本系統開放大眾查閱瀏覽。">
+    <meta name="keywords" content="中央研究院, 歷史語言研究所, 檔案館, 數位典藏, 史語所行政檔案, 史語所研究員檔案">
+    <meta name="Author" content="ARCHIVES,INSTITUTE OF HISTORY AND PHILOLOGY ACADEMIA SINICA">
+
+    <meta property="og:title" content="館藏資料庫">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="中研院史語所檔案館">
+    <meta property="og:url" content="https://ihparchives.ihp.sinica.edu.tw">
+    <meta property="og:image" content="https://ihparchives.ihp.sinica.edu.twimages/share.jpg">
+    <meta property="og:description" content="史語所檔案館庋藏所內考古、拓片、善本圖籍、少數民族、內閣大庫檔案等各項典藏的數位化工作，本系統開放大眾查閱瀏覽。">
+
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" href="../images/favicon.png">
+    <title>指定範圍搜尋結果-館藏資料庫|中央研院歷史語言研究所檔案館</title>
+    <link rel="stylesheet" href="../css/xueMain.css">
+  </head>
+
+  <body>
+    <div id="screenblock">
+      <h1><a href="#">史語所檔案館館藏資料庫</a></h1>
+      <h3>使用注意！</h3>
+      <p>本館藏資料庫尚不支援<br>行動裝置瀏覽查詢，<br>如有不便敬請見諒！</p>
+    </div>
+    <div id="wrap">
+      <header class="nav-down">
+        <div id="hdr-main">
+          <h1><a href="../index.html" title="回首頁">史語所檔案館館藏資料庫</a></h1>
+          <nav id="main-nav">
+            <ul>
+              <li><a href="../index.html" title="回首頁">首頁</a></li>
+              <li><a href="#" title="檔案類型">檔案類型</a>
+                <ul>
+                  <li><a href="#" title="史語所行政檔案">史語所行政檔案</a></li>
+                  <li><a href="#" title="史語所研究員檔案">史語所研究員檔案</a></li>
+                  <li><a href="../collection/file-summary.html" title="徵集檔案">徵集檔案</a></li>
+                  <li><a href="#" title="影音檔案">影音檔案</a></li>
+                </ul>
+              </li>
+              <li><a href="../collection/search.html" title="檔案搜尋">檔案搜尋</a></li>
+              <li><a><img class="icon_user" src="../images/icon_user.svg" alt="user"></a>
+                <ul>
+                  <li>
+                    <!-- 會員註冊名稱-->
+                    <div class="box_llog">網站管理員<br><span>已登入</span></div>
+                  </li>
+                  <li><a href="../user/edit-profiles.html" title="會員編輯">會員編輯</a></li>
+                  <li><a href="../user/edit-pwd.html" title="修改密碼">修改密碼</a></li>
+                  <li><a href="../index.html" title="登出">登出</a></li>
+                </ul>
+                <!-- 未登入狀態
+                <ul>
+                  <li><div class="box_llog">登入會員可瀏覽更多館藏內容</div></li>
+                  <li><a href="../user/signin.html" title="登入會員">登入會員</a></li>
+                  <li><a href="../user/signup.html" title="註冊會員">註冊會員</a></li>
+                </ul>
+                -->
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="container-page">
+        <div id="bar_title">
+          <div class="left_title">
+            <h2>徵集檔案</h2>
+          </div>
+          <div class="right_title">
+            <input class="mybtn_select btn_send" type="button" value="匯出已選擇（99）" onclick="location.href='../collection/export.html'">
+          </div>
+        </div>
+
+        <aside id="aside">
+          <div id="box_search">
+            <h3>指定範圍搜尋</h3>
+            <form action="#" method="post">
+              <input class="myinput" id="anytext" name="anytext" type="text" title="不限欄位" value="乾隆">
+              <details id="box_check" open>
+                <summary>限定全宗範圍：(不勾選表全部，可複選)</summary>
+                <ul>
+                  <li>
+                    <input id="dd-01" type="checkbox" name="sb" value="陳寶鈞京師大學堂檔案" checked>
+                    <label for="dd-01">陳寶鈞京師大學堂檔案</label>
+                  </li>
+                  <li>
+                    <input id="dd-02" type="checkbox" name="sb" value="谷蘭瀅女士家藏契約文書" checked>
+                    <label for="dd-02">谷蘭瀅女士家藏契約文書</label>
+                  </li>
+                </ul>
+              </details>
+              <div class="formbtn">
+                <input class="mybtn btn_reset btn-s" type="reset" value="清除">
+                <input class="mybtn btn_send btn-s" type="button" value="搜尋" onclick="location.href='file-range.html'">
+              </div>
+            </form>
+          </div>
+          <div class="subnav-02" id="box_subnav">
+            <details>
+              <summary>陳寶鈞京師大學堂檔案 <span>999+</span></summary>
+              <ul>
+                <li><a href="#" title="陳寶鈞京師大學堂脩業證書（光緒三十三年十二月）">陳寶鈞京師大學堂脩業證書（光緒三十三年十二月）</a><span>999+</span></li>
+                <li><a href="#" title="陳寶鈞京師大學堂脩業證書（光緒三十四年六月）">陳寶鈞京師大學堂脩業證書（光緒三十四年六月）</a><span>999+</span></li>
+                <li><a href="#" title="陳寶鈞京師大學堂脩業文憑（光緒三十四年十二月）">陳寶鈞京師大學堂脩業文憑（光緒三十四年十二月）</a><span>999+</span></li>
+                <li><a href="#" title="陳寶鈞京師大學堂脩業文憑（宣統元年五月）">陳寶鈞京師大學堂脩業文憑（宣統元年五月）</a><span>999+</span></li>
+                <li><a href="#" title="陳寶鈞京師大學堂畢業文憑（宣統元年五月二十七日）">陳寶鈞京師大學堂畢業文憑（宣統元年五月二十七日）</a><span>999+</span></li>
+              </ul>
+            </details>
+
+            <!-- 在該單元時，加入open讓折疊選單打開-->
+            <details>
+              <summary>谷蘭瀅女士家藏契約文書 <span>999+</span></summary>
+              <ul>
+                <li><a href="file-list.html" title="大盆兒胡同">大盆兒胡同</a><span>99</span></li>
+                <li><a href="#" title="通縣">通縣</a><span>99</span></li>
+                <li><a href="#" title="繩子庫胡同">繩子庫胡同</a><span>999+</span></li>
+                <li><a href="#" title="繩子庫胡同">繩子庫胡同</a><span>999+</span></li>
+                <li><a href="#" title="個人證件文書">個人證件文書</a><span>999+</span></li>
+                <li><a href="file-list.html" title="大盆兒胡同">大盆兒胡同</a><span>999+</span></li>
+                <li><a href="#" title="通縣">通縣</a><span>99</span></li>
+                <li><a href="#" title="繩子庫胡同">繩子庫胡同</a><span>999+</span></li>
+                <li><a href="#" title="繩子庫胡同">繩子庫胡同</a><span>999+</span></li>
+                <li><a href="#" title="個人證件文書">個人證件文書</a><span>999+</span></li>
+                <li><a href="file-list.html" title="大盆兒胡同">大盆兒胡同</a><span>999+</span></li>
+                <li><a href="#" title="通縣">通縣</a><span>99</span></li>
+                <li><a href="#" title="繩子庫胡同">繩子庫胡同</a><span>999+</span></li>
+                <li><a href="#" title="繩子庫胡同">繩子庫胡同</a><span>999+</span></li>
+                <li><a href="#" title="個人證件文書">個人證件文書</a><span>999+</span></li>
+              </ul>
+            </details>
+          </div>
+        </aside>
+
+        <section id="pagemain">
+          <h3>指定範圍搜尋結果</h3>
+          <div id="list_option">
+            <form action="#" method="post">
+              <label>排序：</label>
+              <select class="myinput">
+                <option>按時間排序</option>
+                <option>有數位影像優先</option>
+              </select>
+              <input class="mybtn btn_send btn-s" type="button" value="篩選">
+            </form>
+          </div>
+
+          <table class="mytable" id="mytable2" summary="列表">
+            <thead>
+              <tr>
+                <th> 
+                  <input class="all" id="all" type="checkbox" name="all">
+                  <label>全選</label>
+                </th>
+                <th>全宗</th>
+                <th>檔號</th>
+                <th>時間</th>
+                <th>題名</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td_no">
+                  <input id="selecttd" type="checkbox" name="tdItem" value="1">
+                  <label for="selecttd">1.</label>
+                </td>
+                <td class="td_type">谷蘭瀅女士家藏契約文書</td>
+                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                <td class="td_time"> 
+                  <mark>乾隆</mark>二十四年
+                </td>
+                <td class="td_title"> 
+                  <mark>乾隆</mark>二十四年關成典房契
+                </td>
+              </tr>
+              <tr>
+                <td class="td_no">
+                  <input id="selecttd" type="checkbox" name="tdItem" value="2">
+                  <label for="selecttd">2.</label>
+                </td>
+                <td class="td_type">谷蘭瀅女士家藏契約文書</td>
+                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                <td class="td_time"> 
+                  <mark>乾隆</mark>三十九年
+                </td>
+                <td class="td_title"> 
+                  <mark>乾隆</mark>三十九年長春典房契
+                </td>
+              </tr>
+              <tr>
+                <td class="td_no">
+                  <input id="selecttd" type="checkbox" name="tdItem" value="3">
+                  <label for="selecttd">3.</label>
+                </td>
+                <td class="td_type">谷蘭瀅女士家藏契約文書</td>
+                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                <td class="td_time"> 
+                  <mark>乾隆</mark>五十二年
+                </td>
+                <td class="td_title"> 
+                  <mark>乾隆</mark>五十二年德克錦額典房契
+                </td>
+              </tr>
+              <tr>
+                <td class="td_no">
+                  <input id="selecttd" type="checkbox" name="tdItem" value="4">
+                  <label for="selecttd">4.</label>
+                </td>
+                <td class="td_type">谷蘭瀅女士家藏契約文書</td>
+                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                <td class="td_time">嘉慶六年</td>
+                <td class="td_title">嘉慶六年郭洪吉典房契</td>
+              </tr>
+              <tr>
+                <td class="td_no">
+                  <input id="selecttd" type="checkbox" name="tdItem" value="5">
+                  <label for="selecttd">5.</label>
+                </td>
+                <td class="td_type">谷蘭瀅女士家藏契約文書</td>
+                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                <td class="td_time">嘉慶九年</td>
+                <td class="td_title">嘉慶九年寧文氣典房契</td>
+              </tr>
+              <tr>
+                <td class="td_no">
+                  <input id="selecttd" type="checkbox" name="tdItem" value="6">
+                  <label for="selecttd">6.</label>
+                </td>
+                <td class="td_type">谷蘭瀅女士家藏契約文書</td>
+                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                <td class="td_time">嘉慶十二年</td>
+                <td class="td_title">嘉慶十二年西隆阿典房契</td>
+              </tr>
+              <tr>
+                <td class="td_no">
+                  <input id="selecttd" type="checkbox" name="tdItem" value="7">
+                  <label for="selecttd">7.</label>
+                </td>
+                <td class="td_type">谷蘭瀅女士家藏契約文書</td>
+                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                <td class="td_time">嘉慶二十四年</td>
+                <td class="td_title">嘉慶二十四年巴栢典房契</td>
+              </tr>
+              <tr>
+                <td class="td_no">
+                  <input id="selecttd" type="checkbox" name="tdItem" value="8">
+                  <label for="selecttd">8.</label>
+                </td>
+                <td class="td_type">谷蘭瀅女士家藏契約文書</td>
+                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                <td class="td_time">道光二十年</td>
+                <td class="td_title">道光二十年李廣興老典房契</td>
+              </tr>
+              <tr>
+                <td class="td_no">
+                  <input id="selecttd" type="checkbox" name="tdItem" value="9">
+                  <label for="selecttd">9.</label>
+                </td>
+                <td class="td_type">谷蘭瀅女士家藏契約文書</td>
+                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                <td class="td_time">咸豐十年</td>
+                <td class="td_title">咸豐十年富英仝妻富門李氏賣房契</td>
+              </tr>
+              <tr>
+                <td class="td_no">
+                  <input id="selecttd" type="checkbox" name="tdItem" value="10">
+                  <label for="selecttd">10.</label>
+                </td>
+                <td class="td_type">谷蘭瀅女士家藏契約文書</td>
+                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                <td class="td_time">同治十年</td>
+                <td class="td_title">同治十年李山賣房契</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="page_option">
+            <div id="page-number">
+              <label for="list-page">位於第</label>
+              <select class="myselect" name="list-page">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+              </select>頁/8頁，共有80筆資料
+            </div>
+            <div id="page-btn-left"><a class="mybtn btn_white btn-s" href="#" title="上一頁">上一頁</a></div>
+            <div id="page-btn-right"><a class="mybtn btn_white btn-s" href="#" title="下一頁">下一頁</a></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div id="footer_main">
+        <p class="foot-left">本網站內容著作權屬中央研究院歷史語言研究所檔案館所有，任何形式之轉載，請與我們連絡<br>館址：台北市南港區 115 研究院路二段 130 號　電話：(02) 2782-9555 　Email:<a href="mailto:archives@mail.ihp.sinica.edu.tw" target="_blank" title="聯絡我們">archives@mail.ihp.sinica.edu.tw</a></p>
+        <p class="foot-right"><a href="https://www1.ihp.sinica.edu.tw/" target="_blank" title="[另開視窗]中央研究院歷史語言研究所">中央研究院歷史語言研究所</a>|<a href="http://archives.ihp.sinica.edu.tw/" target="_blank" title="[另開視窗]史語所檔案館">史語所檔案館</a></p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/loadjs/dist/loadjs.umd.min.js"></script>
+  <script src="../js/script.js"></script>
+</html>

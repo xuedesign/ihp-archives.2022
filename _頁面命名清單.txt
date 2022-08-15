@@ -3,9 +3,11 @@
 館藏 collection
 	搜尋 search
 	搜尋結果 search-results
+	搜尋結果（指定類別）search-range
 	輸出結果 export
 	編目原則 file-summary
 	檔案簡目 file-list
+	檔案指定範圍搜尋 file-range
 	檔案詳目（圖片） file-details
 	檔案詳目（音檔）file-details2
 	檔案詳目（影片）file-details3
