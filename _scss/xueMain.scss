@@ -138,12 +138,14 @@ header{
 
 #container{
   @extend %content_block;
+  max-width: 1530px;
   margin: 50px auto 100px auto;
   /* min-height:1000px;
   border:1px solid #ccc; */
 }
 #container-page{
   @extend %content_flex;
+  max-width: 1530px;
   justify-content: space-between;
   margin: 50px auto 80px;
 }
@@ -391,14 +393,16 @@ h1 a{
   cursor:pointer;
 }
 .btn_notyet,
-.btn_reset{
+.btn_reset,
+.btn_disable{
   background:#BDBDBD;
   color:#ffffff;
 }
 .btn_reset:hover{
   cursor: pointer;
 }
-.btn_notyet{
+.btn_notyet,
+.btn_disable{
   cursor:not-allowed;
 }
 .btn_white,
@@ -482,8 +486,11 @@ h2::before{
 .mytable tr:nth-child(even){
   background: #EDEDED
 }
+.mytable tr:last-child{
+  border-bottom: 1px solid #919191;
+}
 .mytable td{
-  padding: 12px;
+  padding: 18px 12px;
   font-size: 1.8rem;
   border-right: 1px solid #fff;
   vertical-align: middle;

@@ -199,12 +199,15 @@
     margin: 20px auto 15px;
     width: 85%;
 }
-#box_check{
+#box_check,
+.search-Condition{
     display: block;
-    width: 85%;
     margin: 0 auto;
     font-size: 1.6rem;
     line-height:2.8rem
+}
+#box_check{
+    width: 85%;
 }
 #box_check summary{
     cursor:pointer;
@@ -212,11 +215,35 @@
 #box_check ul{
     padding-top: 10px;
 }
-
-.subnav-01 li{
+.search-Condition{
+    width: 90%;
+    padding: 15px 0;
+}
+.search-Condition span{
+    display:block;
+    font-weight: 500;
     font-size: 1.8rem;
+    color:#713429
+}
+.search-Condition li{
+    padding:5px 0;
+    border-bottom: 1px dashed rgba(67, 86, 100, .5);
+}
+
+.subnav-01 li,
+.subnav-03 li{
+    font-size: 1.8rem;
+    line-height:2.4rem;
     padding: 20px 15px;
     border-bottom: 1px solid #C18E7F;
+}
+.subnav-03 li{
+    position: relative;
+}
+.subnav-01 .nowin,
+.subnav-03 .nowin{
+    color: #713429;
+    font-weight: 500;
 }
 .subnav-01 li:last-child,
 .subnav-02 li:last-child,
@@ -273,9 +300,8 @@
     padding-right: 70px;
     margin-left: 15px;
     text-indent: -20px;
-}
-.subnav-02 summary{
     font-size: 1.8rem;
+    line-height:2.4rem;
     cursor:pointer
 }
 /* #box_subnav > details summary::before {
@@ -319,7 +345,8 @@
     text-align: center;
     text-indent: 0;
 }
-.subnav-02 li span{
+.subnav-02 li span,
+.subnav-03 li span{
     display:block;
     position:absolute;
     right: 0;
@@ -332,6 +359,9 @@
     background:#EDD3C4;
     font-size: 1.6rem;
     text-align: center;
+}
+.subnav-03 li span{
+    margin-top: 8px;
 }
 
 .subnav-02 ul::-webkit-scrollbar {
@@ -350,7 +380,6 @@
     background: #f4f4f4;
     border: 0px none #fff;
     border-radius: 0}
-
 
 /*整編原則*/
 #pagemain h3{
