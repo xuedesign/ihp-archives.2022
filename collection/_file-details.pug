@@ -1,0 +1,80 @@
+doctype html
+html(lang="zh-Hant-TW")
+  head
+    include ../_template/head-page.pug
+    title 滿漢文合璧執照-館藏資料庫|中央研院歷史語言研究所檔案館
+    link(rel="stylesheet" href="../css/xueMain.css")
+  = '\n'
+
+  body
+    include ../_template/screenblock.pug
+
+    #wrap
+      header.nav-down
+        #hdr-main
+          include ../_template/hdr-page.pug
+      = '\n'
+
+      main#container-page
+        #bar_title
+          .left_title
+            h2 滿漢文合璧執照
+          .right_title
+            a.mybtn_select.btn_white(href="https://copyrite.ihp.sinica.edu.tw/ihponlinec/ihponline") 申請授權
+            a.mybtn_select.btn_white(href="#") 意見回饋
+            input.mybtn_select.btn_white(type='button', value='返回上頁', onclick="window.history.back();")
+        = '\n'
+
+        aside#aside-view
+          
+        = '\n'
+
+        section#pagemain-view
+          table#mytable2.mytable(summary='檔案資訊')
+            thead
+              tr
+                th 標題
+                th 內容
+            tbody
+              tr
+                td.td_ftitle 檔號
+                td 11012011002
+              tr
+                td.td_ftitle 檔案類型
+                td 徵集檔案
+              tr
+                td.td_ftitle 全宗類別
+                td 谷蘭瀅女士家藏契約文書
+              tr
+                td.td_ftitle 題名
+                td 滿漢文合璧執照
+              tr
+                td.td_ftitle 關鍵詞
+                td 滿漢文、執照
+              tr
+                td.td_ftitle 摘要說明
+                td 谷蘭瀅女士家藏滿漢文合璧執照
+              tr
+                td.td_ftitle 日期
+                td 光緒拾貳年拾壹月
+              tr
+                td.td_ftitle 閱覽型態
+                td 限館內瀏覽
+              tr
+                td.td_ftitle 展覽或出版訊息
+                td -
+              tr
+                td.td_ftitle 數位連結
+                td
+                  a(href="#" title="連結") 連結
+          = '\n'
+    = '\n'
+    footer
+        include ../_template/foot.pug
+  = '\n'
+
+  //- script區塊
+  script(src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/jquery-migrate/dist/jquery-migrate.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/loadjs/dist/loadjs.umd.min.js")
+  script(src="../js/script.js")

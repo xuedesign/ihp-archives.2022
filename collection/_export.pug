@@ -2,7 +2,7 @@ doctype html
 html(lang="zh-Hant-TW")
   head
     include ../_template/head-page.pug
-    title 搜尋結果-館藏資料庫|中央研院歷史語言研究所檔案館
+    title 匯出檢索條目-館藏資料庫|中央研院歷史語言研究所檔案館
     link(rel="stylesheet" href="../css/xueMain.css")
   = '\n'
 
@@ -18,35 +18,16 @@ html(lang="zh-Hant-TW")
       main#container-page
         #bar_title
           .left_title
-            h2 搜尋結果
+            h2 匯出檢索條目
           .right_title
-            input.mybtn_select.btn_send(type='button', value='匯出已選擇（99）', onclick="location.href='../collection/export.html'")
+            input.mybtn_select.btn_white(type='button', value='清空所有條目')
+            input.mybtn_select.btn_send(type='button', value='匯出CSV檔')
         = '\n'
 
         aside#aside
-          #box_search
-            h3 搜尋條件
-            ul.search-Condition
-              li
-                span 檔案類型:
-                | 徵集檔案
-              li
-                span 關鍵字:
-                | 乾隆 嘉慶 道光 咸豐 同治
-              // <li><span>(AND) 關鍵字:</span>XXX</li>
-              // <li>(NOT) 摘要:</span>XXXXXXXX</li>
-              li
-                input#dd-01(type='checkbox', name='sb', value='異體字' checked)
-                label(for='dd-01') 異體字（例如：煙=烟）
-              li
-                input#dd-02(type='checkbox', name='sb', value='異體字' checked)
-                label(for='dd-02') 同義詞（例如：傅斯年=孟真）
-            .formbtn
-              input.mybtn.btn_send.btn-s(type='button', value='重新搜尋', onclick="location.href='search.html'")
-          = '\n'
           #box_subnav.subnav-03
             ul
-              //切換到該類別時，增加.nowin
+              //切換到該類別，增加.nowin
               li
                   a.nowin(href='#', title='全部類型') 全部類型
                   |#[span 655]
@@ -65,7 +46,7 @@ html(lang="zh-Hant-TW")
         = '\n'
 
         section#pagemain
-          h3 搜尋結果
+          h3 已選擇項目：655筆
           #list_option
             form(action='#', method='post')
               label 排序：
@@ -78,7 +59,7 @@ html(lang="zh-Hant-TW")
             thead
               tr
                 th
-                  input#all.all(type='checkbox', name='all') 
+                  input#all.all(type='checkbox', name='all', checked) 
                   label 全選
                 th 檔號
                 th 檔案類型
@@ -87,7 +68,7 @@ html(lang="zh-Hant-TW")
             tbody
               tr
                 td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='1')
+                  input#selecttd(type='checkbox', name='tdItem', value='1', checked)
                   label(for='selecttd') 1.
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
@@ -100,7 +81,7 @@ html(lang="zh-Hant-TW")
                   |二十四年關成典房契
               tr
                 td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='2')
+                  input#selecttd(type='checkbox', name='tdItem', value='2', checked)
                   label(for='selecttd') 2.
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
@@ -113,7 +94,7 @@ html(lang="zh-Hant-TW")
                   |三十九年長春典房契
               tr
                 td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='3')
+                  input#selecttd(type='checkbox', name='tdItem', value='3', checked)
                   label(for='selecttd') 3.
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
@@ -126,7 +107,7 @@ html(lang="zh-Hant-TW")
                   |五十二年德克錦額典房契
               tr
                 td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='4')
+                  input#selecttd(type='checkbox', name='tdItem', value='4', checked)
                   label(for='selecttd') 4.
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
@@ -139,7 +120,7 @@ html(lang="zh-Hant-TW")
                   |六年郭洪吉典房契
               tr
                 td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='5')
+                  input#selecttd(type='checkbox', name='tdItem', value='5', checked)
                   label(for='selecttd') 5.
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
@@ -152,7 +133,7 @@ html(lang="zh-Hant-TW")
                   |九年寧文氣典房契
               tr
                 td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='6')
+                  input#selecttd(type='checkbox', name='tdItem', value='6', checked)
                   label(for='selecttd') 6.
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
@@ -165,7 +146,7 @@ html(lang="zh-Hant-TW")
                   |十二年西隆阿典房契
               tr
                 td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='7')
+                  input#selecttd(type='checkbox', name='tdItem', value='7', checked)
                   label(for='selecttd') 7.
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
@@ -178,7 +159,7 @@ html(lang="zh-Hant-TW")
                   |二十四年巴栢典房契
               tr
                 td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='8')
+                  input#selecttd(type='checkbox', name='tdItem', value='8', checked)
                   label(for='selecttd') 8.
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
@@ -191,7 +172,7 @@ html(lang="zh-Hant-TW")
                   |二十年李廣興老典房契
               tr
                 td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='9')
+                  input#selecttd(type='checkbox', name='tdItem', value='9', checked)
                   label(for='selecttd') 9.
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
@@ -204,7 +185,7 @@ html(lang="zh-Hant-TW")
                   |十年富英仝妻富門李氏賣房契
               tr
                 td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='10')
+                  input#selecttd(type='checkbox', name='tdItem', value='10', checked)
                   label(for='selecttd') 10.
                 td.td_fileno
                   a(href='file-details.html' title='11012011002') 11012011002
@@ -229,7 +210,7 @@ html(lang="zh-Hant-TW")
                 option 6
                 option 7
                 option 8
-              |頁/8頁，共有80筆資料
+              |頁/66頁，共有655筆資料
             #page-btn-left
               a.mybtn.btn-s.btn_disable(href='#', title='上一頁') 上一頁
             #page-btn-right

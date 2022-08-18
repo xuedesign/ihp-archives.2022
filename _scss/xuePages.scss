@@ -453,6 +453,9 @@
     font-size: 1.6rem;
     margin-right: 10px;
 }
+.right_title input{
+    margin-left: 15px;
+}
 
 /*簡目表格*/
 #list_option{
@@ -492,6 +495,10 @@
     color:#EDD3C4
 }
 .td_time{ width: 14%;}
+.td_ftitle{ 
+    width: 20%;
+    text-align: left;
+}
 /*#mytable1 .td_title,
 #mytable1 .td_info{ width: 30%;}
 #mytable2 .td_type{ width: 25%;}
