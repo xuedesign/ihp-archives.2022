@@ -134,9 +134,9 @@
     height: 210px;
     overflow: hidden;
     border-radius:15px 15px 0 0;
-    background-size: contain;
+    /* background-size: cover; */
     /* background-position: center; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 #box_links h3{
     font-family: "Noto Serif TC";
@@ -453,7 +453,8 @@
     font-size: 1.6rem;
     margin-right: 10px;
 }
-.right_title input{
+.right_title input,
+.right_title a{
     margin-left: 15px;
 }
 
@@ -504,9 +505,6 @@
 #mytable2 .td_type{ width: 25%;}
 #mytable2 .td_title{ width: 35%;} */
 
-
-
-
 .page_option{
    display: block;
    width: 95%;
@@ -530,4 +528,61 @@ mark{
 #page-number .myselect{
     margin: 0 8px;
     padding: 0 10px;
+}
+
+/*檔案詳目*/
+dialog[open],
+.dialog-open {
+  display: block;
+  opacity: 1;
+}
+.dialog{
+    opacity: 0;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30%;
+    /* width: -webkit-fit-content;
+    width: fit-content; */
+    max-width: 1500px;
+    /* height: -moz-fit-content;
+    height: -webkit-fit-content;
+    height: fit-content;
+    max-height: 50%; */
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.15);
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+    z-index: 20;
+  }
+.dialog-body h3{
+    font-family: "Noto Serif TC";
+    font-weight:700;
+    font-size: 2.2rem;
+    line-height: 4.3rem;
+    color:#3a4f5f;
+}
+.dialog-body label,
+.dialog-body textarea{
+    display: block;
+    width:100%;
+    margin-bottom:15px
+}
+.dialog-body label{
+    font-size: 1.6rem;
+}
+.dialog-foot{
+    text-align:center;
+}
+.dialog-foot input{
+    padding: 8px 15px;
+    margin: 0 10px;
 }

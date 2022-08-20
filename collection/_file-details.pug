@@ -20,8 +20,8 @@ html(lang="zh-Hant-TW")
           .left_title
             h2 滿漢文合璧執照
           .right_title
-            a.mybtn_select.btn_white(href="https://copyrite.ihp.sinica.edu.tw/ihponlinec/ihponline") 申請授權
-            a.mybtn_select.btn_white(href="#") 意見回饋
+            a.mybtn_select.btn_white(href="https://copyrite.ihp.sinica.edu.tw/ihponlinec/ihponline", target="_blank") 申請授權
+            input#showdialog.mybtn_select.btn_white(type='button', value='意見回饋')
             input.mybtn_select.btn_white(type='button', value='返回上頁', onclick="window.history.back();")
         = '\n'
 
@@ -30,6 +30,16 @@ html(lang="zh-Hant-TW")
         = '\n'
 
         section#pagemain-view
+          dialog#mydialog.dialog(role='dialog')
+            form(action='#', method='post')
+              .dialog-body
+                h3 意見回饋：
+                label(for="textarea") 如有任何意見與回饋，歡迎與我們聯繫交流...
+                textarea#textarea.mytextarea(name='textarea', rows='5', cols='33')
+              .dialog-foot
+                input#hidedialog.mybtn_select.btn_white(type='button', value='取消')
+                input#hidedialog.mybtn_select.btn_white(type='button', value='送出')
+          = '\n'
           table#mytable2.mytable(summary='檔案資訊')
             thead
               tr

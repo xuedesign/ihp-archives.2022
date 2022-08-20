@@ -138,14 +138,14 @@ header{
 
 #container{
   @extend %content_block;
-  max-width: 1530px;
+  /* max-width: 1530px; */
   margin: 50px auto 100px auto;
   /* min-height:1000px;
   border:1px solid #ccc; */
 }
 #container-page{
   @extend %content_flex;
-  max-width: 1530px;
+  /* max-width: 1530px; */
   justify-content: space-between;
   margin: 50px auto 80px;
 }
@@ -349,12 +349,19 @@ h1 a{
 .foot-left a,
 .foot-right a,
 .foot-left a:visited,
-.foot-right a:visited{
+.foot-right a:visited,
+.mytable a,
+.mytable a:visited{
   color: #C18E7F;
   text-decoration:none
 }
+.mytable a,
+.mytable a:visited{
+  text-decoration:underline
+}
 .foot-left a:hover,
-.foot-right a:hover{
+.foot-right a:hover,
+.mytable a:hover{
   color: #713429;
   text-decoration:none;
   cursor: pointer;
@@ -384,7 +391,7 @@ h1 a{
 .mybtn_select{
   display: inline-block;
   /* padding: 5px 8px 5px 15px; */
-  padding: 8px 8px 8px 15px;
+  padding: 8px;
   font-size: 1.6rem
 }
 .btn_active,
@@ -428,7 +435,8 @@ h1 a{
 
 /*表單元件*/
 .myselect,
-.myinput{
+.myinput,
+.mytextarea{
   font-family:"Noto Sans TC", "Microsoft JhengHei","PingFangTC-Regular", "Arial", "Helvetica", sans-serif;
   font-size: 1.8rem;
   color: #2E3234;
@@ -439,7 +447,8 @@ h1 a{
 .myinput{
   padding: 5px 0 5px 10px
 }
-.myinput:focus{
+.myinput:focus,
+.mytextarea:focus{
   border:1px solid #BF1A1F;
   background: #efefef;
   outline: none;
@@ -508,7 +517,6 @@ h2::before{
 .mytable th:last-child{
   border-right: none;
 }
-
 
 
 /*

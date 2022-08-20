@@ -51,13 +51,13 @@
                     <!-- 會員註冊名稱-->
                     <div class="box_llog">網站管理員<br><span>已登入</span></div>
                   </li>
-                  <li><a href="../user/edit-profiles.html" title="會員編輯">會員編輯</a></li>
+                  <li><a href="../user/edit-profiles.html" title="編輯會員資料">編輯會員資料</a></li>
                   <li><a href="../user/edit-pwd.html" title="修改密碼">修改密碼</a></li>
-                  <li><a href="../index.html" title="登出">登出</a></li>
+                  <li><a href="../index.html" title="登出系統">登出系統</a></li>
                 </ul>
                 <!-- 未登入狀態
                 <ul>
-                  <li><div class="box_llog">登入會員可瀏覽更多館藏內容</div></li>
+                  <li><div class="box_llog">會員可以瀏覽更多館藏細節</div></li>
                   <li><a href="../user/signin.html" title="登入會員">登入會員</a></li>
                   <li><a href="../user/signup.html" title="註冊會員">註冊會員</a></li>
                 </ul>
@@ -73,7 +73,8 @@
           <div class="left_title">
             <h2>滿漢文合璧執照</h2>
           </div>
-          <div class="right_title"><a class="mybtn_select btn_white" href="https://copyrite.ihp.sinica.edu.tw/ihponlinec/ihponline">申請授權</a><a class="mybtn_select btn_white" href="#">意見回饋</a>
+          <div class="right_title"><a class="mybtn_select btn_white" href="https://copyrite.ihp.sinica.edu.tw/ihponlinec/ihponline" target="_blank">申請授權</a>
+            <input class="mybtn_select btn_white" id="showdialog" type="button" value="意見回饋">
             <input class="mybtn_select btn_white" type="button" value="返回上頁" onclick="window.history.back();">
           </div>
         </div>
@@ -81,6 +82,20 @@
         <aside id="aside-view"></aside>
 
         <section id="pagemain-view">
+          <dialog class="dialog" id="mydialog" role="dialog">
+            <form action="#" method="post">
+              <div class="dialog-body">
+                <h3>意見回饋：</h3>
+                <label for="textarea">如有任何意見與回饋，歡迎與我們聯繫交流...</label>
+                <textarea class="mytextarea" id="textarea" name="textarea" rows="5" cols="33"></textarea>
+              </div>
+              <div class="dialog-foot">
+                <input class="mybtn_select btn_white" id="hidedialog" type="button" value="取消">
+                <input class="mybtn_select btn_white" id="hidedialog" type="button" value="送出">
+              </div>
+            </form>
+          </dialog>
+
           <table class="mytable" id="mytable2" summary="檔案資訊">
             <thead>
               <tr>
