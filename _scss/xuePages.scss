@@ -586,3 +586,62 @@ dialog[open],
     padding: 8px 15px;
     margin: 0 10px;
 }
+
+#box_annex{
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+}
+#box_annex h3{
+    font-family: "Noto Serif TC";
+    font-weight:700;
+    font-size:2.3rem;
+    line-height:7rem;
+    color:#3a4f5f;
+    letter-spacing: 1px;
+    text-shadow: 0 0 4px rgb(241, 241, 241);
+}
+#box_annex ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#box_annex li{
+    display:block;
+    width: 225px;
+    margin: 0 15px;
+    border:1px solid #111;
+    text-align: center;
+}
+#box_annex img{
+    height: 125px;
+    width: auto;
+    margin: 0 auto;
+}
+#box_annex h4{
+    font-family: "Noto Serif TC";
+    font-weight:700;
+    font-size:1.8rem;
+    color:#435664;
+    text-align: left;
+    padding: 8px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #929ca2;
+}
+#box_annex a,
+#box_annex a:visited,
+#box_annex i{
+    font-size:1.6rem;
+    margin: 5px 10px;
+    color:#435664;
+    text-decoration: none;
+}
+#box_annex a:hover,
+#box_annex a:hover>i{
+    color: #713429;
+    text-decoration:none;
+}
+#box_annex i{
+    margin: 0 5px 0 0;
+    color: #9da5ab
+}
