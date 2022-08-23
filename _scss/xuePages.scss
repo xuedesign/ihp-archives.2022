@@ -530,6 +530,18 @@ mark{
     padding: 0 10px;
 }
 
+#box_emptyinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height:300px;
+}
+#box_emptyinfo h4{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
 /*檔案詳目*/
 dialog[open],
 .dialog-open {

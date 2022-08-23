@@ -20,7 +20,8 @@ html(lang="zh-Hant-TW")
           .left_title
             h2 搜尋結果
           .right_title
-            input.mybtn_select.btn_send(type='button', value='匯出已選擇（99）', onclick="location.href='../collection/export.html'")
+            input.mybtn_select.btn_white(type='button', value='加入收藏')
+            input.mybtn_select.btn_send(type='button', value='匯出收藏清單(99)', onclick="location.href='../collection/export.html'")
         = '\n'
 
         aside#aside
@@ -48,7 +49,7 @@ html(lang="zh-Hant-TW")
             ul
               //切換到該類別時，增加.nowin
               li
-                  a.nowin(href='#', title='全部類型') 全部類型
+                  a.nowin(href='#', title='全部檔案類型') 全部檔案類型
                   |#[span 655]
               li
                 a(href='#', title='史語所行政檔案') 史語所行政檔案
@@ -66,175 +67,180 @@ html(lang="zh-Hant-TW")
 
         section#pagemain
           h3 搜尋結果
-          #list_option
-            form(action='#', method='post')
-              label 排序：
-              select.myinput
-                option 按時間排序
-                option 有數位影像優先
-              input.mybtn.btn_send.btn-s(type='button', value='篩選')
+          // 沒有搜尋結果的標語
+          //#box_emptyinfo
+            h4 搜尋結果 0 筆
           = '\n'
-          table#mytable2.mytable(summary='列表')
-            thead
-              tr
-                th
-                  input#all.all(type='checkbox', name='all') 
-                  label 全選
-                th 檔號
-                th 檔案類型
-                th 時間
-                th 題名
-            tbody
-              tr
-                td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='1')
-                  label(for='selecttd') 1.
-                td.td_fileno
-                  a(href='file-details.html' title='11012011002') 11012011002
-                td 徵集檔案
-                td.td_time
-                  mark 乾隆
-                  |二十四年
-                td.td_title
-                  mark 乾隆
-                  |二十四年關成典房契
-              tr
-                td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='2')
-                  label(for='selecttd') 2.
-                td.td_fileno
-                  a(href='file-details.html' title='11012011002') 11012011002
-                td 徵集檔案
-                td.td_time
-                  mark 乾隆
-                  |三十九年
-                td.td_title
-                  mark 乾隆
-                  |三十九年長春典房契
-              tr
-                td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='3')
-                  label(for='selecttd') 3.
-                td.td_fileno
-                  a(href='file-details.html' title='11012011002') 11012011002
-                td 徵集檔案
-                td.td_time
-                  mark 乾隆
-                  |五十二年
-                td.td_title
-                  mark 乾隆
-                  |五十二年德克錦額典房契
-              tr
-                td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='4')
-                  label(for='selecttd') 4.
-                td.td_fileno
-                  a(href='file-details.html' title='11012011002') 11012011002
-                td 徵集檔案
-                td.td_time
-                  mark 嘉慶
-                  |六年
-                td.td_title
-                  mark 嘉慶
-                  |六年郭洪吉典房契
-              tr
-                td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='5')
-                  label(for='selecttd') 5.
-                td.td_fileno
-                  a(href='file-details.html' title='11012011002') 11012011002
-                td 徵集檔案
-                td.td_time
-                  mark 嘉慶
-                  |九年
-                td.td_title
-                  mark 嘉慶
-                  |九年寧文氣典房契
-              tr
-                td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='6')
-                  label(for='selecttd') 6.
-                td.td_fileno
-                  a(href='file-details.html' title='11012011002') 11012011002
-                td 徵集檔案
-                td.td_time
-                  mark 嘉慶
-                  |十二年
-                td.td_title
-                  mark 嘉慶
-                  |十二年西隆阿典房契
-              tr
-                td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='7')
-                  label(for='selecttd') 7.
-                td.td_fileno
-                  a(href='file-details.html' title='11012011002') 11012011002
-                td 徵集檔案
-                td.td_time
-                  mark 嘉慶
-                  |二十四年
-                td.td_title
-                  mark 嘉慶
-                  |二十四年巴栢典房契
-              tr
-                td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='8')
-                  label(for='selecttd') 8.
-                td.td_fileno
-                  a(href='file-details.html' title='11012011002') 11012011002
-                td 徵集檔案
-                td.td_time
-                  mark 道光
-                  |二十年
-                td.td_title
-                  mark 道光
-                  |二十年李廣興老典房契
-              tr
-                td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='9')
-                  label(for='selecttd') 9.
-                td.td_fileno
-                  a(href='file-details.html' title='11012011002') 11012011002
-                td 徵集檔案
-                td.td_time
-                  mark 咸豐
-                  |十年
-                td.td_title
-                  mark 咸豐
-                  |十年富英仝妻富門李氏賣房契
-              tr
-                td.td_no
-                  input#selecttd(type='checkbox', name='tdItem', value='10')
-                  label(for='selecttd') 10.
-                td.td_fileno
-                  a(href='file-details.html' title='11012011002') 11012011002
-                td 徵集檔案
-                td.td_time
-                  mark 同治
-                  |十年
-                td.td_title
-                  mark 同治
-                  |十年李山賣房契
-          = '\n'
+          //沒有項目時，box_page可以整個隱藏
+          #box_page
+            #list_option
+              form(action='#', method='post')
+                label 排序：
+                select.myinput
+                  option 按時間排序
+                  option 有數位影像優先
+                input.mybtn.btn_send.btn-s(type='button', value='篩選')
+            = '\n'
+            table#mytable2.mytable(summary='列表')
+              thead
+                tr
+                  th
+                    input#all.all(type='checkbox', name='all') 
+                    label 全選
+                  th 檔號
+                  th 檔案類型
+                  th 時間
+                  th 題名
+              tbody
+                tr
+                  td.td_no
+                    input#selecttd(type='checkbox', name='tdItem', value='1')
+                    label(for='selecttd') 1.
+                  td.td_fileno
+                    a(href='file-details.html' title='11012011002') 11012011002
+                  td 徵集檔案
+                  td.td_time
+                    mark 乾隆
+                    |二十四年
+                  td.td_title
+                    mark 乾隆
+                    |二十四年關成典房契
+                tr
+                  td.td_no
+                    input#selecttd(type='checkbox', name='tdItem', value='2')
+                    label(for='selecttd') 2.
+                  td.td_fileno
+                    a(href='file-details.html' title='11012011002') 11012011002
+                  td 徵集檔案
+                  td.td_time
+                    mark 乾隆
+                    |三十九年
+                  td.td_title
+                    mark 乾隆
+                    |三十九年長春典房契
+                tr
+                  td.td_no
+                    input#selecttd(type='checkbox', name='tdItem', value='3')
+                    label(for='selecttd') 3.
+                  td.td_fileno
+                    a(href='file-details.html' title='11012011002') 11012011002
+                  td 徵集檔案
+                  td.td_time
+                    mark 乾隆
+                    |五十二年
+                  td.td_title
+                    mark 乾隆
+                    |五十二年德克錦額典房契
+                tr
+                  td.td_no
+                    input#selecttd(type='checkbox', name='tdItem', value='4')
+                    label(for='selecttd') 4.
+                  td.td_fileno
+                    a(href='file-details.html' title='11012011002') 11012011002
+                  td 徵集檔案
+                  td.td_time
+                    mark 嘉慶
+                    |六年
+                  td.td_title
+                    mark 嘉慶
+                    |六年郭洪吉典房契
+                tr
+                  td.td_no
+                    input#selecttd(type='checkbox', name='tdItem', value='5')
+                    label(for='selecttd') 5.
+                  td.td_fileno
+                    a(href='file-details.html' title='11012011002') 11012011002
+                  td 徵集檔案
+                  td.td_time
+                    mark 嘉慶
+                    |九年
+                  td.td_title
+                    mark 嘉慶
+                    |九年寧文氣典房契
+                tr
+                  td.td_no
+                    input#selecttd(type='checkbox', name='tdItem', value='6')
+                    label(for='selecttd') 6.
+                  td.td_fileno
+                    a(href='file-details.html' title='11012011002') 11012011002
+                  td 徵集檔案
+                  td.td_time
+                    mark 嘉慶
+                    |十二年
+                  td.td_title
+                    mark 嘉慶
+                    |十二年西隆阿典房契
+                tr
+                  td.td_no
+                    input#selecttd(type='checkbox', name='tdItem', value='7')
+                    label(for='selecttd') 7.
+                  td.td_fileno
+                    a(href='file-details.html' title='11012011002') 11012011002
+                  td 徵集檔案
+                  td.td_time
+                    mark 嘉慶
+                    |二十四年
+                  td.td_title
+                    mark 嘉慶
+                    |二十四年巴栢典房契
+                tr
+                  td.td_no
+                    input#selecttd(type='checkbox', name='tdItem', value='8')
+                    label(for='selecttd') 8.
+                  td.td_fileno
+                    a(href='file-details.html' title='11012011002') 11012011002
+                  td 徵集檔案
+                  td.td_time
+                    mark 道光
+                    |二十年
+                  td.td_title
+                    mark 道光
+                    |二十年李廣興老典房契
+                tr
+                  td.td_no
+                    input#selecttd(type='checkbox', name='tdItem', value='9')
+                    label(for='selecttd') 9.
+                  td.td_fileno
+                    a(href='file-details.html' title='11012011002') 11012011002
+                  td 徵集檔案
+                  td.td_time
+                    mark 咸豐
+                    |十年
+                  td.td_title
+                    mark 咸豐
+                    |十年富英仝妻富門李氏賣房契
+                tr
+                  td.td_no
+                    input#selecttd(type='checkbox', name='tdItem', value='10')
+                    label(for='selecttd') 10.
+                  td.td_fileno
+                    a(href='file-details.html' title='11012011002') 11012011002
+                  td 徵集檔案
+                  td.td_time
+                    mark 同治
+                    |十年
+                  td.td_title
+                    mark 同治
+                    |十年李山賣房契
+            = '\n'
 
-          .page_option
-            #page-number
-              label(for='list-page') 位於第
-              select.myselect(name='list-page')
-                option 1
-                option 2
-                option 3
-                option 4
-                option 5
-                option 6
-                option 7
-                option 8
-              |頁/8頁，共有80筆資料
-            #page-btn-left
-              a.mybtn.btn-s.btn_disable(href='#', title='上一頁') 上一頁
-            #page-btn-right
-              a.mybtn.btn-s.btn_white(href='#', title='下一頁') 下一頁
-
+            .page_option
+              #page-number
+                label(for='list-page') 位於第
+                select.myselect(name='list-page')
+                  option 1
+                  option 2
+                  option 3
+                  option 4
+                  option 5
+                  option 6
+                  option 7
+                  option 8
+                |頁/8頁，共有80筆資料
+              #page-btn-left
+                a.mybtn.btn-s.btn_disable(href='#', title='上一頁') 上一頁
+              #page-btn-right
+                a.mybtn.btn-s.btn_white(href='#', title='下一頁') 下一頁
     = '\n'
     footer
         include ../_template/foot.pug

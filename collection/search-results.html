@@ -74,7 +74,8 @@
             <h2>搜尋結果</h2>
           </div>
           <div class="right_title">
-            <input class="mybtn_select btn_send" type="button" value="匯出已選擇（99）" onclick="location.href='../collection/export.html'">
+            <input class="mybtn_select btn_white" type="button" value="加入收藏">
+            <input class="mybtn_select btn_send" type="button" value="匯出收藏清單(99)" onclick="location.href='../collection/export.html'">
           </div>
         </div>
 
@@ -103,7 +104,7 @@
           <div class="subnav-03" id="box_subnav">
             <ul>
               <!--切換到該類別時，增加.nowin-->
-              <li><a class="nowin" href="#" title="全部類型">全部類型</a><span>655</span></li>
+              <li><a class="nowin" href="#" title="全部檔案類型">全部檔案類型</a><span>655</span></li>
               <li><a href="#" title="史語所行政檔案">史語所行政檔案</a><span>567</span></li>
               <li><a href="#" title="史語所研究員檔案">史語所研究員檔案</a><span>0</span></li>
               <li><a href="#" title="徵集檔案">徵集檔案</a><span>88</span></li>
@@ -114,190 +115,197 @@
 
         <section id="pagemain">
           <h3>搜尋結果</h3>
-          <div id="list_option">
-            <form action="#" method="post">
-              <label>排序：</label>
-              <select class="myinput">
-                <option>按時間排序</option>
-                <option>有數位影像優先</option>
-              </select>
-              <input class="mybtn btn_send btn-s" type="button" value="篩選">
-            </form>
-          </div>
+          <!-- 沒有搜尋結果的標語-->
+          <!--#box_emptyinfoh4 搜尋結果 0 筆
+          -->
 
-          <table class="mytable" id="mytable2" summary="列表">
-            <thead>
-              <tr>
-                <th>
-                  <input class="all" id="all" type="checkbox" name="all">
-                  <label>全選</label>
-                </th>
-                <th>檔號</th>
-                <th>檔案類型</th>
-                <th>時間</th>
-                <th>題名</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="td_no">
-                  <input id="selecttd" type="checkbox" name="tdItem" value="1">
-                  <label for="selecttd">1.</label>
-                </td>
-                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
-                <td>徵集檔案</td>
-                <td class="td_time">
-                  <mark>乾隆</mark>二十四年
-                </td>
-                <td class="td_title">
-                  <mark>乾隆</mark>二十四年關成典房契
-                </td>
-              </tr>
-              <tr>
-                <td class="td_no">
-                  <input id="selecttd" type="checkbox" name="tdItem" value="2">
-                  <label for="selecttd">2.</label>
-                </td>
-                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
-                <td>徵集檔案</td>
-                <td class="td_time">
-                  <mark>乾隆</mark>三十九年
-                </td>
-                <td class="td_title">
-                  <mark>乾隆</mark>三十九年長春典房契
-                </td>
-              </tr>
-              <tr>
-                <td class="td_no">
-                  <input id="selecttd" type="checkbox" name="tdItem" value="3">
-                  <label for="selecttd">3.</label>
-                </td>
-                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
-                <td>徵集檔案</td>
-                <td class="td_time">
-                  <mark>乾隆</mark>五十二年
-                </td>
-                <td class="td_title">
-                  <mark>乾隆</mark>五十二年德克錦額典房契
-                </td>
-              </tr>
-              <tr>
-                <td class="td_no">
-                  <input id="selecttd" type="checkbox" name="tdItem" value="4">
-                  <label for="selecttd">4.</label>
-                </td>
-                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
-                <td>徵集檔案</td>
-                <td class="td_time">
-                  <mark>嘉慶</mark>六年
-                </td>
-                <td class="td_title">
-                  <mark>嘉慶</mark>六年郭洪吉典房契
-                </td>
-              </tr>
-              <tr>
-                <td class="td_no">
-                  <input id="selecttd" type="checkbox" name="tdItem" value="5">
-                  <label for="selecttd">5.</label>
-                </td>
-                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
-                <td>徵集檔案</td>
-                <td class="td_time">
-                  <mark>嘉慶</mark>九年
-                </td>
-                <td class="td_title">
-                  <mark>嘉慶</mark>九年寧文氣典房契
-                </td>
-              </tr>
-              <tr>
-                <td class="td_no">
-                  <input id="selecttd" type="checkbox" name="tdItem" value="6">
-                  <label for="selecttd">6.</label>
-                </td>
-                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
-                <td>徵集檔案</td>
-                <td class="td_time">
-                  <mark>嘉慶</mark>十二年
-                </td>
-                <td class="td_title">
-                  <mark>嘉慶</mark>十二年西隆阿典房契
-                </td>
-              </tr>
-              <tr>
-                <td class="td_no">
-                  <input id="selecttd" type="checkbox" name="tdItem" value="7">
-                  <label for="selecttd">7.</label>
-                </td>
-                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
-                <td>徵集檔案</td>
-                <td class="td_time">
-                  <mark>嘉慶</mark>二十四年
-                </td>
-                <td class="td_title">
-                  <mark>嘉慶</mark>二十四年巴栢典房契
-                </td>
-              </tr>
-              <tr>
-                <td class="td_no">
-                  <input id="selecttd" type="checkbox" name="tdItem" value="8">
-                  <label for="selecttd">8.</label>
-                </td>
-                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
-                <td>徵集檔案</td>
-                <td class="td_time">
-                  <mark>道光</mark>二十年
-                </td>
-                <td class="td_title">
-                  <mark>道光</mark>二十年李廣興老典房契
-                </td>
-              </tr>
-              <tr>
-                <td class="td_no">
-                  <input id="selecttd" type="checkbox" name="tdItem" value="9">
-                  <label for="selecttd">9.</label>
-                </td>
-                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
-                <td>徵集檔案</td>
-                <td class="td_time">
-                  <mark>咸豐</mark>十年
-                </td>
-                <td class="td_title">
-                  <mark>咸豐</mark>十年富英仝妻富門李氏賣房契
-                </td>
-              </tr>
-              <tr>
-                <td class="td_no">
-                  <input id="selecttd" type="checkbox" name="tdItem" value="10">
-                  <label for="selecttd">10.</label>
-                </td>
-                <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
-                <td>徵集檔案</td>
-                <td class="td_time">
-                  <mark>同治</mark>十年
-                </td>
-                <td class="td_title">
-                  <mark>同治</mark>十年李山賣房契
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <div class="page_option">
-            <div id="page-number">
-              <label for="list-page">位於第</label>
-              <select class="myselect" name="list-page">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-              </select>頁/8頁，共有80筆資料
+          <!--沒有項目時，box_page可以整個隱藏-->
+          <div id="box_page">
+            <div id="list_option">
+              <form action="#" method="post">
+                <label>排序：</label>
+                <select class="myinput">
+                  <option>按時間排序</option>
+                  <option>有數位影像優先</option>
+                </select>
+                <input class="mybtn btn_send btn-s" type="button" value="篩選">
+              </form>
             </div>
-            <div id="page-btn-left"><a class="mybtn btn-s btn_disable" href="#" title="上一頁">上一頁</a></div>
-            <div id="page-btn-right"><a class="mybtn btn-s btn_white" href="#" title="下一頁">下一頁</a></div>
+
+            <table class="mytable" id="mytable2" summary="列表">
+              <thead>
+                <tr>
+                  <th>
+                    <input class="all" id="all" type="checkbox" name="all">
+                    <label>全選</label>
+                  </th>
+                  <th>檔號</th>
+                  <th>檔案類型</th>
+                  <th>時間</th>
+                  <th>題名</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="td_no">
+                    <input id="selecttd" type="checkbox" name="tdItem" value="1">
+                    <label for="selecttd">1.</label>
+                  </td>
+                  <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                  <td>徵集檔案</td>
+                  <td class="td_time">
+                    <mark>乾隆</mark>二十四年
+                  </td>
+                  <td class="td_title">
+                    <mark>乾隆</mark>二十四年關成典房契
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td_no">
+                    <input id="selecttd" type="checkbox" name="tdItem" value="2">
+                    <label for="selecttd">2.</label>
+                  </td>
+                  <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                  <td>徵集檔案</td>
+                  <td class="td_time">
+                    <mark>乾隆</mark>三十九年
+                  </td>
+                  <td class="td_title">
+                    <mark>乾隆</mark>三十九年長春典房契
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td_no">
+                    <input id="selecttd" type="checkbox" name="tdItem" value="3">
+                    <label for="selecttd">3.</label>
+                  </td>
+                  <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                  <td>徵集檔案</td>
+                  <td class="td_time">
+                    <mark>乾隆</mark>五十二年
+                  </td>
+                  <td class="td_title">
+                    <mark>乾隆</mark>五十二年德克錦額典房契
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td_no">
+                    <input id="selecttd" type="checkbox" name="tdItem" value="4">
+                    <label for="selecttd">4.</label>
+                  </td>
+                  <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                  <td>徵集檔案</td>
+                  <td class="td_time">
+                    <mark>嘉慶</mark>六年
+                  </td>
+                  <td class="td_title">
+                    <mark>嘉慶</mark>六年郭洪吉典房契
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td_no">
+                    <input id="selecttd" type="checkbox" name="tdItem" value="5">
+                    <label for="selecttd">5.</label>
+                  </td>
+                  <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                  <td>徵集檔案</td>
+                  <td class="td_time">
+                    <mark>嘉慶</mark>九年
+                  </td>
+                  <td class="td_title">
+                    <mark>嘉慶</mark>九年寧文氣典房契
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td_no">
+                    <input id="selecttd" type="checkbox" name="tdItem" value="6">
+                    <label for="selecttd">6.</label>
+                  </td>
+                  <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                  <td>徵集檔案</td>
+                  <td class="td_time">
+                    <mark>嘉慶</mark>十二年
+                  </td>
+                  <td class="td_title">
+                    <mark>嘉慶</mark>十二年西隆阿典房契
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td_no">
+                    <input id="selecttd" type="checkbox" name="tdItem" value="7">
+                    <label for="selecttd">7.</label>
+                  </td>
+                  <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                  <td>徵集檔案</td>
+                  <td class="td_time">
+                    <mark>嘉慶</mark>二十四年
+                  </td>
+                  <td class="td_title">
+                    <mark>嘉慶</mark>二十四年巴栢典房契
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td_no">
+                    <input id="selecttd" type="checkbox" name="tdItem" value="8">
+                    <label for="selecttd">8.</label>
+                  </td>
+                  <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                  <td>徵集檔案</td>
+                  <td class="td_time">
+                    <mark>道光</mark>二十年
+                  </td>
+                  <td class="td_title">
+                    <mark>道光</mark>二十年李廣興老典房契
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td_no">
+                    <input id="selecttd" type="checkbox" name="tdItem" value="9">
+                    <label for="selecttd">9.</label>
+                  </td>
+                  <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                  <td>徵集檔案</td>
+                  <td class="td_time">
+                    <mark>咸豐</mark>十年
+                  </td>
+                  <td class="td_title">
+                    <mark>咸豐</mark>十年富英仝妻富門李氏賣房契
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td_no">
+                    <input id="selecttd" type="checkbox" name="tdItem" value="10">
+                    <label for="selecttd">10.</label>
+                  </td>
+                  <td class="td_fileno"><a href="file-details.html" title="11012011002">11012011002</a></td>
+                  <td>徵集檔案</td>
+                  <td class="td_time">
+                    <mark>同治</mark>十年
+                  </td>
+                  <td class="td_title">
+                    <mark>同治</mark>十年李山賣房契
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="page_option">
+              <div id="page-number">
+                <label for="list-page">位於第</label>
+                <select class="myselect" name="list-page">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                </select>頁/8頁，共有80筆資料
+              </div>
+              <div id="page-btn-left"><a class="mybtn btn-s btn_disable" href="#" title="上一頁">上一頁</a></div>
+              <div id="page-btn-right"><a class="mybtn btn-s btn_white" href="#" title="下一頁">下一頁</a></div>
+            </div>
           </div>
         </section>
       </main>
