@@ -126,7 +126,15 @@ html(lang="zh-Hant-TW")
                 select.myinput
                   option 按時間排序
                   option 有數位影像優先
-                input.mybtn.btn_send.btn-s(type='button', value='篩選')
+                label 每頁
+                select.myinput
+                  option 10
+                  option 20
+                  option 30
+                  option 50
+                  option 100
+                |筆
+                input.mybtn.btn_send.btn-s(type='button', value='重新排序')
             = '\n'
             table#mytable2.mytable(summary='列表')
               thead

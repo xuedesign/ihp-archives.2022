@@ -73,7 +73,9 @@
           <div class="left_title">
             <h2>滿漢文合璧執照</h2>
           </div>
-          <div class="right_title"><a class="mybtn_select btn_white" href="https://copyrite.ihp.sinica.edu.tw/ihponlinec/ihponline" target="_blank">申請授權</a>
+          <div class="right_title">
+            <input class="mybtn_select btn_white" type="button" value="加入收藏">
+            <input class="mybtn_select btn_send" type="button" value="匯出收藏清單(99)" onclick="location.href='../collection/export.html'"><span>|</span><a class="mybtn_select btn_white" href="https://copyrite.ihp.sinica.edu.tw/ihponlinec/ihponline" target="_blank">申請授權</a>
             <input class="mybtn_select btn_white" id="showdialog" type="button" value="意見回饋">
             <input class="mybtn_select btn_white" type="button" value="返回上頁" onclick="window.history.back();">
           </div>
@@ -151,10 +153,11 @@
             <h3>附件：</h3>
             <ul>
               <li><img class="to_print" src="../images/pic_annex-sample.png" alt="*">
-                <h4>附件名稱</h4><a href="#" title="放大瀏覽"><i class="fa-solid fa-magnifying-glass-plus"></i>放大瀏覽</a><a class="print_button" href="#" title="列印檔案" onclick="printNewWindow('../images/pic_sample-02.jpg')"><i class="fa-solid fa-print"></i>列印檔案</a>
+                <h4>附件名稱附件名稱</h4><a href="#" title="放大瀏覽"><i class="fa-solid fa-magnifying-glass-plus"></i>放大瀏覽</a><a class="print_button" title="列印檔案" onclick="printJS({printable:'../images/pic_annex-big.jpg', type:'image', header: '附件名稱'})"><i class="fa-solid fa-print"></i>列印檔案</a>
               </li>
-              <li></li>
-              <li></li>
+              <li><img class="to_print" src="../images/pic_annex-sample.png" alt="*">
+                <h4>附件名稱附件名稱</h4><a href="#" title="放大瀏覽"><i class="fa-solid fa-magnifying-glass-plus"></i>放大瀏覽</a><a class="print_button" title="列印檔案" onclick="printJS({printable:'../images/pic_annex-big.jpg', type:'image', header: '附件名稱'})"><i class="fa-solid fa-print"></i>列印檔案</a>
+              </li>
             </ul>
           </div>
         </section>

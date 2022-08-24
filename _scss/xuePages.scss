@@ -457,23 +457,30 @@
 .right_title a{
     margin-left: 15px;
 }
+.right_title span{
+    margin-left: 15px;
+}
 
 /*簡目表格*/
 #list_option{
-    display:block;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     padding: 20px 10px;
+    font-size: 1.6rem;
 }
 #list_option label{
     font-size: 1.6rem;
     padding-right: 5px;
 }
 #list_option .myinput{
-    margin-right: 15px;
+    margin-right: 10px;
     font-size: 1.6rem;
 }
 #list_option .mybtn{
-    display: inline-block
+    display: inline-block;
+    margin-left: 15px;
 }
 .td_no{
     width: 10%;
@@ -496,7 +503,7 @@
     color:#EDD3C4
 }
 .td_time{ width: 14%;}
-.td_ftitle{ 
+.td_ftitle{
     width: 20%;
     text-align: left;
 }
@@ -616,14 +623,14 @@ dialog[open],
 #box_annex ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 #box_annex li{
     display:block;
-    width: 225px;
-    margin: 0 15px;
-    border:1px solid #111;
+    width: 30%;
+    margin: 0 15px 25px;
     text-align: center;
+    /* border:1px solid #111; */
 }
 #box_annex img{
     height: 125px;
@@ -652,6 +659,7 @@ dialog[open],
 #box_annex a:hover>i{
     color: #713429;
     text-decoration:none;
+    cursor: pointer;
 }
 #box_annex i{
     margin: 0 5px 0 0;
