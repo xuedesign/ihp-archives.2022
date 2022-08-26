@@ -22,4 +22,3 @@ loadjs('https://xuedesign.github.io/ihp-archives.2022/js/dialog.js');
 
 //print-img
 loadjs('https://cdn.jsdelivr.net/npm/print-js@1.6.0/dist/print.min.js');
-//loadjs('https://xuedesign.github.io/ihp-archives.2022/js/printIMG.js');
