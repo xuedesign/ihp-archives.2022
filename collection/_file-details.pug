@@ -4,6 +4,7 @@ html(lang="zh-Hant-TW")
     include ../_template/head-page.pug
     title 滿漢文合璧執照-館藏資料庫|中央研院歷史語言研究所檔案館
     link(rel="stylesheet" href="../css/xueMain.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.css")
   = '\n'
 
   body
@@ -29,7 +30,15 @@ html(lang="zh-Hant-TW")
         = '\n'
 
         aside#aside-view
-          
+          .flexslider
+            ul#lightgallery.slides
+              li
+                a(href="../images/pic_annex-big2.jpg",data-lg-size="1600-2400")
+                  img(src="../images/pic_annex-01.jpg", title="滿漢文合璧執照")
+              li
+                img(src="../images/pic_annex-02.jpg", title="滿漢文合璧執照2")
+              li
+                img(src="../images/pic_annex-03.jpg", title="滿漢文合璧執照3")
         = '\n'
 
         section#pagemain-view
