@@ -647,21 +647,40 @@ dialog[open],
     margin-bottom: 10px;
     border-bottom: 1px solid #929ca2;
 }
+.view_option{
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 40px 10px;
+}
 #box_annex a,
 #box_annex a:visited,
-#box_annex i{
+.view_option a,
+.view_option a:visited,
+#box_annex i,
+.view_option i,
+#box_annex span,
+.view_option span{
     font-size:1.6rem;
     margin: 5px 10px;
     color:#435664;
     text-decoration: none;
 }
 #box_annex a:hover,
-#box_annex a:hover>i{
+#box_annex a:hover>i,
+.view_option a:hover,
+.view_option a:hover>i{
     color: #713429;
     text-decoration:none;
     cursor: pointer;
 }
-#box_annex i{
+#box_annex i,
+.view_option i{
     margin: 0 5px 0 0;
     color: #9da5ab
+}
+#box_annex img:hover,
+#viewer img:hover{
+    cursor: zoom-in;
 }

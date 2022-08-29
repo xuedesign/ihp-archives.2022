@@ -21,7 +21,7 @@ loadjs('https://xuedesign.github.io/ihp-archives.2022/js/dialog.js');
 //loadjs('../js/dialog.js');
 
 //slide-img
-loadjs('https://cdn.jsdelivr.net/npm/flexslider/jquery.flexslider.min.js', function() {
+loadjs(['https://ihparchives.pages.dev/_scss/flexslider.css','https://cdn.jsdelivr.net/npm/flexslider/jquery.flexslider.min.js'], function() {
     $(window).load(function() {
         $('.flexslider').flexslider({
           animation: "slide"
@@ -30,13 +30,9 @@ loadjs('https://cdn.jsdelivr.net/npm/flexslider/jquery.flexslider.min.js', funct
 });
 
 //lightgallery
-loadjs('https://cdn.jsdelivr.net/npm/lightgallery/lightgallery.umd.min.js',function() {
-    lightGallery(document.getElementById('lightgallery'),{
-        //plugins: [lgZoom, lgThumbnail],
-        licenseKey: '0000-0000-000-0000',
-        speed: 500,
-        // ... other settings
-    });
+loadjs('https://cdn.jsdelivr.net/npm/viewerjs@1.10.5/dist/viewer.min.js',function() {
+    var viewer = new Viewer(document.getElementById('viewer'));
+    var viewer = new Viewer(document.getElementById('subviewer'));
 });
 
 //print-img

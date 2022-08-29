@@ -183,7 +183,7 @@ footer{
 #aside-view{
   width: 33.5%;
   margin-top: 20px;
-  border:1px solid #181f52;
+  /* border:1px solid #181f52; */
 }
 #pagemain-view{
   width: 62%;
@@ -578,4 +578,3 @@ h2::before{
 */
 @import 'xuePages';
 @import 'xueRwd';
-@import 'flexslider';
