@@ -54,8 +54,17 @@
         margin-top: 60px;
     }
     .td_time{ width: 16%;}
+    .box_media audio{
+        bottom: 18%;
+        left: 11%;
+    }
 }
-
+@media (max-width:1400px) {
+    .box_media audio{
+        bottom: 22%;
+        left: 11%;
+    }
+}
 @media (max-width:1300px) {
     #main-nav{
         margin-right: 4.5%;
@@ -73,6 +82,10 @@
         margin: 20px 20px 20px 50px} */
     .td_ftitle{
         width: 22%
+    }
+    .box_media audio{
+        bottom: 26%;
+        left: 11%;
     }
 }
 
