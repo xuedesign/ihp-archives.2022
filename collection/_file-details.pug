@@ -4,7 +4,6 @@ html(lang="zh-Hant-TW")
     include ../_template/head-page.pug
     title 滿漢文合璧執照-館藏資料庫|中央研院歷史語言研究所檔案館
     link(rel="stylesheet" href="../css/xueMain.css")
-    link(rel="stylesheet" href="../css/viewer.css")
     link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.css")
   = '\n'
 
@@ -34,7 +33,7 @@ html(lang="zh-Hant-TW")
           .view_option
             // 瀏覽大圖和PDF只能到檔案館內觀看
             span
-              <i class="fa-solid fa-magnifying-glass-plus"></i>點擊圖片放大瀏覽
+              <i class="fa-solid fa-magnifying-glass-plus"></i>點圖瀏覽
             a(href="../file/pdf_annex.pdf", title="PDF瀏覽", target="_blank") <i class="fa-solid fa-file-pdf"></i>PDF瀏覽
             // 只有管理者可以看見列印按鈕
             a.print_button(title="列印檔案", onclick="printJS({printable:'../file/pdf_annex.pdf', type:'pdf'})") <i class="fa-solid fa-print"></i>列印檔案
@@ -109,14 +108,14 @@ html(lang="zh-Hant-TW")
                 img.to_print(src="../images/pic_annex-big.jpg", alt="附件名稱")
                 h4 附件名稱附件名稱
                 span
-                  <i class="fa-solid fa-magnifying-glass-plus"></i>點圖放大瀏覽
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>點圖瀏覽
                 // 只有管理者可以看見列印按鈕
                 a.print_button(title="列印檔案", onclick="printJS({printable:'../images/pic_annex-big.jpg', type:'image'})") <i class="fa-solid fa-print"></i>列印檔案
               li
                 img.to_print(src="../images/pic_annex-big.jpg", alt="附件名稱")
                 h4 附件名稱附件名稱
                 span
-                  <i class="fa-solid fa-magnifying-glass-plus"></i>點圖放大瀏覽
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>點圖瀏覽
                 // 只有管理者可以看見列印按鈕
                 a.print_button(title="列印檔案", onclick="printJS({printable:'../images/pic_annex-big.jpg', type:'image'})") <i class="fa-solid fa-print"></i>列印檔案
     = '\n'
