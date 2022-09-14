@@ -527,10 +527,10 @@ mark{
     display: inline-block;
     padding-top: 8px;}
 #page-btn-left{
-    display: inline-block;
+    display: block;
     float: left}
 #page-btn-right{
-    display: inline-block;
+    display: block;
     float: right}
 #page-number .myselect{
     margin: 0 8px;
@@ -621,21 +621,33 @@ dialog[open],
     text-shadow: 0 0 4px rgb(241, 241, 241);
 }
 #box_annex ul{
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
+    display: block;
+    width: 100%;
+    /* border:1px solid #111; */
 }
 #box_annex li{
     display:block;
-    width: 30%;
-    margin: 0 15px 25px;
-    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
     /* border:1px solid #111; */
 }
-#box_annex img{
+.title_annex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #929ca2;
+}
+#box_annex .img_annex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+}
+#box_annex .img_annex img{
     height: 125px;
     width: auto;
-    margin: 0 auto;
+    margin: 0 25px 25px
 }
 #box_annex h4{
     font-family: "Noto Serif TC";
@@ -643,9 +655,7 @@ dialog[open],
     font-size:1.8rem;
     color:#435664;
     text-align: left;
-    padding: 8px 0;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #929ca2;
+    padding: 0;
 }
 .view_option{
     display:flex;

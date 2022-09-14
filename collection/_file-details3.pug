@@ -80,12 +80,27 @@ html(lang="zh-Hant-TW")
             h3 附件：
             ul#subviewer
               li
-                img.to_print(src="../images/pic_annex-04.jpg", alt="附件名稱")
-                h4 附件名稱附件名稱
-                span
-                  <i class="fa-solid fa-magnifying-glass-plus"></i>點圖瀏覽
-                // 只有管理者可以看見列印按鈕
-                a.print_button(title="列印檔案", onclick="printJS({printable:'../images/pic_annex-04.jpg', type:'image'})") <i class="fa-solid fa-print"></i>列印檔案
+                .title_annex
+                  h4 1.抄國民政府十月十八日第七零四號訓令
+                  span
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>點圖瀏覽
+                    // 只有管理者可以看見列印按鈕
+                    a.print_button(title="列印檔案", onclick="printJS({printable: ['../images/pic_annex-big.jpg', '../images/pic_annex-big.jpg', '../images/pic_annex-big.jpg'], type:'image'})") <i class="fa-solid fa-print"></i>列印檔案
+                .img_annex
+                  img.to_print(src="../images/pic_annex-big.jpg", alt="附件名稱")
+                  img.to_print(src="../images/pic_annex-big.jpg", alt="附件名稱")
+                  img.to_print(src="../images/pic_annex-big.jpg", alt="附件名稱")
+              li
+                .title_annex
+                  h4 2.國難時期各項支出緊縮辦法
+                  span
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>點圖瀏覽
+                    // 只有管理者可以看見列印按鈕
+                    a.print_button(title="列印檔案", onclick="printJS({printable:['../images/pic_annex-big.jpg', '../images/pic_annex-big.jpg', '../images/pic_annex-big.jpg'], type:'image'})") <i class="fa-solid fa-print"></i>列印檔案
+                .img_annex
+                  img.to_print(src="../images/pic_annex-big.jpg", alt="附件名稱")
+                  img.to_print(src="../images/pic_annex-big.jpg", alt="附件名稱")
+                  img.to_print(src="../images/pic_annex-big.jpg", alt="附件名稱")
     = '\n'
     footer
         include ../_template/foot.pug
