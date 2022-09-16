@@ -719,3 +719,50 @@ dialog[open],
     width: 100%;
     border: 5px solid #9da5ab;
 }
+
+/*
+=====================================
+會員
+=====================================
+*/
+.bg_tree{
+    display: block;
+    width: 100%;
+    background:url(../images/bg_tree.png) no-repeat;
+    background-position: center -140px;
+    background-color: #d4cbb1;
+    padding-top: 30px;
+}
+.bg_tree h3{
+    font-family: "Noto Serif TC";
+    font-weight:700;
+    font-size: 3.3rem;
+    color:#435664;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 0px rgba(255, 255, 255, 0.36);
+}
+.bg_tree h3::before{
+    content: url(../images/pot_brownbox.svg);
+    vertical-align: 6px;
+    margin-right: 13px;
+}
+.bg_tree p{
+    font-size: 1.8rem;
+    color:#435664;
+    margin-left: 33px;
+}
+#short_right{
+    font-size: 1.7rem;
+}
+#short_right p{
+    margin-bottom: 10px;
+}
+#short_right ul{
+    display: block;
+    padding: 20px 0 20px 50px;
+    text-align: justify;
+}
+#short_right li{
+    list-style: cjk-ideographic;
+    padding-bottom: 8px;
+}

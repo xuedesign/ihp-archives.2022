@@ -58,6 +58,9 @@
         bottom: 18%;
         left: 11%;
     }
+    #box_shortmain{
+        width:65%
+    }
 }
 @media (max-width:1400px) {
     .box_media audio{
@@ -86,6 +89,9 @@
     .box_media audio{
         bottom: 26%;
         left: 11%;
+    }
+    #box_shortmain{
+        width:75%
     }
 }
 

@@ -189,6 +189,35 @@ footer{
   width: 62%;
   /* border:1px solid #181f52; */
 }
+#box_short{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height:640px;
+  /* border:1px solid #111; */
+}
+#box_shortmain{
+  display:flex;
+  flex-wrap: wrap;
+  width: 60%;
+  min-height:580px;
+  background-color:#fff;
+  border-radius: 20px;
+  box-shadow: 0px 55px 48px rgba(146, 124, 124, 0.07), 0px 35.6481px 28.1111px rgba(146, 124, 124, 0.0531481), 0px 21.1852px 15.2889px rgba(146, 124, 124, 0.0425185), 0px 11px 7.8px rgba(146, 124, 124, 0.035), 0px 4.48148px 3.91111px rgba(146, 124, 124, 0.0274815), 0px 1.01852px 1.88889px rgba(146, 124, 124, 0.0168519);
+}
+#short_left{
+  display: block;
+  width: 40%;
+  border-radius: 20px 0 0 20px;
+  /* background:#d4cbb1; */
+}
+#short_right{
+  display: block;
+  width: 59%;
+  padding: 40px 30px 30px;
+  /* background:#d4cbb1; */
+}
 
 /*
 =====================================
@@ -352,7 +381,9 @@ h1 a{
 .foot-left a:visited,
 .foot-right a:visited,
 .mytable a,
-.mytable a:visited{
+.mytable a:visited,
+#short_right a,
+#short_right a:visited{
   color: #C18E7F;
   text-decoration:none
 }
@@ -362,7 +393,8 @@ h1 a{
 }
 .foot-left a:hover,
 .foot-right a:hover,
-.mytable a:hover{
+.mytable a:hover,
+#short_right a:hover{
   color: #713429;
   text-decoration:none;
   cursor: pointer;
