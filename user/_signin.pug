@@ -1,0 +1,43 @@
+doctype html
+html(lang="zh-Hant-TW")
+  head
+    include ../_template/head-page.pug
+    title 會員登入-館藏資料庫|中央研院歷史語言研究所檔案館
+    link(rel="stylesheet" href="../css/xueMain.css")
+  = '\n'
+
+  body
+    include ../_template/screenblock.pug
+
+    #wrap
+      header.nav-down
+        #hdr-main
+          include ../_template/hdr-page-notyet.pug
+      = '\n'
+
+      main#container
+        #box_short
+          #box_shortmain
+            #short_left.bg_tree
+              h3 會員登入
+              p Signin
+            #short_right
+              .main_info
+                p.text_center 請先登入會員，再繼續查閱瀏覽藏品詳目與數位影像。
+                  br
+                  | hahahahahhahahhahahahahh
+                p.text_center 還不是會員？立即
+                  a(href="signup.html" title="申請會員") 申請會員
+                  br
+                  | hahahahahhahahhahahahahh
+              input.mybtn.btn_send.btn-l(type='button', value='登入 Signin', onclick="location.href='../collection/file-details.html'")
+    = '\n'
+    footer
+        include ../_template/foot.pug
+  = '\n'
+
+  //- script區塊
+  script(src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/jquery-migrate/dist/jquery-migrate.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/loadjs/dist/loadjs.umd.min.js")
+  script(src="js/script.js")

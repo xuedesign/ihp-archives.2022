@@ -1,0 +1,37 @@
+doctype html
+html(lang="zh-Hant-TW")
+  head
+    include ../_template/head-page.pug
+    title 申請會員-館藏資料庫|中央研院歷史語言研究所檔案館
+    link(rel="stylesheet" href="../css/xueMain.css")
+  = '\n'
+
+  body
+    include ../_template/screenblock.pug
+
+    #wrap
+      header.nav-down
+        #hdr-main
+          include ../_template/hdr-page-notyet.pug
+      = '\n'
+
+      main#container
+        #box_short
+          #box_shortmain
+            #short_left.bg_tree
+              h3 申請會員
+              p Signup
+            #short_right
+              .main_info
+                
+              input.mybtn.btn_send.btn-l(type='button', value='申請會員 Signup', onclick="location.href='collection/search-results.html'")
+    = '\n'
+    footer
+        include ../_template/foot.pug
+  = '\n'
+
+  //- script區塊
+  script(src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/jquery-migrate/dist/jquery-migrate.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/loadjs/dist/loadjs.umd.min.js")
+  script(src="js/script.js")

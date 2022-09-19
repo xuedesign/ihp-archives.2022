@@ -68,6 +68,7 @@ image{border:0}
 .clean{ clear:both}
 .hidden{ visibility:hidden;}
 .txt_small{font-size: 1.8rem}
+.text_center{ text-align: center}
 
 /*頁面反白設定*/
 ::selection { background: #3A4F5F; color: #EFDFC5}
@@ -382,8 +383,8 @@ h1 a{
 .foot-right a:visited,
 .mytable a,
 .mytable a:visited,
-#short_right a,
-#short_right a:visited{
+.main_info a,
+.main_info a:visited{
   color: #C18E7F;
   text-decoration:none
 }
@@ -394,7 +395,7 @@ h1 a{
 .foot-left a:hover,
 .foot-right a:hover,
 .mytable a:hover,
-#short_right a:hover{
+.main_info a:hover{
   color: #713429;
   text-decoration:none;
   cursor: pointer;

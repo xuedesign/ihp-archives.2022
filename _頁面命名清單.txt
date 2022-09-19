@@ -1,3 +1,4 @@
+資料庫使用規範 terms-of-use
 首頁 index
 
 館藏 collection
@@ -13,7 +14,6 @@
 	檔案詳目（影片）file-details3
 
 會員 user
-	資料庫使用規範 terms-of-use
 	登入 signin
 	忘記密碼 forget-pwd
 	重設密碼 reset-pwd

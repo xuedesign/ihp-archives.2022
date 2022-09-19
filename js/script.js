@@ -29,6 +29,9 @@ loadjs(['https://ihparchives.pages.dev/css/flexslider.css','https://cdn.jsdelivr
       });
 });
 
+//login
+loadjs('https://xuedesign.github.io/ihp-archives.2022/js/login.js');
+
 //lightgallery
 loadjs(['https://ihparchives.pages.dev/css/viewer.css','https://cdn.jsdelivr.net/npm/viewerjs@1.10.5/dist/viewer.min.js'],function() {
     var viewer = new Viewer(document.getElementById('viewer'));

@@ -1,0 +1,46 @@
+doctype html
+html(lang="zh-Hant-TW")
+  head
+    include _template/head.pug
+    title 資料庫使用規範-館藏資料庫|中央研院歷史語言研究所檔案館
+    link(rel="stylesheet" href="css/xueMain.css")
+  = '\n'
+
+  body
+    include _template/screenblock.pug
+
+    #wrap
+      header.nav-down
+        #hdr-main
+          h1
+            a(href="#" title="回首頁") 史語所檔案館館藏資料庫
+      = '\n'
+
+      main#container
+        #box_short
+          #box_shortmain
+            #short_left.bg_tree
+              h3 資料庫版權頁聲明
+              p Terms of use
+            #short_right
+              .main_info
+                p 歡迎進入史語所檔案館館藏資料庫
+                ul
+                  li 本館館藏資料可供個人、學術研究與非商業目的使用，請遵守本所檔案閱覽、調閱與複印規則，以及檔案法、著作權法與個人資訊管理法等現行法律規範。引用時，請註明出處。
+                  li 請勿擅自重製、改作、編輯、出版或公開傳輸本館館藏檔案。使用者若有違反規定，本館有權暫停或終止相關服務。
+                  li 本資料庫登錄的個人訊息僅作管理與提升服務上之利用。
+                  li 若有任何使用上的疑慮，請隨時與我們聯繫：
+                    br
+                    a(href="mailto:archives@mail.ihp.sinica.edu.tw") archives@mail.ihp.sinica.edu.tw
+                p 同意上述規範，請按「同意」進入資料庫。
+              a.mybtn.btn-l.btn_active(href="index.html") 同意 Yes, I Agree
+    = '\n'
+    footer
+        include _template/foot.pug
+  = '\n'
+
+  //- script區塊
+  script(src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/jquery-migrate/dist/jquery-migrate.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/loadjs/dist/loadjs.umd.min.js")
+  script(src="js/script.js")
