@@ -98,7 +98,11 @@
     font-size:2rem;
     font-weight: 400;
     letter-spacing: 1px;
-    width: 120px;
+    /* width: 120px; */
+    width: 17.5%;
+}
+.tabs__content label{
+    vertical-align: middle;
 }
 .formbtn{
     display: block;

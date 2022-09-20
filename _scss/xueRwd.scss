@@ -67,9 +67,9 @@
         bottom: 22%;
         left: 11%;
     }
-    #footer_main{
+    /* #footer_main{
         width: 98%;
-    }
+    } */
 }
 @media (max-width:1300px) {
     #main-nav{
@@ -78,8 +78,11 @@
     .formbtn .mybtn{
         margin: 25px 8px}
     #box_tabs{
-        width: 760px;
+        width: 800px;
         margin:30px 0 30px 38%;
+    }
+    #box_tabs2{
+        width: 850px;
     }
     /* .formbtn .mybtn:nth-child(1){
         margin: 20px 20px 20px 50px} */
