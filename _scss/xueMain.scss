@@ -69,6 +69,7 @@ image{border:0}
 .hidden{ visibility:hidden;}
 .txt_small{font-size: 1.8rem}
 .text_center{ text-align: center}
+.text_right{ text-align: right}
 
 /*頁面反白設定*/
 ::selection { background: #3A4F5F; color: #EFDFC5}
@@ -201,7 +202,7 @@ footer{
 #box_shortmain{
   display:flex;
   flex-wrap: wrap;
-  width: 60%;
+  width: 70%;
   min-height:580px;
   background-color:#fff;
   border-radius: 20px;

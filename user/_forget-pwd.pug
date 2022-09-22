@@ -2,7 +2,7 @@ doctype html
 html(lang="zh-Hant-TW")
   head
     include ../_template/head-page.pug
-    title 會員登入-館藏資料庫|中央研院歷史語言研究所檔案館
+    title 忘記密碼-館藏資料庫|中央研院歷史語言研究所檔案館
     link(rel="stylesheet" href="../css/xueMain.css")
   = '\n'
 
@@ -19,32 +19,20 @@ html(lang="zh-Hant-TW")
         #box_short
           #box_shortmain
             #short_left.bg_tree
-              h3 會員登入
-              p Signin
+              h3 忘記密碼
+              p Forget Password
             #short_right
               .main_info
-                p.text_center 請先登入會員，再繼續查閱瀏覽藏品詳目與數位影像。
-                  br
-                  | hahahahahhahahhahahahahh
-                p.text_center 還不是會員？立即
-                  a(href="signup.html" title="申請會員") 申請會員
+                p.text_center 請輸入你的電子郵件地址，將傳送確認信以重新設定密碼。
                   br
                   | hahahahahhahahhahahahahh
                 = '\n'
                 form(action='#', method='post')
                   .textinput
                     input#name(type="email" value="")
-                    label(for="name") 帳號#[span Email]
-                  .textinput
-                    input#password.pass(type="password" value="")
-                    label(for="password") 密碼#[span Password]
-                    .pass-view
-                      i.fa-regular.fa-eye-slash
-                      i.fa-regular.fa-eye(style="display: none;")
+                    label(for="name") 電子信箱#[span Email]
                 = '\n'
-                p.text_right
-                 a(href="forget-pwd.html" title="忘記密碼") 忘記密碼?
-                input.mybtn.btn_send.btn-l(type='button', value='登入 Signin', onclick="location.href='../collection/file-details.html'")
+                input.mybtn.btn_send.btn-l(type='button', value='送出 Send', onclick="location.href='../user/reset-pwd.html'")
     = '\n'
     footer
         include ../_template/foot.pug

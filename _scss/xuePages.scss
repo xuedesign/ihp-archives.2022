@@ -758,9 +758,6 @@ dialog[open],
 #short_right{
     font-size: 1.7rem;
 }
-#short_right p{
-    margin-bottom: 10px;
-}
 #short_right ul{
     display: block;
     padding: 20px 0 20px 50px;
@@ -772,4 +769,70 @@ dialog[open],
 }
 #short_right .mybtn{
     margin: 60px auto 30px auto;
+}
+.main_info p{
+    display: block;
+    width: 95%;
+    margin-bottom: 10px;
+}
+.textinput{
+    position: relative;
+    width: 90%;
+    height: 50px;
+    margin: 4rem auto;
+    border-bottom: 2px solid #ADADAD;
+}
+.textinput input,
+.textinput label {
+    position: absolute;
+    left: 0;
+    width: 80%;
+    cursor: text;
+    font-family: "Noto Sans TC", "Microsoft JhengHei","PingFangTC-Regular", "Arial", "Helvetica", sans-serif;
+    font-weight:400;
+    font-size: 2rem;
+    color:#3A4F5F;
+    text-align: left;
+    padding: 1rem 1% 0.15rem 1%;
+    transition: all 0.15s ease
+}
+
+.textinput input {
+    border:none
+}
+
+.textinput label {
+    color: #3E3E3E;
+    letter-spacing: 2px;
+    padding: 0.5rem 1%;
+}
+.textinput label span{
+    letter-spacing: 0;
+    padding: 0 5px;
+    font-size: 1.6rem
+}
+.textinput input:focus{ outline: none}
+.textinput input.filled ~ label,
+.textinput input:focus ~ label,
+.textinput input.filled ~ label span,
+.textinput input:focus ~ label span{
+    position: absolute;
+    font-size: 1.8rem;
+    color:#909090}
+.textinput input.filled ~ label,
+.textinput input:focus ~ label{
+    top:-20px;}
+.pass-view{
+    position:absolute;
+    top:13px;
+    right:10px;
+    background-color:#fff;
+    border-color: #fff;
+}
+.pass-view:hover{
+    cursor: pointer;
+}
+.pass-view i{
+    font-size:2rem;
+    color: #3e3e3e
 }
