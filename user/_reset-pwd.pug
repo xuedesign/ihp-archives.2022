@@ -29,19 +29,19 @@ html(lang="zh-Hant-TW")
                 = '\n'
                 form(action='#', method='post')
                   .textinput
-                    input#newpassword.pass(type="password" value="")
+                    input#newpassword.pass(type="password" value="" placeholder="設定8碼以上密碼，且混合大小寫英文字母、數字")
                     label(for="newpassword") 新密碼#[span New Password]
                     .pass-view
                       i.fa-regular.fa-eye-slash
                       i.fa-regular.fa-eye(style="display: none;")
                   .textinput
-                    input#confirmpassword.pass(type="password"  value="")
+                    input#confirmpassword.pass(type="password"  value="" placeholder="請再次輸入密碼")
                     label(for="confirmpassword") 確認新密碼#[span Confirm Password]
                     .pass-view
                       i.fa-regular.fa-eye-slash
                       i.fa-regular.fa-eye(style="display: none;")
                 = '\n'
-                input.mybtn.btn_send.btn-l(type='button', value='送出 Send', onclick="location.href='../user/reset-pwd.html'")
+                input.mybtn.btn_send.btn-l(type='button', value='儲存 Save', onclick="location.href='../user/signin.html'")
     = '\n'
     footer
         include ../_template/foot.pug

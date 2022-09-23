@@ -70,6 +70,10 @@ image{border:0}
 .txt_small{font-size: 1.8rem}
 .text_center{ text-align: center}
 .text_right{ text-align: right}
+.mg-bottom{ margin-bottom: 40px}
+.bod-bottom{ 
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ADADAD;}
 
 /*頁面反白設定*/
 ::selection { background: #3A4F5F; color: #EFDFC5}
@@ -461,6 +465,8 @@ h1 a{
   background:#f4f4f4;
   color:#435664
 }
+.btn-xl{
+  width: 220px}
 .btn-l{
   width: 173px}
 .btn-m{

@@ -2,7 +2,7 @@ doctype html
 html(lang="zh-Hant-TW")
   head
     include ../_template/head-page.pug
-    title 忘記密碼-館藏資料庫|中央研院歷史語言研究所檔案館
+    title 申請會員-館藏資料庫|中央研院歷史語言研究所檔案館
     link(rel="stylesheet" href="../css/xueMain.css")
   = '\n'
 
@@ -12,27 +12,25 @@ html(lang="zh-Hant-TW")
     #wrap
       header.nav-down
         #hdr-main
-          include ../_template/hdr-page.pug
+          include ../_template/hdr-page-notyet.pug
       = '\n'
 
       main#container
         #box_short
           #box_shortmain
             #short_left.bg_tree
-              h3 忘記密碼
-              p Forget Password
+              h3 申請會員
+              p Sign Up
             #short_right
               .main_info
-                p.text_center 請輸入你的電子郵件地址，將傳送確認信以重新設定密碼。
+                h4.text_center.mg-bottom.bod-bottom 申請完成！
+                p.text_center
+                  |會員認證信己寄出，請至 xxxx@gmail.com 信箱中確認。
                   br
-                  | hahahahahhahahhahahahahh
+                  |若沒收到認證信，請再與網站管理員聯絡。
+
                 = '\n'
-                form(action='#', method='post')
-                  .textinput
-                    input#name(type="email" value="" placeholder="請輸入已註冊的Email")
-                    label(for="name") 電子信箱#[span Email]
-                = '\n'
-                input.mybtn.btn_send.btn-l(type='button', value='送出 Send', onclick="location.href='../user/reset-pwd.html'")
+                input.mybtn.btn_send.btn-xl(type='button', value='返回首頁 Back Home', onclick="location.href='../index.html'")
     = '\n'
     footer
         include ../_template/foot.pug

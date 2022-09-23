@@ -20,11 +20,46 @@ html(lang="zh-Hant-TW")
           #box_shortmain
             #short_left.bg_tree
               h3 申請會員
-              p Signup
+              p Sign Up
             #short_right
               .main_info
-                
-              input.mybtn.btn_send.btn-l(type='button', value='申請會員 Signup', onclick="location.href='collection/search-results.html'")
+                p.text_center 已經註冊過會員？
+                  a(href="signin.html" title="會員登入") 會員登入
+                  br
+                  | hahahahahhahahhahahahahh
+                = '\n'
+                form(action='#', method='post')
+                  h4 一、帳號設定：
+                  .textinput
+                    input#email(type="email" value="" placeholder="寄送認證信用，請填寫正確")
+                    label(for="email") 帳號#[span Email]
+                  .textinput
+                    input#password.pass(type="password" value="" placeholder="設定8碼以上密碼，且混合大小寫英文字母、數字")
+                    label(for="password") 密碼#[span Password]
+                    .pass-view
+                      i.fa-regular.fa-eye-slash
+                      i.fa-regular.fa-eye(style="display: none;")
+                  .textinput
+                    input#confirmpassword.pass(type="password"  value="" placeholder="請再次輸入密碼")
+                    label(for="confirmpassword") 確認密碼#[span Confirm Password]
+                    .pass-view
+                      i.fa-regular.fa-eye-slash
+                      i.fa-regular.fa-eye(style="display: none;")
+                  h4 二、會員資料：
+                  .textinput
+                    input#name(type="email" value="" placeholder="請輸入姓名")
+                    label(for="name") 姓名#[span Name]
+                  .textinput
+                    input#phone(type="phone" value="" placeholder="請輸入聯絡電話")
+                    label(for="phone") 電話#[span Phone Number]
+                  .textinput
+                    input#unit(type="text" value="" placeholder="請輸入單位名稱")
+                    label(for="unit") 所屬單位#[span Unit]
+                  .textinput
+                    input#title(type="text" value="" placeholder="請輸入職稱")
+                    label(for="title") 職稱#[span Title]
+                = '\n'
+                input.mybtn.btn_send.btn-l(type='button', value='申請會員 Sign Up', onclick="location.href='../user/signup-success.html'")
     = '\n'
     footer
         include ../_template/foot.pug
@@ -34,4 +69,4 @@ html(lang="zh-Hant-TW")
   script(src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js")
   script(src="https://cdn.jsdelivr.net/npm/jquery-migrate/dist/jquery-migrate.min.js")
   script(src="https://cdn.jsdelivr.net/npm/loadjs/dist/loadjs.umd.min.js")
-  script(src="js/script.js")
+  script(src="../js/script.js")

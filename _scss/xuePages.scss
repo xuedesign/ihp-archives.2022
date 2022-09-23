@@ -775,12 +775,20 @@ dialog[open],
     width: 95%;
     margin-bottom: 10px;
 }
+.main_info h4{
+    font-family: "Noto Serif TC";
+    font-weight:700;
+    font-size: 2.3rem;
+    line-height:1.5rem;
+    color:#435664;
+    padding-top:30px
+}
 .textinput{
     position: relative;
     width: 90%;
     height: 50px;
     margin: 4rem auto;
-    border-bottom: 2px solid #ADADAD;
+    border-bottom: 1px solid #ADADAD;
 }
 .textinput input,
 .textinput label {
@@ -796,11 +804,9 @@ dialog[open],
     padding: 1rem 1% 0.15rem 1%;
     transition: all 0.15s ease
 }
-
 .textinput input {
     border:none
 }
-
 .textinput label {
     color: #3E3E3E;
     letter-spacing: 2px;
@@ -811,6 +817,11 @@ dialog[open],
     padding: 0 5px;
     font-size: 1.6rem
 }
+.textinput ::placeholder{
+    text-indent: -500px;
+    transition: all 0.5s ease
+}
+
 .textinput input:focus{ outline: none}
 .textinput input.filled ~ label,
 .textinput input:focus ~ label,
@@ -822,6 +833,12 @@ dialog[open],
 .textinput input.filled ~ label,
 .textinput input:focus ~ label{
     top:-20px;}
+.textinput input.filled::placeholder,
+.textinput input:focus::placeholder{
+    font-size: 1.6rem;
+    color:#ababab;
+    text-indent: 0;
+}
 .pass-view{
     position:absolute;
     top:13px;

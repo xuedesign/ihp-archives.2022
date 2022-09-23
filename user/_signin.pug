@@ -20,7 +20,7 @@ html(lang="zh-Hant-TW")
           #box_shortmain
             #short_left.bg_tree
               h3 會員登入
-              p Signin
+              p Sign In
             #short_right
               .main_info
                 p.text_center 請先登入會員，再繼續查閱瀏覽藏品詳目與數位影像。
@@ -33,10 +33,10 @@ html(lang="zh-Hant-TW")
                 = '\n'
                 form(action='#', method='post')
                   .textinput
-                    input#name(type="email" value="")
+                    input#name(type="email" value="" placeholder="請輸入已註冊的Email")
                     label(for="name") 帳號#[span Email]
                   .textinput
-                    input#password.pass(type="password" value="")
+                    input#password.pass(type="password" value="" placeholder="請輸入密碼")
                     label(for="password") 密碼#[span Password]
                     .pass-view
                       i.fa-regular.fa-eye-slash
@@ -44,7 +44,7 @@ html(lang="zh-Hant-TW")
                 = '\n'
                 p.text_right
                  a(href="forget-pwd.html" title="忘記密碼") 忘記密碼?
-                input.mybtn.btn_send.btn-l(type='button', value='登入 Signin', onclick="location.href='../collection/file-details.html'")
+                input.mybtn.btn_send.btn-l(type='button', value='登入 Sign In', onclick="location.href='../collection/file-details.html'")
     = '\n'
     footer
         include ../_template/foot.pug

@@ -74,11 +74,49 @@
           <div id="box_shortmain">
             <div class="bg_tree" id="short_left">
               <h3>申請會員</h3>
-              <p>Signup</p>
+              <p>Sign Up</p>
             </div>
             <div id="short_right">
-              <div class="main_info"></div>
-              <input class="mybtn btn_send btn-l" type="button" value="申請會員 Signup" onclick="location.href='collection/search-results.html'">
+              <div class="main_info">
+                <p class="text_center">已經註冊過會員？<a href="signin.html" title="會員登入">會員登入</a><br>hahahahahhahahhahahahahh</p>
+
+                <form action="#" method="post">
+                  <h4>一、帳號設定：</h4>
+                  <div class="textinput">
+                    <input id="email" type="email" value="" placeholder="寄送認證信用，請填寫正確">
+                    <label for="email">帳號<span>Email</span></label>
+                  </div>
+                  <div class="textinput">
+                    <input class="pass" id="password" type="password" value="" placeholder="設定8碼以上密碼，且混合大小寫英文字母、數字">
+                    <label for="password">密碼<span>Password</span></label>
+                    <div class="pass-view"><i class="fa-regular fa-eye-slash"></i><i class="fa-regular fa-eye" style="display: none;"></i></div>
+                  </div>
+                  <div class="textinput">
+                    <input class="pass" id="confirmpassword" type="password" value="" placeholder="請再次輸入密碼">
+                    <label for="confirmpassword">確認密碼<span>Confirm Password</span></label>
+                    <div class="pass-view"><i class="fa-regular fa-eye-slash"></i><i class="fa-regular fa-eye" style="display: none;"></i></div>
+                  </div>
+                  <h4>二、會員資料：</h4>
+                  <div class="textinput">
+                    <input id="name" type="email" value="" placeholder="請輸入姓名">
+                    <label for="name">姓名<span>Name</span></label>
+                  </div>
+                  <div class="textinput">
+                    <input id="phone" type="phone" value="" placeholder="請輸入聯絡電話">
+                    <label for="phone">電話<span>Phone Number</span></label>
+                  </div>
+                  <div class="textinput">
+                    <input id="unit" type="text" value="" placeholder="請輸入單位名稱">
+                    <label for="unit">所屬單位<span>Unit</span></label>
+                  </div>
+                  <div class="textinput">
+                    <input id="title" type="text" value="" placeholder="請輸入職稱">
+                    <label for="title">職稱<span>Title</span></label>
+                  </div>
+                </form>
+
+                <input class="mybtn btn_send btn-l" type="button" value="申請會員 Sign Up" onclick="location.href='../user/signup-success.html'">
+              </div>
             </div>
           </div>
         </div>
@@ -95,5 +133,5 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-migrate/dist/jquery-migrate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/loadjs/dist/loadjs.umd.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 </html>
