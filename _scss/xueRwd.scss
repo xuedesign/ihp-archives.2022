@@ -43,9 +43,9 @@
     .mybtn{
         font-size: 1.65rem
     }
-    .mybtn{
+    /* .mybtn{
         padding: 5px;
-    }
+    } */
     .bgIndex{
         background: url(../images/bg_index-1.png) no-repeat;
         background-position: 0 30px;
@@ -60,6 +60,15 @@
     }
     #box_shortmain{
         width:80%
+    }
+    .editinput label{
+        min-width: 30%;
+    }
+    .editinput input{
+        min-width: 68%
+    }
+    #pagemain .pass-view{
+        right:50px;
     }
 }
 @media (max-width:1400px) {

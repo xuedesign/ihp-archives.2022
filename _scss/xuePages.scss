@@ -783,6 +783,9 @@ dialog[open],
     color:#435664;
     padding-top:30px
 }
+.main_info .mybtn{
+    margin: 20px auto 10px auto;
+}
 .textinput{
     position: relative;
     width: 90%;
@@ -846,6 +849,13 @@ dialog[open],
     background-color:#fff;
     border-color: #fff;
 }
+#pagemain .pass-view{
+    position:absolute;
+    top:45px;
+    right:100px;
+    background-color:none;
+    border-color: none;
+}
 .pass-view:hover{
     cursor: pointer;
 }
@@ -853,3 +863,34 @@ dialog[open],
     font-size:2rem;
     color: #3e3e3e
 }
+
+.editinput{
+    display: block;
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid #ADADAD;
+}
+.editinput input,
+.editinput label{
+    font-family: "Noto Sans TC", "Microsoft JhengHei","PingFangTC-Regular", "Arial", "Helvetica", sans-serif;
+    font-weight:400;
+    font-size: 2rem;
+    color:#3A4F5F;
+    text-align: left;
+    vertical-align: middle;
+}
+.editinput label{
+    display:inline-block;
+    min-width: 23%;
+    padding-top: 1rem;
+}
+.editinput input{
+    display:inline-block;
+    min-width: 72%;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+}
+.editinput input:focus{
+    outline: 2px solid #3A4F5F;
+    /* background:#ededed */}

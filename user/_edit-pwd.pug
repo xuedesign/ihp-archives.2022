@@ -1,0 +1,74 @@
+doctype html
+html(lang="zh-Hant-TW")
+  head
+    include ../_template/head-page.pug
+    title 修改密碼-館藏資料庫|中央研院歷史語言研究所檔案館
+    link(rel="stylesheet" href="../css/xueMain.css")
+  = '\n'
+
+  body
+    include ../_template/screenblock.pug
+
+    #wrap
+      header.nav-down
+        #hdr-main
+          include ../_template/hdr-page.pug
+      = '\n'
+
+      main#container-page
+        #bar_title
+          .left_title
+            h2 會員設定
+        = '\n'
+
+        aside#aside
+          #box_subnav.subnav-01
+              ul
+                //切換到該類別，增加.nowin
+                li
+                  a(href='../user/edit-profiles.html', title='編輯會員資料') 編輯會員資料
+                li
+                  a.nowin(href='../user/edit-pwd.html', title='修改密碼') 修改密碼
+          = '\n'
+
+        section#pagemain
+          h3 修改密碼
+          .main_info
+            form(action='#', method='post')
+              .editinput
+                label(for="oldpassword") 舊密碼
+                  br
+                  |#[span Old Password]
+                input#oldpassword.pass(type="password" value="" placeholder="請輸入原本的密碼")
+                .pass-view
+                  i.fa-regular.fa-eye-slash
+                  i.fa-regular.fa-eye(style="display: none;")
+              .editinput
+                label(for="newpassword") 新密碼
+                  br
+                  |#[span New Password]
+                input#newpassword.pass(type="password" value="" placeholder="設定8碼以上密碼，且混合大小寫英文字母、數字")
+                .pass-view
+                  i.fa-regular.fa-eye-slash
+                  i.fa-regular.fa-eye(style="display: none;")
+              .editinput
+                label(for="confirmpassword") 確認新密碼
+                  br
+                  |#[span Confirm New Password]
+                input#confirmpassword.pass(type="password" value="" placeholder="請再次輸入新密碼")
+                .pass-view
+                  i.fa-regular.fa-eye-slash
+                  i.fa-regular.fa-eye(style="display: none;")
+            = '\n'
+            input.mybtn.btn_send.btn-l(type='button', value='儲存修改')
+
+    = '\n'
+    footer
+        include ../_template/foot.pug
+  = '\n'
+
+  //- script區塊
+  script(src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/jquery-migrate/dist/jquery-migrate.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/loadjs/dist/loadjs.umd.min.js")
+  script(src="../js/script.js")
