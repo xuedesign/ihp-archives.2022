@@ -244,8 +244,8 @@
 .subnav-03 li{
     position: relative;
 }
-.subnav-01 .nowin,
-.subnav-03 .nowin{
+.subnav-01 a.nowin,
+.subnav-03 a.nowin{
     color: #713429;
     font-weight: 500;
 }
@@ -894,3 +894,13 @@ dialog[open],
 .editinput input:focus{
     outline: 2px solid #3A4F5F;
     /* background:#ededed */}
+.pwd-set{ margin-bottom: 10rem;}
+.pwd-rule{
+    display: block;
+    position:absolute;
+    bottom: -70px;
+    font-size:1.6rem;
+    line-height: 2.2rem;
+    color:#77a6c5;
+    padding: 0 5px;
+}
