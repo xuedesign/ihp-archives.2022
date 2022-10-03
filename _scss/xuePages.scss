@@ -821,6 +821,8 @@ dialog[open],
     font-size: 1.6rem
 }
 .textinput ::placeholder{
+    display: none;
+    font-size:0;
     text-indent: -500px;
     transition: all 0.5s ease
 }
@@ -838,6 +840,7 @@ dialog[open],
     top:-20px;}
 .textinput input.filled::placeholder,
 .textinput input:focus::placeholder{
+    display: block;
     font-size: 1.6rem;
     color:#ababab;
     text-indent: 0;
