@@ -755,6 +755,38 @@ dialog[open],
     color:#435664;
     margin-left: 33px;
 }
+.bg_god{
+    display: block;
+    width: 100%;
+    background:url(../images/bg_god.jpg) no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    background-color: #d4cbb1;
+    padding-top: 30px;
+}
+.bg_god h3{
+    font-family: "Noto Serif TC";
+    font-weight:700;
+    font-size: 3.3rem;
+    color:#ffffff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(42, 42, 41, 0.8);
+    background:#3A4F5F;
+    width:80%;
+    border-radius:0 50px 50px 0;
+    padding-bottom: 8px;
+}
+.bg_god h3::before{
+    content: url(../images/pot_brownbox.svg);
+    vertical-align: 6px;
+    margin-right: 13px;
+}
+.bg_god p{
+    font-size: 1.8rem;
+    color:#3A4F5F;
+    text-shadow: 0 2px 20px rgba(255, 255, 255, 1);
+    margin-left: 33px;
+}
 #short_right{
     font-size: 1.7rem;
 }
