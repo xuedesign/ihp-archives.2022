@@ -45,12 +45,30 @@
     /* border:1px solid #ccc; */
 }
 #box_tabs{
-    width: 790px;
-    margin:30px 0 30px 40%;
+    /* width: 790px; */
+    /* margin:30px 0 30px 40%; */
+    min-height: 400px;
 }
 #box_tabs2{
     width: 790px;
     margin:30px auto;
+}
+.search_index{
+    width: 58%;
+    height: 15%;
+    /* border:1px solid #ccc; */
+    background: linear-gradient(180.04deg, #FFFFFF -32.26%, rgba(255, 255, 255, 0) 99.96%);
+    border-top: 3px solid #FFFFFF;
+    filter: drop-shadow(0px 1.85185px 3.14815px rgba(115, 112, 112, 0.0168519));
+    border-radius: 20px;
+    margin-top: 100px;
+    padding: 30px 20px 0;
+}
+.search_index h3,
+.search_index li li{
+    font-family: "Noto Serif TC";
+    font-size: 1.8rem;
+    line-height: 2.8rem;
 }
 .tabs__label{
     margin-right: 20px;
@@ -79,29 +97,39 @@
 }
 .tabs__content h3,
 .fruits_container,
-.fruits_container li{
+.fruits_container li,
+.search_index h3,
+.search_index li li{
     display: inline-block;
 }
-.tabs__content ul{
+.tabs__content ul,
+.search_index ul{
     padding: 20px 20px 0;
 }
-.tabs__content ul ul{
+.tabs__content ul ul,
+.search_index ul ul{
     padding: 0
 }
-.tabs__content li{
+.tabs__content li,
+.search_index li{
     padding-bottom: 15px;
 }
 .tabs__content li li{
     padding-bottom: 0;
 }
-.tabs__content h3{
+.search_index li li{
+    padding-bottom: 15px;
+}
+.tabs__content h3,
+.search_index h3{
     font-size:2rem;
     font-weight: 400;
     letter-spacing: 1px;
     /* width: 120px; */
     width: 17.5%;
 }
-.tabs__content label{
+.tabs__content label,
+.search_index label{
     vertical-align: middle;
 }
 .formbtn{
@@ -768,7 +796,7 @@ dialog[open],
     font-family: "Noto Serif TC";
     font-weight:700;
     font-size: 3.3rem;
-    color:#ffffff;
+    color:#EFDFC5;
     letter-spacing: 1px;
     text-shadow: 0 0 10px rgba(42, 42, 41, 0.8);
     background:#3A4F5F;
@@ -783,8 +811,9 @@ dialog[open],
 }
 .bg_god p{
     font-size: 1.8rem;
+    font-weight: 500;
     color:#3A4F5F;
-    text-shadow: 0 2px 20px rgba(255, 255, 255, 1);
+    text-shadow: 5px 5px 20px rgb(255, 255, 255);
     margin-left: 33px;
 }
 #short_right{

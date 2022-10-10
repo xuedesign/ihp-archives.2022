@@ -7,8 +7,6 @@ html(lang="zh-Hant-TW")
   = '\n'
 
   body
-    include _template/screenblock.pug
-
     #wrap.bgIndex
       header.nav-down
         #hdr-main
@@ -17,9 +15,7 @@ html(lang="zh-Hant-TW")
 
       main#container
         #box_tabs
-          input#tab1.tabs__radio(type='radio', name='tabs-example',checked)
-          label.tabs__label.mybtn.btn-m(for='tab1') 簡易搜尋
-          .tabs__content
+          .search_index
             form(action='#', method='post')
               ul
                 li
@@ -40,102 +36,9 @@ html(lang="zh-Hant-TW")
                 li
                   h3 不限欄位：
                   input#anytext.myinput.inputLong(name='anytext', type='text', title='不限欄位')
-                li
-                  h3 檔號：
-                  input#filenumber.myinput.inputLong(name='filenumber', type='text', title='檔號')
-                li
-                  h3 題名：
-                  input#filetitle.myinput.inputLong(name='filetitle', type='text', title='題名')
-                li
-                  h3 關鍵字：
-                  input#keyword.myinput.inputLong(name='keyword', type='text', title='關鍵字')
-                li
-                  h3 摘要：
-                  input#summary.myinput.inputLong(name='summary', type='text', title='摘要')
-                li
-                  h3 日期：
-                  input#date1.myinput.inputMid(name='date1', type='month', title='日期')
-                  span(style='padding:0 14px') ~
-                  input#date2.myinput.inputMid(name='date2', type='month', title='日期')
               .formbtn
                 input.mybtn.btn_reset.btn-m(type='reset', value='清除重填')
                 input.mybtn.btn_send.btn-m(type='button', value='送出查詢', onclick="location.href='collection/search-results.html'")
-          = '\n'
-
-          input#tab2.tabs__radio(type='radio', name='tabs-example')
-          label.tabs__label.mybtn.btn-m(for='tab2') 進階搜尋
-          .tabs__content
-            form(action='#', method='post')
-              ul
-                li
-                  h3 檔案類型：
-                  ul.fruits_container
-                    li
-                      input#sd-01(type='checkbox', name='sb2', value='史語所行政檔案')
-                      label(for='sd-01') 史語所行政檔案
-                    li
-                      input#sd-02(type='checkbox', name='sb2', value='史語所研究員檔案')
-                      label(for='sd-02') 史語所研究員檔案
-                    li
-                      input#sd-03(type='checkbox', name='sb2', value='徵集檔案')
-                      label(for='sd-03') 徵集檔案
-                    li
-                      input#sd-04(type='checkbox', name='sb2', value='影音檔案')
-                      label(for='sd-04') 影音檔案
-                li
-                  h3 不限欄位：
-                  input#anytext.myinput.inputLong(name='anytext', type='text', title='不限欄位')
-                li
-                  select.myinput(name='xxx')
-                    option(value='AND', selected='') AND
-                    option(value='OR') OR
-                    option(value='NOT') NOT
-                  input.myinput.inputMid2(type='text', name='xxxx')
-                  span(style='padding:0 10px') @
-                  select.myinput(name='xxxs')
-                    option(value='', selected='all') 所有欄位
-                    option(value='file number') 檔號
-                    option(value='filetitle') 題名
-                    option(value='keyword') 關鍵字
-                    option(value='summary') 摘要
-                    option(value='date') 日期
-                li
-                  select.myinput(name='xxx')
-                    option(value='AND', selected='') AND
-                    option(value='OR') OR
-                    option(value='NOT') NOT
-                  input.myinput.inputMid2(type='text', name='xxxx')
-                  span(style='padding:0 10px') @
-                  select.myinput(name='xxxs')
-                    option(value='', selected='all') 所有欄位
-                    option(value='file number') 檔號
-                    option(value='filetitle') 題名
-                    option(value='keyword') 關鍵字
-                    option(value='summary') 摘要
-                    option(value='date') 日期
-                li
-                  select.myinput(name='xxx')
-                    option(value='AND', selected='') AND
-                    option(value='OR') OR
-                    option(value='NOT') NOT
-                  input.myinput.inputMid2(type='text', name='xxxx')
-                  span(style='padding:0 10px') @
-                  select.myinput(name='xxxs')
-                    option(value='', selected='all') 所有欄位
-                    option(value='file number') 檔號
-                    option(value='filetitle') 題名
-                    option(value='keyword') 關鍵字
-                    option(value='summary') 摘要
-                    option(value='date') 日期
-                li
-                  input#dd-01(type='checkbox', name='sb', value='異體字')
-                  label(for='dd-01') 異體字（例如：煙=烟）
-                li
-                  input#dd-02(type='checkbox', name='sb', value='異體字')
-                  label(for='dd-02') 同義詞（例如：傅斯年=孟真）
-              .formbtn
-                  input.mybtn.btn_reset.btn-m(type='reset', value='清除重填')
-                  input.mybtn.btn_send.btn-m(type='button', value='送出查詢', onclick="location.href='collection/search-results.html'")
         = '\n'
         #box_links
           h2 檔案類型

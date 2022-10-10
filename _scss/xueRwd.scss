@@ -46,10 +46,10 @@
     /* .mybtn{
         padding: 5px;
     } */
-    .bgIndex{
+    /* .bgIndex{
         background: url(../images/bg_index-1.png) no-repeat;
         background-position: 0 30px;
-    }
+    } */
     #box_links{
         margin-top: 60px;
     }
@@ -79,6 +79,9 @@
     /* #footer_main{
         width: 98%;
     } */
+    .search_index{
+        width: 68%;
+    }
 }
 @media (max-width:1300px) {
     #main-nav{
@@ -86,12 +89,17 @@
     }
     .formbtn .mybtn{
         margin: 25px 8px}
-    #box_tabs{
+    /* #box_tabs{
         width: 800px;
         margin:30px 0 30px 38%;
-    }
+    } */
     #box_tabs2{
         width: 850px;
+    }
+    .search_index{
+        width: 80%;
+        margin: 50px auto 0;
+        background: linear-gradient(180.04deg, #FFFFFF 20%, rgba(255, 255, 255, 0) 99.96%);
     }
     /* .formbtn .mybtn:nth-child(1){
         margin: 20px 20px 20px 50px} */
@@ -118,6 +126,9 @@
     position:fixed;
     top: 0;
     z-index: 999;
+}
+.search_index{
+    width: 90%;
 }
 
 }
