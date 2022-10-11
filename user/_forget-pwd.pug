@@ -7,8 +7,6 @@ html(lang="zh-Hant-TW")
   = '\n'
 
   body
-    include ../_template/screenblock.pug
-
     #wrap
       header.nav-down
         #hdr-main
@@ -24,8 +22,8 @@ html(lang="zh-Hant-TW")
             #short_right
               .main_info
                 p.text_center 請輸入你的電子郵件地址，將傳送確認信以重新設定密碼。
-                  br
-                  | hahahahahhahahhahahahahh
+                  span.text_en2
+                    |Please enter your account email and a verification will be sent to reset your password.
                 = '\n'
                 form(action='#', method='post')
                   .textinput

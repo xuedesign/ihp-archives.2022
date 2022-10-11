@@ -25,17 +25,6 @@
   </head>
 
   <body>
-    <!--#screenblock
-    h1
-      a(href="#") 史語所檔案館館藏資料庫
-    h3 使用注意！
-    p
-      |本館藏資料庫尚不支援
-      br
-      |行動裝置瀏覽查詢，
-      br
-      |如有不便敬請見諒！
-    -->
     <div id="wrap">
       <header class="nav-down">
         <div id="hdr-main">
@@ -85,10 +74,10 @@
             </div>
             <div id="short_right">
               <div class="main_info">
-                <p class="text_center">已經註冊過會員？<a href="signin.html" title="會員登入">會員登入</a><br>hahahahahhahahhahahahahh</p>
+                <p class="text_center">已經註冊過會員？<a href="signin.html" title="會員登入">會員登入</a><span class="text_en2">Already have a registered account? Log in <a href="signin.html" title="Log in">here</a></span></p>
 
                 <form action="#" method="post">
-                  <h4>一、帳號設定：</h4>
+                  <h4>一、帳號設定<span class="text_en3">Account Setup</span></h4>
                   <div class="textinput">
                     <input id="email" type="email" value="" placeholder="寄送認證信用，請填寫正確">
                     <label for="email">帳號<span>Email</span></label>
@@ -97,14 +86,14 @@
                     <input class="pass" id="password" type="password" value="" placeholder="請輸入密碼">
                     <label for="password">密碼<span>Passwords</span></label>
                     <div class="pass-view"><i class="fa-regular fa-eye-slash"></i><i class="fa-regular fa-eye" style="display: none;"></i></div>
-                    <div class="pwd-rule">設定 8 碼以上密碼，且混合大小寫英文字母、數字。<br>Passwords contain a mix of English uppercase, lowercase, numbers, and are longer than 8 characters.</div>
+                    <div class="pwd-rule">請設定 6 碼以上之密碼。<span class="text_en">Passwords are longer than 6 characters.</span></div>
                   </div>
                   <div class="textinput">
                     <input class="pass" id="confirmpassword" type="password" value="" placeholder="請再次輸入密碼">
                     <label for="confirmpassword">確認密碼<span>Confirm Passwords</span></label>
                     <div class="pass-view"><i class="fa-regular fa-eye-slash"></i><i class="fa-regular fa-eye" style="display: none;"></i></div>
                   </div>
-                  <h4>二、會員資料：</h4>
+                  <h4>二、會員資料<span class="text_en3">Account Details</span></h4>
                   <div class="textinput">
                     <input id="name" type="email" value="" placeholder="請輸入姓名">
                     <label for="name">姓名<span>Name</span></label>
@@ -115,11 +104,11 @@
                   </div>
                   <div class="textinput">
                     <input id="unit" type="text" value="" placeholder="請輸入單位名稱">
-                    <label for="unit">所屬單位<span>Unit</span></label>
+                    <label for="unit">所屬單位<span>Affiliated institute</span></label>
                   </div>
                   <div class="textinput">
                     <input id="title" type="text" value="" placeholder="請輸入職稱">
-                    <label for="title">職稱<span>Title</span></label>
+                    <label for="title">職稱<span>Job Title</span></label>
                   </div>
                 </form>
 

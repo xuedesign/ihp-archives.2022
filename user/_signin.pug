@@ -7,8 +7,6 @@ html(lang="zh-Hant-TW")
   = '\n'
 
   body
-    include ../_template/screenblock.pug
-
     #wrap
       header.nav-down
         #hdr-main
@@ -24,12 +22,13 @@ html(lang="zh-Hant-TW")
             #short_right
               .main_info
                 p.text_center 請先登入會員，再繼續查閱瀏覽藏品詳目與數位影像。
-                  br
-                  | hahahahahhahahhahahahahh
+                  span.text_en2
+                    |  Please log in to your account to browse the collections catalogue and digital images.
                 p.text_center 還不是會員？立即
                   a(href="signup.html" title="申請會員") 申請會員
-                  br
-                  | hahahahahhahahhahahahahh
+                  span.text_en2
+                    | Don’t have an account? Apply for one  
+                    a(href="signup.html" title="Apply for one account") here.
                 = '\n'
                 form(action='#', method='post')
                   .textinput
@@ -44,6 +43,9 @@ html(lang="zh-Hant-TW")
                 = '\n'
                 p.text_right
                  a(href="forget-pwd.html" title="忘記密碼") 忘記密碼?
+                 br
+                 a(href="forget-pwd.html" title="Forgot your password?" style="font-size:1.5rem") Forgot your password?
+                = '\n'
                 input.mybtn.btn_send.btn-l(type='button', value='登入 Sign In', onclick="location.href='../collection/file-details.html'")
     = '\n'
     footer

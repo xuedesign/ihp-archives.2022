@@ -7,8 +7,6 @@ html(lang="zh-Hant-TW")
   = '\n'
 
   body
-    include ../_template/screenblock.pug
-
     #wrap
       header.nav-down
         #hdr-main
@@ -24,11 +22,16 @@ html(lang="zh-Hant-TW")
             #short_right
               .main_info
                 h4.text_center.mg-bottom.bod-bottom 申請完成！
+                  span.text_en2(style="padding-top:15px")
+                    | Application Has Been Completed Successfully
                 p.text_center
                   |會員認證信己寄出，請至 xxxx@gmail.com 信箱中確認。
                   br
-                  |若沒收到認證信，請再與網站管理員聯絡。
-
+                  |若沒收到認證信，請再與網站管理員聯絡
+                  span.text_en2
+                    |An account verification has been sent to your login account email. Please confirm at xxxx@gmail.com.
+                    br
+                    |If you have not received an account verification, please contact the website administrator.
                 = '\n'
                 input.mybtn.btn_send.btn-xl(type='button', value='返回首頁 Back Home', onclick="location.href='../index.html'")
     = '\n'

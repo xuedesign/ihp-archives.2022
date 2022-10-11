@@ -7,8 +7,6 @@ html(lang="zh-Hant-TW")
   = '\n'
 
   body
-    include ../_template/screenblock.pug
-
     #wrap
       header.nav-down
         #hdr-main
@@ -51,9 +49,9 @@ html(lang="zh-Hant-TW")
                 .pass-view
                   i.fa-regular.fa-eye-slash
                   i.fa-regular.fa-eye(style="display: none;")
-                .pwd-rule 設定 8 碼以上密碼，且混合大小寫英文字母、數字。
-                  br
-                  |Passwords contain a mix of English uppercase, lowercase, numbers, and are longer than 8 characters.
+                .pwd-rule 請設定 6 碼以上之密碼。
+                  span.text_en
+                    |Passwords are longer than 6 characters.
               .editinput
                 label(for="confirmpassword") 確認新密碼
                   br

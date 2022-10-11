@@ -812,7 +812,7 @@ dialog[open],
 .bg_god p{
     font-size: 1.8rem;
     font-weight: 500;
-    color:#3A4F5F;
+    color:#EFDFC5;
     text-shadow: 5px 5px 20px rgb(255, 255, 255);
     margin-left: 33px;
 }
@@ -822,7 +822,6 @@ dialog[open],
 #short_right ul{
     display: block;
     padding: 20px 0 20px 50px;
-    text-align: justify;
 }
 #short_right li{
     list-style: cjk-ideographic;
@@ -835,6 +834,22 @@ dialog[open],
     display: block;
     width: 95%;
     margin-bottom: 10px;
+}
+#short_right .text_en,
+#short_right .text_en2{
+    display: block;
+    font-size: 1.5rem;
+    padding: 5px 0 10px;
+}
+#short_right .text_en{
+    text-align: left;
+}
+#short_right .text_en2{
+    text-align: center;
+}
+#short_right .text_en3{
+    font-size: 1.8rem;
+    padding-left: 15px;
 }
 .main_info h4{
     font-family: "Noto Serif TC";
@@ -967,4 +982,7 @@ dialog[open],
     line-height: 2.2rem;
     color:#77a6c5;
     padding: 0 5px;
+}
+.pwd-rule span{
+    display: block;
 }
