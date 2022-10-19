@@ -54,9 +54,19 @@ html(lang="zh-Hant-TW")
                   input#summary.myinput.inputLong(name='summary', type='text', title='摘要')
                 li
                   h3 日期：
-                  input#date1.myinput.inputMid(name='date1', type='month', title='日期')
+                  input#year1.myinput.inputSm1(name='year1', type='text', title='年')
+                  span(style='padding:0 8px') 年
+                  input#month1.myinput.inputSm2(name='month1', type='text', title='月')
+                  span(style='padding:0 8px') 月
+                  input#day1.myinput.inputSm2(name='day1', type='text', title='日')
+                  span(style='padding-left:8px') 日
                   span(style='padding:0 14px') ~
-                  input#date2.myinput.inputMid(name='date2', type='month', title='日期')
+                  input#year2.myinput.inputSm1(name='year2', type='text', title='年')
+                  span(style='padding:0 8px') 年
+                  input#month2.myinput.inputSm2(name='month2', type='text', title='月')
+                  span(style='padding:0 8px') 月
+                  input#day2.myinput.inputSm2(name='day2', type='text', title='日')
+                  span(style='padding-left:8px') 日
               .formbtn
                 input.mybtn.btn_reset.btn-m(type='reset', value='清除')
                 input.mybtn.btn_send.btn-m(type='button', value='搜尋', onclick="location.href='../collection/search-results.html'")
