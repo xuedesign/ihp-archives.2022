@@ -481,15 +481,19 @@
 } */
 
 /*選取輸出按鈕*/
-.right_title label{
+.right_title label,
+.right_title2 label{
     font-size: 1.6rem;
     margin-right: 10px;
 }
 .right_title input,
-.right_title a{
+.right_title a,
+.right_title2 input,
+.right_title2 a{
     margin-left: 15px;
 }
-.right_title span{
+.right_title span,
+.right_title2 span{
     margin-left: 15px;
 }
 
@@ -502,15 +506,30 @@
     padding: 20px 10px;
     font-size: 1.6rem;
 }
-#list_option label{
+#search_again{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0 15px;
+    padding: 0 10px;
+}
+#list_option label,
+#search_again label{
     font-size: 1.6rem;
     padding-right: 5px;
 }
 #list_option .myinput{
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
     font-size: 1.6rem;
 }
-#list_option .mybtn{
+#list_option .myinput2{
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+#list_option .mybtn,
+#search_again .mybtn{
     display: inline-block;
     margin-left: 15px;
 }
@@ -555,6 +574,11 @@
 mark{
     font-weight: 500;
     color:#941010}
+mark.mark2{
+    font-weight: 500;
+    color:#1316ca;
+    margin-left: -4px;
+}
 #page-number{
     display: inline-block;
     padding-top: 8px;}

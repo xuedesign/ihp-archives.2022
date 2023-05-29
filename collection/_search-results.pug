@@ -73,6 +73,11 @@ html(lang="zh-Hant-TW")
           = '\n'
           //沒有項目時，box_page可以整個隱藏
           #box_page
+            #search_again
+             form(action='#', method='post')
+                label 結果再次搜尋：
+                input.myinput.inputLong70(name='anytext', type='text', title='再次搜尋', placeholder='於本次搜尋結果再次查詢', value='房契')
+                input.mybtn.btn_send.btn-s(type='button', value='再次搜尋')
             #list_option
               form(action='#', method='post')
                 label 排序：
@@ -114,7 +119,8 @@ html(lang="zh-Hant-TW")
                     |二十四年
                   td.td_title
                     mark 乾隆
-                    |二十四年關成典房契
+                    |二十四年關成典
+                    mark.mark2 房契
                 tr
                   td.td_no
                     input#selecttd(type='checkbox', name='tdItem', value='2')
@@ -127,7 +133,8 @@ html(lang="zh-Hant-TW")
                     |三十九年
                   td.td_title
                     mark 乾隆
-                    |三十九年長春典房契
+                    |三十九年長春典
+                    mark.mark2 房契
                 tr
                   td.td_no
                     input#selecttd(type='checkbox', name='tdItem', value='3')
@@ -140,7 +147,8 @@ html(lang="zh-Hant-TW")
                     |五十二年
                   td.td_title
                     mark 乾隆
-                    |五十二年德克錦額典房契
+                    |五十二年德克錦額典
+                    mark.mark2 房契
                 tr
                   td.td_no
                     input#selecttd(type='checkbox', name='tdItem', value='4')
