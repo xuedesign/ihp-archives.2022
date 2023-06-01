@@ -558,6 +558,38 @@
     width: 20%;
     text-align: left;
 }
+.td_summary{
+    position:relative;
+    width: 8%;
+    text-align: center;
+}
+.td_summary a,
+.td_summary a:visited{
+    color: rgba(67, 86, 100, .8)
+}
+.td_summary a:hover{
+    color: rgba(67, 86, 100, 1)
+}
+.fa-square-plus{
+    font-size:2.5rem
+}
+.box_summary{
+    display: none;
+}
+.td_summary:hover>.box_summary{
+    display: block;
+    position:absolute;
+    top:25%;
+    right:70%;
+    width: 500px;
+    height: 300px;
+    background: #d9d9d9;
+    border: 4px solid #111;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+    text-align: left;
+}
 /*#mytable1 .td_title,
 #mytable1 .td_info{ width: 30%;}
 #mytable2 .td_type{ width: 25%;}
@@ -603,6 +635,48 @@ mark.mark2{
 #box_emptyinfo h4{
     font-size: 3rem;
     font-weight: 400;
+}
+
+/*2023-05-31 簡目表格樣式改變，暫時不用，因為一改下去，要變動的地方太多*/
+#list_products{
+    display:block;
+    width: 100%;
+    margin: 20px 0;
+    min-height:500px;
+    /* border: 1px solid #a4a4a4; */
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+.box_checkall{
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    /* border-bottom: 1px solid rgba(67, 86, 100, .5); */
+    background-color:#435664;
+    color:#EFDFC5;
+    font-size:1.8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+#list_products li{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    padding: 15px 10px;
+    border-bottom: 1px dashed rgba(67, 86, 100, .5);
+}
+#list_products li:nth-child(even){
+    background: #EDEDED
+}
+.box_no{ width: 8%;}
+.box_pinfo p{
+    line-height: 3rem;
+}
+.box_pinfo h4{
+    font-size:2.2rem;
+    font-weight: normal;
+    line-height: 5rem;
+    letter-spacing: 1px;
 }
 
 /*檔案詳目*/
