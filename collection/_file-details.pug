@@ -53,8 +53,15 @@ html(lang="zh-Hant-TW")
           dialog#mydialog.dialog(role='dialog')
             form(action='#', method='post')
               .dialog-body
-                h3 意見回饋：
-                label(for="textarea") 如對「#[span 00000000000 滿漢文合璧執照]」有任何想法與意見，歡迎與我們聯繫交流...
+                h3
+                  i.fa-solid.fa-square-pen
+                  |意見回饋：
+                //label(for="textarea") 如對「#[span 00000000000 滿漢文合璧執照]」有任何想法與意見，歡迎與我們聯繫交流...
+                p #[span 檔號：]00000000000
+                p #[span 題名：]滿漢文合璧執照
+                p #[span 會員名稱：]OOOO
+                p #[span 時間：]2023/06/00
+                label(for="textarea") #[span 我要反映：]
                 textarea#textarea.mytextarea(name='textarea', rows='5', cols='33')
               .dialog-foot
                 input#hidedialog.mybtn_select.btn_white(type='button', value='取消')
