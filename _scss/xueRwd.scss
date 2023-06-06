@@ -73,6 +73,12 @@
     #pagemain .pass-view{
         right:50px;
     }
+    .left_title{
+        width: 53%;
+      }
+      .right_title{
+        width: 46%;
+      }
 }
 @media (max-width:1400px) {
     .box_media audio{
@@ -85,6 +91,12 @@
     .search_index{
         width: 68%;
     }
+    .left_title{
+        width: 50%;
+      }
+      .right_title{
+        width: 49%;
+      }
 }
 @media (max-width:1300px) {
     #main-nav{
@@ -119,6 +131,15 @@
     #box_shortmain{
         width:85%
     }
+    .dialog{
+        width: 70%;
+    }
+    .left_title{
+        width: 49%;
+      }
+      .right_title{
+        width: 50%;
+      }
 }
 
 /*

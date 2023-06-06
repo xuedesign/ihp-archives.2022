@@ -13,6 +13,10 @@ loadjs('https://ihparchives.pages.dev/js/checkall.js');
 //fontawesome
 loadjs('https://kit.fontawesome.com/c66b525810.js');
 
+//openSubInfo
+loadjs('https://ihparchives.pages.dev/js/opensubinfo.js');
+//loadjs('../js/opensubinfo.js');
+
 //fancybox
 loadjs(['https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js']);
 

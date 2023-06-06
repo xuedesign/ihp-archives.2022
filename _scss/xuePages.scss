@@ -570,42 +570,26 @@
 .td_summary a:hover{
     color: rgba(67, 86, 100, 1)
 }
-.fa-square-plus{
+.fa-square-plus,
+.fa-square-minus{
     font-size:2.5rem
 }
-.box_summary{
-    display: none;
+.mytable2 .td_info{
+    background: #636363;
+    padding: 10px 35px;
 }
-
-.box_summary h4{
+.td_info h4{
     font-size: 1.8rem;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     color:#EFDFC5;
 }
-.box_summary p{
-    font-size: 1.5rem;
+.td_info p{
+    font-size: 1.6rem;
     color:#e3e3e3;
     text-align: justify;
     padding-bottom: 15px;
 }
-.td_summary:hover>.box_summary{
-    display: block;
-    position:absolute;
-    top:25%;
-    right:70%;
-    width: 500px;
-    height: 250px;
-    background: #435664;
-    border: 4px solid #435664;
-    border-radius: 5px;
-    padding: 10px 20px;
-    overflow-y: auto;
-    text-align: left;
-}
-/*#mytable1 .td_title,
-#mytable1 .td_info{ width: 30%;}
-#mytable2 .td_type{ width: 25%;}
-#mytable2 .td_title{ width: 35%;} */
+
 
 .page_option{
    display: block;
@@ -705,7 +689,7 @@ dialog[open],
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 35%;
+    width: 55%;
     /* width: -webkit-fit-content;
     width: fit-content; */
     max-width: 1500px;

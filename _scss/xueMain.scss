@@ -67,6 +67,7 @@ form{ margin:0; padding:0}
 image{border:0}
 .clean{ clear:both}
 .hidden{ visibility:hidden;}
+.trhidden{ display:none}
 .txt_small{font-size: 1.8rem}
 .text_center{ text-align: center}
 .text_right{ text-align: right}
@@ -172,21 +173,21 @@ footer{
   padding-top: 20px;
 }
 .left_title{
-  width: 30%;
+  width: 51%;
 }
 .right_title{
-  width: 69%;
+  width: 48%;
   text-align: right;
   /* border: 1px solid rgb(81, 81, 81); */
 }
-.left_title2{
+/* .left_title2{
   width: 100%;
   margin-bottom: 40px;
 }
 .right_title2{
   width: 100%;
   text-align: right;
-}
+} */
 #aside{
   width: 23.5%;
   min-height:500px;
@@ -553,11 +554,13 @@ h2::before{
 }
 
 /*表格*/
-.mytable{
+.mytable,
+.mytable2{
   width:98%;
   margin: 20px auto 30px auto;
 }
-.mytable th{
+.mytable th,
+.mytable2 th{
   padding: 5px 8px;
   text-align: center;
   background-color:#435664;
@@ -569,20 +572,24 @@ h2::before{
   vertical-align: middle;
 
 }
-.mytable tr:nth-child(even){
+.mytable tr:nth-child(even),
+.mytable2 tr:nth-child(4n+3){
   background: #EDEDED
 }
-.mytable tr:last-child{
+.mytable2 tr:last-child{
   border-bottom: 1px solid #919191;
 }
-.mytable td{
+.mytable td,
+.mytable2 td{
   padding: 18px 12px;
   font-size: 1.8rem;
   border-right: 1px solid #fff;
   vertical-align: middle;
 }
 .mytable td:last-child,
-.mytable th:last-child{
+.mytable th:last-child,
+.mytable2 td:last-child,
+.mytable2 th:last-child{
   border-right: none;
 }
 

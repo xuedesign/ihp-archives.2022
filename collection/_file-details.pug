@@ -16,9 +16,9 @@ html(lang="zh-Hant-TW")
 
       main#container-page
         #bar_title
-          .left_title2
+          .left_title
             h2 滿漢文合璧執照滿漢文合璧執照滿漢文合璧執照滿漢文合璧執照滿漢文合璧執照滿漢文合璧執照滿漢文合璧執照滿漢文合璧執照滿漢文合璧執照
-          .right_title2
+          .right_title
             input.mybtn_select.btn_white(type='button', value='加入收藏')
             input.mybtn_select.btn_send(type='button', value='匯出收藏清單(99)', onclick="location.href='../collection/export.html'")
             | #[span |]
@@ -61,13 +61,13 @@ html(lang="zh-Hant-TW")
                 p #[span 題名：]滿漢文合璧執照
                 p #[span 會員名稱：]OOOO
                 p #[span 時間：]2023/06/00
-                label(for="textarea") #[span 我要反映：]
+                label(for="textarea") #[span 意見內容：]
                 textarea#textarea.mytextarea(name='textarea', rows='5', cols='33')
               .dialog-foot
                 input#hidedialog.mybtn_select.btn_white(type='button', value='取消')
                 input#hidedialog.mybtn_select.btn_white(type='button', value='送出')
           = '\n'
-          table#mytable2.mytable(summary='檔案資訊')
+          table.mytable(summary='檔案資訊')
             thead
               tr
                 th 標題

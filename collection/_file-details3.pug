@@ -18,9 +18,9 @@ html(lang="zh-Hant-TW")
 
       main#container-page
         #bar_title
-          .left_title2
+          .left_title
             h2 影音檔案名稱
-          .right_title2
+          .right_title
             input.mybtn_select.btn_white(type='button', value='加入收藏')
             input.mybtn_select.btn_send(type='button', value='匯出收藏清單(99)', onclick="location.href='../collection/export.html'")
             | #[span |]
@@ -47,7 +47,7 @@ html(lang="zh-Hant-TW")
                 input#hidedialog.mybtn_select.btn_white(type='button', value='取消')
                 input#hidedialog.mybtn_select.btn_white(type='button', value='送出')
           = '\n'
-          table#mytable2.mytable(summary='檔案資訊')
+          table.mytable(summary='檔案資訊')
             thead
               tr
                 th 標題

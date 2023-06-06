@@ -135,7 +135,7 @@ html(lang="zh-Hant-TW")
               input.mybtn.btn_send.btn-s(type='button', value='重新排序')
           = '\n'
           
-          table#mytable1.mytable(summary='列表')
+          table.mytable2(summary='列表')
             thead
               tr
                 th
@@ -155,13 +155,14 @@ html(lang="zh-Hant-TW")
                 td.td_time 乾隆二十四年
                 td.td_title 乾隆二十四年關成典房契
                 td.td_summary
-                  a(href="##" title="...")
+                  a.btn_click(data-id="summary1")
                     i.fa-solid.fa-square-plus
-                  .box_summary
-                    h4 摘要說明：
-                    p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
-                    h4 關鍵字：
-                    p 徐滿、羅華田、楊時達、黎光明、王元輝
+              tr#summary1.trhidden
+                td.td_info(colspan='5')
+                  h4 摘要說明：
+                  p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
+                  h4 關鍵字：
+                  p 徐滿、羅華田、楊時達、黎光明、王元輝
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='2')
@@ -171,13 +172,14 @@ html(lang="zh-Hant-TW")
                 td.td_time 乾隆三十九年
                 td.td_title 乾隆三十九年長春典房契
                 td.td_summary
-                  a(href="##" title="...")
+                  a(data-id="summary2")
                     i.fa-solid.fa-square-plus
-                  .box_summary
-                    h4 摘要說明：
-                    p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
-                    h4 關鍵字：
-                    p 徐滿、羅華田、楊時達、黎光明、王元輝
+              tr#summary2.trhidden
+                td.td_info(colspan='5')
+                  h4 摘要說明：
+                  p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
+                  h4 關鍵字：
+                  p 徐滿、羅華田、楊時達、黎光明、王元輝
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='3')
@@ -187,13 +189,14 @@ html(lang="zh-Hant-TW")
                 td.td_time 乾隆五十二年
                 td.td_title 乾隆五十二年德克錦額典房契
                 td.td_summary
-                  a(href="##" title="...")
+                  a(data-id="summary3")
                     i.fa-solid.fa-square-plus
-                  .box_summary
-                    h4 摘要說明：
-                    p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
-                    h4 關鍵字：
-                    p 徐滿、羅華田、楊時達、黎光明、王元輝
+              tr#summary3.trhidden
+                td.td_info(colspan='5')
+                  h4 摘要說明：
+                  p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
+                  h4 關鍵字：
+                  p 徐滿、羅華田、楊時達、黎光明、王元輝
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='4')
@@ -203,13 +206,14 @@ html(lang="zh-Hant-TW")
                 td.td_time 嘉慶六年
                 td.td_title 嘉慶六年郭洪吉典房契
                 td.td_summary
-                  a(href="##" title="...")
+                  a(data-id="summary4")
                     i.fa-solid.fa-square-plus
-                  .box_summary
-                    h4 摘要說明：
-                    p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
-                    h4 關鍵字：
-                    p 徐滿、羅華田、楊時達、黎光明、王元輝
+              tr#summary4.trhidden
+                td.td_info(colspan='5')
+                  h4 摘要說明：
+                  p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
+                  h4 關鍵字：
+                  p 徐滿、羅華田、楊時達、黎光明、王元輝
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='5')
@@ -219,13 +223,14 @@ html(lang="zh-Hant-TW")
                 td.td_time 嘉慶九年
                 td.td_title 嘉慶九年寧文氣典房契
                 td.td_summary
-                  a(href="##" title="...")
+                  a(data-id="summary5")
                     i.fa-solid.fa-square-plus
-                  .box_summary
-                    h4 摘要說明：
-                    p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
-                    h4 關鍵字：
-                    p 徐滿、羅華田、楊時達、黎光明、王元輝
+              tr#summary5.trhidden
+                td.td_info(colspan='5')
+                  h4 摘要說明：
+                  p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
+                  h4 關鍵字：
+                  p 徐滿、羅華田、楊時達、黎光明、王元輝
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='6')
@@ -235,13 +240,14 @@ html(lang="zh-Hant-TW")
                 td.td_time 嘉慶十二年
                 td.td_title 嘉慶十二年西隆阿典房契
                 td.td_summary
-                  a(href="##" title="...")
+                  a(data-id="summary6")
                     i.fa-solid.fa-square-plus
-                  .box_summary
-                    h4 摘要說明：
-                    p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
-                    h4 關鍵字：
-                    p 徐滿、羅華田、楊時達、黎光明、王元輝
+              tr#summary6.trhidden
+                td.td_info(colspan='5')
+                  h4 摘要說明：
+                  p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
+                  h4 關鍵字：
+                  p 徐滿、羅華田、楊時達、黎光明、王元輝
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='7')
@@ -251,13 +257,14 @@ html(lang="zh-Hant-TW")
                 td.td_time 嘉慶二十四年
                 td.td_title 嘉慶二十四年巴栢典房契
                 td.td_summary
-                  a(href="##" title="...")
+                  a(data-id="summary7")
                     i.fa-solid.fa-square-plus
-                  .box_summary
-                    h4 摘要說明：
-                    p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
-                    h4 關鍵字：
-                    p 徐滿、羅華田、楊時達、黎光明、王元輝
+              tr#summary7.trhidden
+                td.td_info(colspan='5')
+                  h4 摘要說明：
+                  p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
+                  h4 關鍵字：
+                  p 徐滿、羅華田、楊時達、黎光明、王元輝
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='8')
@@ -267,13 +274,14 @@ html(lang="zh-Hant-TW")
                 td.td_time 道光二十年
                 td.td_title 道光二十年李廣興老典房契
                 td.td_summary
-                  a(href="##" title="...")
+                  a(data-id="summary8")
                     i.fa-solid.fa-square-plus
-                  .box_summary
-                    h4 摘要說明：
-                    p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
-                    h4 關鍵字：
-                    p 徐滿、羅華田、楊時達、黎光明、王元輝
+              tr#summary8.trhidden
+                td.td_info(colspan='5')
+                  h4 摘要說明：
+                  p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
+                  h4 關鍵字：
+                  p 徐滿、羅華田、楊時達、黎光明、王元輝
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='9')
@@ -283,13 +291,14 @@ html(lang="zh-Hant-TW")
                 td.td_time 咸豐十年
                 td.td_title 咸豐十年富英仝妻富門李氏賣房契
                 td.td_summary
-                  a(href="##" title="...")
+                  a(data-id="summary9")
                     i.fa-solid.fa-square-plus
-                  .box_summary
-                    h4 摘要說明：
-                    p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
-                    h4 關鍵字：
-                    p 徐滿、羅華田、楊時達、黎光明、王元輝
+              tr#summary9.trhidden
+                td.td_info(colspan='5')
+                  h4 摘要說明：
+                  p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
+                  h4 關鍵字：
+                  p 徐滿、羅華田、楊時達、黎光明、王元輝
               tr
                 td.td_no
                   input#selecttd(type='checkbox', name='tdItem', value='10')
@@ -299,13 +308,14 @@ html(lang="zh-Hant-TW")
                 td.td_time 同治十年
                 td.td_title 同治十年李山賣房契
                 td.td_summary
-                  a(href="##" title="...")
+                  a(data-id="summary10")
                     i.fa-solid.fa-square-plus
-                  .box_summary
-                    h4 摘要說明：
-                    p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
-                    h4 關鍵字：
-                    p 徐滿、羅華田、楊時達、黎光明、王元輝
+              tr#summary10.trhidden
+                td.td_info(colspan='5')
+                  h4 摘要說明：
+                  p 書籍裝訂賈、車費、襟費、器具、標本及古 物、祿蛋、儀器、服裝、圖吉、報紙、營繕房屋、營繕裝置、營籍器械、營繕車輛、旅費、匯兌、論文獎金及津貼、交際費、調查費、 醫藥賈、考古費、蒙古語典進款、國外書店暂記、本所二十年度餘款暫記
+                  h4 關鍵字：
+                  p 徐滿、羅華田、楊時達、黎光明、王元輝
           = '\n'
           .page_option
             #page-number
