@@ -924,11 +924,15 @@ dialog[open],
 }
 .bg_god p{
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: normal;
     color:#133c5c;
-    letter-spacing:1px;
     text-shadow: 5px 5px 20px rgb(255, 255, 255);
     margin: 0 0 0 33px;
+}
+.bg_god p span{
+    font-size: 1.6rem;
+    line-height: 4rem;
+    letter-spacing:1px;
 }
 #short_right{
     font-size: 1.7rem;
