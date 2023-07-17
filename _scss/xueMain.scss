@@ -82,6 +82,9 @@ image{border:0}
 img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 
+/*隱藏EDGE瀏覽器的密碼顯示功能*/
+::-ms-reveal { display: none;}
+
 /*
 =====================================
 變數
