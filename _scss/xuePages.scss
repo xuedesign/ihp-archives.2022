@@ -980,12 +980,18 @@ dialog[open],
 .main_info .mybtn{
     margin: 20px auto 10px auto;
 }
-.textinput{
+.textinput,
+.textinput-captcha{
     position: relative;
     width: 90%;
     height: 50px;
-    margin: 4rem auto;
+}
+.textinput{
     border-bottom: 1px solid #ADADAD;
+    margin: 4rem auto;
+}
+.textinput-captcha{
+    margin: -30px auto 0 auto;
 }
 .textinput input,
 .textinput label {
