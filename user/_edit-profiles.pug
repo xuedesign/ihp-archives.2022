@@ -20,13 +20,18 @@ html(lang="zh-Hant-TW")
         = '\n'
 
         aside#aside
+          #box_memberdate
+            h3 會員到期日
+            p 2026-09-21
+            input.mybtn.btn_send.btn-l(type='button', value='展延會員期限')
+          = '\n'
           #box_subnav.subnav-01
-              ul
-                //切換到該類別，增加.nowin
-                li
-                  a.nowin(href='../user/edit-profiles.html', title='編輯會員資料') 編輯會員資料
-                li
-                  a(href='../user/edit-pwd.html', title='修改密碼') 修改密碼
+            ul
+              //切換到該類別，增加.nowin
+              li
+                a.nowin(href='../user/edit-profiles.html', title='編輯會員資料') 編輯會員資料
+              li
+                a(href='../user/edit-pwd.html', title='修改密碼') 修改密碼
           = '\n'
 
         section#pagemain
