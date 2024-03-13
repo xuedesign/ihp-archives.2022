@@ -595,6 +595,13 @@ h2::before{
 .mytable2 th:last-child{
   border-right: none;
 }
+.mytable td> img{
+  display: inline-table;
+  width: 19px;
+  height: 19px;
+  vertical-align: sub;
+  margin: 0;
+}
 
 
 /*
